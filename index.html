@@ -105,6 +105,20 @@ h3{font-size:15.5px;font-weight:620;letter-spacing:-.01em;margin:32px 0 10px}
 .axis{display:flex;justify-content:space-between;font-family:var(--m);font-size:10.5px;
   color:var(--faint);margin-top:6px}
 
+/* ---------- dataset ---------- */
+.dsname{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:0 0 10px}
+.dsname h2{margin:0;color:var(--lilac-d)}
+.dsname em{font-style:normal;font-family:var(--m);font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--lilac-d);background:var(--lilac-bg);
+  padding:3px 10px;border-radius:20px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:22px 0 4px}
+@media(max-width:700px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--lilac-bg);border-radius:10px;padding:15px 16px}
+.stat b{display:block;font-size:22px;font-weight:660;letter-spacing:-.02em;
+  color:var(--lilac-d);line-height:1.1;margin-bottom:3px}
+.stat span{font-family:var(--m);font-size:10.5px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--dim)}
+
 /* ---------- audio compare ---------- */
 .cmp{background:var(--pan);border:1px solid var(--ln);border-radius:var(--r);
   padding:18px 20px 16px;margin-bottom:14px}
@@ -151,6 +165,7 @@ footer .mark{justify-content:center;margin-bottom:10px;font-size:15px;color:var(
   <div class="mark"><i></i>VoxAgora</div>
   <div class="sp"></div>
   <a class="lnk" href="#about">Benchmark</a>
+  <a class="lnk" href="#data">Data</a>
   <a class="lnk" href="#simulator">Simulator</a>
   <a class="lnk" href="#samples">Samples</a>
 </div></nav>
@@ -198,17 +213,44 @@ footer .mark{justify-content:center;margin-bottom:10px;font-size:15px;color:var(
   <div class="ph"><b>Placeholder</b>Task definition, evaluation protocol, and metric table go here.</div>
 </div></section>
 
-<!-- ============ 2. SIMULATOR ============ -->
+<!-- ============ 2. DATA ============ -->
+<section id="data"><div class="w">
+  <p class="eyebrow">02 &mdash; Dataset</p>
+  <div class="dsname">
+    <h2>MINGLE</h2>
+    <em>dataset</em>
+  </div>
+  <p class="lead">One-paragraph description of the dataset goes here.</p>
+
+  <div class="stats">
+    <div class="stat"><b>&mdash;</b><span>sessions</span></div>
+    <div class="stat"><b>&mdash;</b><span>turns</span></div>
+    <div class="stat"><b>&mdash;</b><span>speakers</span></div>
+    <div class="stat"><b>&mdash;</b><span>hours</span></div>
+  </div>
+
+  <h3>Composition</h3>
+  <div class="grid3">
+    <div class="card l"><span class="tag">01</span><h4>Point one</h4><p>Short description.</p></div>
+    <div class="card s"><span class="tag">02</span><h4>Point two</h4><p>Short description.</p></div>
+    <div class="card p"><span class="tag">03</span><h4>Point three</h4><p>Short description.</p></div>
+  </div>
+
+  <h3>Format &amp; release</h3>
+  <div class="ph"><b>Placeholder</b>Schema, annotation fields, splits, and license go here.</div>
+</div></section>
+
+<!-- ============ 3. SIMULATOR ============ -->
 <section id="simulator"><div class="w">
-  <p class="eyebrow">02 &mdash; Simulator</p>
+  <p class="eyebrow">03 &mdash; Simulator</p>
   <h2>Conversation simulator</h2>
   <p class="lead">How multi-party sessions are rendered into audio &mdash; description goes here.</p>
   <div class="ph"><b>Placeholder</b>Pipeline figure and stage-by-stage description go here.</div>
 </div></section>
 
-<!-- ============ 3. AUDIO COMPARISON ============ -->
+<!-- ============ 4. AUDIO COMPARISON ============ -->
 <section id="samples"><div class="w">
-  <p class="eyebrow">03 &mdash; Listening samples</p>
+  <p class="eyebrow">04 &mdash; Listening samples</p>
   <h2>Audio comparison</h2>
   <p class="lead">Click a waveform to seek. Starting one track pauses the others and hands over
      the playhead position, so variants can be compared at the same moment.</p>
