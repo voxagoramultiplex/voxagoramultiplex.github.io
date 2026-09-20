@@ -647,8 +647,10 @@ function draw(P){
   const mid = h / 2;
   const prog = P.dur && P.audio ? P.audio.currentTime / P.dur : 0;
   const scale = 1 / (P.S.pmax || P.pmax || 1);
+  /* Same scale and same gamma for every track in the scene, so the comparison
+     stays honest while quiet speech next to a loud burst is still visible. */
   for (let i = 0; i < n; i++){
-    const v = (P.peaks[Math.floor(i / n * P.peaks.length)] || 0) * scale;
+    const v = Math.pow((P.peaks[Math.floor(i / n * P.peaks.length)] || 0) * scale, 0.6);
     const bh = Math.max(1.5, v * (h - 10));
     g.fillStyle = (i / n <= prog) ? C.fill : C.base;
     g.fillRect(i * step, mid - bh/2, bw, bh);
