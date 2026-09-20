@@ -733,8 +733,8 @@ async function buildBleed(){
       target: s.target,
       transcript: s.transcript,
       tracks: [
-        { name: 'Original mic',  meta: 'as recorded', src: s.orig  },
-        { name: 'Bleed removed', meta: 'pipeline',    src: s.clean }
+        { name: 'Original mic',  meta: 'as recorded',         src: s.orig  },
+        { name: 'Bleed removed', meta: 'separated, restored', src: s.clean }
       ]
     });
   };
