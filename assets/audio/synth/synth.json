@@ -1,0 +1,455 @@
+[
+ {
+  "id": "syn952",
+  "label": "Session 952 · 69 turns",
+  "note": "3 speakers. This 30 s excerpt is built around a mutual-drop: two of them start at once, then both give way. The session has 2 such moments among 8 floor-taking events.",
+  "tracks": [
+   {
+    "spk": "Diane",
+    "src": "assets/audio/synth/syn952_Diane.opus"
+   },
+   {
+    "spk": "Michael",
+    "src": "assets/audio/synth/syn952_Michael.opus"
+   },
+   {
+    "spk": "Claire",
+    "src": "assets/audio/synth/syn952_Claire.opus"
+   }
+  ],
+  "transcript": [
+   {
+    "spk": "Michael",
+    "t0": -1.24,
+    "t1": 1.08,
+    "text": "Okay, okay. Sorry. Go ahead, I'll shut up."
+   },
+   {
+    "spk": "Claire",
+    "t0": 1.28,
+    "t1": 2.8,
+    "text": "Me too. I'm listening. Really."
+   },
+   {
+    "spk": "Diane",
+    "t0": 3.0,
+    "t1": 5.39,
+    "text": "Alright. I've decided I'm going to sell the—"
+   },
+   {
+    "spk": "Michael",
+    "t0": 5.18,
+    "t1": 5.81,
+    "text": "Sell—"
+   },
+   {
+    "spk": "Claire",
+    "t0": 5.18,
+    "t1": 5.92,
+    "text": "Wait, no—"
+   },
+   {
+    "spk": "Claire",
+    "t0": 7.12,
+    "t1": 9.28,
+    "text": "Oh, I'm sorry. I literally just promised."
+   },
+   {
+    "spk": "Michael",
+    "t0": 9.48,
+    "t1": 11.56,
+    "text": "Yeah, me too. Go on, Mom. Finish it."
+   },
+   {
+    "spk": "Diane",
+    "t0": 11.76,
+    "t1": 13.13,
+    "text": "Thank you. I'm gonna sell the—"
+   },
+   {
+    "spk": "Michael",
+    "t0": 12.91,
+    "t1": 13.79,
+    "text": "Sell the—"
+   },
+   {
+    "spk": "Diane",
+    "t0": 13.99,
+    "t1": 17.03,
+    "text": "Michael. You just promised. Both of you just promised."
+   },
+   {
+    "spk": "Michael",
+    "t0": 17.23,
+    "t1": 19.31,
+    "text": "I know, I just, sorry. Sorry, go ahead."
+   },
+   {
+    "spk": "Diane",
+    "t0": 19.51,
+    "t1": 23.67,
+    "text": "I'm gonna sell the house. This house. I've already talked to a realtor."
+   },
+   {
+    "spk": "Claire",
+    "t0": 23.87,
+    "t1": 24.94,
+    "text": "A realtor? Mom—"
+   },
+   {
+    "spk": "Diane",
+    "t0": 24.64,
+    "t1": 27.2,
+    "text": "Claire, you said you'd listen. I'm not done."
+   },
+   {
+    "spk": "Diane",
+    "t0": 27.4,
+    "t1": 35.0,
+    "text": "I know this is a shock but I need you both to let me explain why before you start telling me all the reasons I shouldn't."
+   }
+  ]
+ },
+ {
+  "id": "syn982",
+  "label": "Session 982 · 73 turns",
+  "note": "4 speakers. This 30 s excerpt is built around a mutual-drop: two of them start at once, then both give way. The session has 2 such moments among 7 floor-taking events.",
+  "tracks": [
+   {
+    "spk": "Mia",
+    "src": "assets/audio/synth/syn982_Mia.opus"
+   },
+   {
+    "spk": "Sam",
+    "src": "assets/audio/synth/syn982_Sam.opus"
+   },
+   {
+    "spk": "Alex",
+    "src": "assets/audio/synth/syn982_Alex.opus"
+   },
+   {
+    "spk": "Jordan",
+    "src": "assets/audio/synth/syn982_Jordan.opus"
+   }
+  ],
+  "transcript": [
+   {
+    "spk": "Alex",
+    "t0": -11.92,
+    "t1": 2.8,
+    "text": "That Butterworth is exactly what I was worried about. I actually ran a quick simulation comparing it to an FIR with linear phase, and the passband ripple alone accounts for like a 2 percent distortion in the low end. Have you ever measured the group delay on that thing?"
+   },
+   {
+    "spk": "Sam",
+    "t0": 3.0,
+    "t1": 13.16,
+    "text": "I measured it like two years ago and it's a mess, like 12 milliseconds of variation across the passband. If you've got an FIR design that fixes it I wanna see that simulation."
+   },
+   {
+    "spk": "Mia",
+    "t0": 13.36,
+    "t1": 14.19,
+    "text": "Alex built—"
+   },
+   {
+    "spk": "Alex",
+    "t0": 13.36,
+    "t1": 13.89,
+    "text": "I can—"
+   },
+   {
+    "spk": "Mia",
+    "t0": 15.39,
+    "t1": 16.59,
+    "text": "Sorry, go ahead."
+   },
+   {
+    "spk": "Alex",
+    "t0": 16.79,
+    "t1": 26.15,
+    "text": "Yeah, I got the comparison plots right here. The FIR design uses a Kaiser window with like 80 dB stopband attenuation, and the group delay is dead flat across the whole passband."
+   },
+   {
+    "spk": "Sam",
+    "t0": 26.35,
+    "t1": 26.74,
+    "text": "Let me—"
+   },
+   {
+    "spk": "Alex",
+    "t0": 26.35,
+    "t1": 27.2,
+    "text": "The difference—"
+   },
+   {
+    "spk": "Alex",
+    "t0": 28.4,
+    "t1": 31.52,
+    "text": "Sorry, go ahead, you're the one who actually measured the Butterworth."
+   }
+  ]
+ },
+ {
+  "id": "syn593",
+  "label": "Session 593 · 77 turns",
+  "note": "4 speakers. This 38 s excerpt is built around a mutual-drop: two of them start at once, then both give way. The session has 2 such moments among 9 floor-taking events.",
+  "tracks": [
+   {
+    "spk": "Elena",
+    "src": "assets/audio/synth/syn593_Elena.opus"
+   },
+   {
+    "spk": "Marcus",
+    "src": "assets/audio/synth/syn593_Marcus.opus"
+   },
+   {
+    "spk": "Priya",
+    "src": "assets/audio/synth/syn593_Priya.opus"
+   },
+   {
+    "spk": "Jordan",
+    "src": "assets/audio/synth/syn593_Jordan.opus"
+   }
+  ],
+  "transcript": [
+   {
+    "spk": "Marcus",
+    "t0": -2.24,
+    "t1": 2.8,
+    "text": "So we're debating two busted models, and the only thing that stops us is a clear decision."
+   },
+   {
+    "spk": "Priya",
+    "t0": -2.24,
+    "t1": 1.76,
+    "text": "This is exactly my point about agility, because the baseline has to move."
+   },
+   {
+    "spk": "Elena",
+    "t0": 3.0,
+    "t1": 11.4,
+    "text": "Stop. Both of you. Jordan, you said neither model holds up. What does that mean for the decision I actually have to make in the next forty minutes?"
+   },
+   {
+    "spk": "Priya",
+    "t0": 11.6,
+    "t1": 12.25,
+    "text": "It's the—"
+   },
+   {
+    "spk": "Jordan",
+    "t0": 11.6,
+    "t1": 12.29,
+    "text": "Right, so—"
+   },
+   {
+    "spk": "Elena",
+    "t0": 12.49,
+    "t1": 14.89,
+    "text": "Enough. Jordan, you finish. Priya, I'll get to you."
+   },
+   {
+    "spk": "Priya",
+    "t0": 15.09,
+    "t1": 16.31,
+    "text": "Sorry, go ahead."
+   },
+   {
+    "spk": "Jordan",
+    "t0": 16.51,
+    "t1": 24.99,
+    "text": "Thank you. So whichever department we protect, we're still gonna come up short unless we adjust the baseline first. The cut itself isn't the problem, it's what we're cutting from."
+   },
+   {
+    "spk": "Priya",
+    "t0": 25.19,
+    "t1": 30.95,
+    "text": "I actually agree with that framing, I just reach a different conclusion about what adjusting the baseline looks like."
+   },
+   {
+    "spk": "Elena",
+    "t0": 31.15,
+    "t1": 35.23,
+    "text": "Then let's hear it. Jordan, what does adjusting the baseline actually look like, practically?"
+   },
+   {
+    "spk": "Jordan",
+    "t0": 35.43,
+    "t1": 53.35,
+    "text": "It means we stop using the price point from January and plug in the actual trend line from the last six months instead. That one change alone shifts the break even on Marcus's proposal by about four months and Priya's by, um, seven, I think. So the whole timeline we're arguing over is based on a number we already left behind."
+   }
+  ]
+ },
+ {
+  "id": "syn1097",
+  "label": "Session 1097 · 71 turns",
+  "note": "5 speakers. This 44 s excerpt is built around a mutual-drop: two of them start at once, then both give way. The session has 3 such moments among 10 floor-taking events.",
+  "tracks": [
+   {
+    "spk": "Elena",
+    "src": "assets/audio/synth/syn1097_Elena.opus"
+   },
+   {
+    "spk": "Marcus",
+    "src": "assets/audio/synth/syn1097_Marcus.opus"
+   },
+   {
+    "spk": "Priya",
+    "src": "assets/audio/synth/syn1097_Priya.opus"
+   },
+   {
+    "spk": "Derek",
+    "src": "assets/audio/synth/syn1097_Derek.opus"
+   },
+   {
+    "spk": "Sam",
+    "src": "assets/audio/synth/syn1097_Sam.opus"
+   }
+  ],
+  "transcript": [
+   {
+    "spk": "Marcus",
+    "t0": -1.6,
+    "t1": 2.8,
+    "text": "You had two years to finish that sentence. I wanna hear it now. Every detail."
+   },
+   {
+    "spk": "Elena",
+    "t0": 3.0,
+    "t1": 9.16,
+    "text": "Fair enough. I told the engineering team to skip the load testing phase so we could hit the launch date."
+   },
+   {
+    "spk": "Elena",
+    "t0": 9.36,
+    "t1": 10.23,
+    "text": "I knew—"
+   },
+   {
+    "spk": "Marcus",
+    "t0": 9.36,
+    "t1": 10.19,
+    "text": "You told—"
+   },
+   {
+    "spk": "Priya",
+    "t0": 9.36,
+    "t1": 10.09,
+    "text": "I knew—"
+   },
+   {
+    "spk": "Derek",
+    "t0": 9.36,
+    "t1": 9.91,
+    "text": "Jesus—"
+   },
+   {
+    "spk": "Priya",
+    "t0": 11.43,
+    "t1": 13.43,
+    "text": "Stop. All of you, just stop."
+   },
+   {
+    "spk": "Priya",
+    "t0": 13.63,
+    "t1": 22.43,
+    "text": "Elena was in the middle of saying something that took guts, and three of us just piled on like it was two years ago. I'm not doing that again."
+   },
+   {
+    "spk": "Priya",
+    "t0": 22.63,
+    "t1": 28.47,
+    "text": "Elena, finish what you were saying. Then I've got something to say too, and it's about me, not you."
+   },
+   {
+    "spk": "Elena",
+    "t0": 28.67,
+    "t1": 41.47,
+    "text": "I knew the risk. I told myself it was a calculated risk but it wasn't. It was just me wanting to prove we could move fast and beat the market, and I threw out every principle I ever taught my junior engineers."
+   },
+   {
+    "spk": "Marcus",
+    "t0": 41.67,
+    "t1": 48.55,
+    "text": "Which junior engineers, Elena. Name them. Because I talked to three of them after the collapse and they all said you never—"
+   }
+  ]
+ },
+ {
+  "id": "syn1066",
+  "label": "Session 1066 · 70 turns",
+  "note": "5 speakers. This 51 s excerpt is built around a mutual-drop: two of them start at once, then both give way. The session has 2 such moments among 8 floor-taking events.",
+  "tracks": [
+   {
+    "spk": "Maya",
+    "src": "assets/audio/synth/syn1066_Maya.opus"
+   },
+   {
+    "spk": "Leo",
+    "src": "assets/audio/synth/syn1066_Leo.opus"
+   },
+   {
+    "spk": "Priya",
+    "src": "assets/audio/synth/syn1066_Priya.opus"
+   },
+   {
+    "spk": "Eli",
+    "src": "assets/audio/synth/syn1066_Eli.opus"
+   },
+   {
+    "spk": "Sasha",
+    "src": "assets/audio/synth/syn1066_Sasha.opus"
+   }
+  ],
+  "transcript": [
+   {
+    "spk": "Leo",
+    "t0": -10.88,
+    "t1": 2.8,
+    "text": "I almost talked myself out of it like three times. You know when you sit there at two in the morning staring at a sentence and you think, this is either the best thing I've written or the most obvious thing anyone's ever written, and you can't tell which anymore?"
+   },
+   {
+    "spk": "Priya",
+    "t0": 3.0,
+    "t1": 16.55,
+    "text": "That's exactly how I felt about the timeline breaks in my piece, I kept thinking they were either the whole point or just me being too clever, and I almost smoothed them all out last week but then I thought no, the fracture is—"
+   },
+   {
+    "spk": "Sasha",
+    "t0": 16.3,
+    "t1": 16.91,
+    "text": "the fracture—"
+   },
+   {
+    "spk": "Sasha",
+    "t0": 18.11,
+    "t1": 20.35,
+    "text": "Sorry, go ahead, I just got excited."
+   },
+   {
+    "spk": "Priya",
+    "t0": 20.55,
+    "t1": 29.19,
+    "text": "Thanks. I just need to get this out, I've been holding onto it all night. The fracture is the feeling, and I almost talked myself into hiding it."
+   },
+   {
+    "spk": "Leo",
+    "t0": 29.39,
+    "t1": 38.91,
+    "text": "See, this is what I was trying to get at earlier. Priya, your willingness to leave the breaks showing, that's the thing that separates serious craft from just telling a story."
+   },
+   {
+    "spk": "Maya",
+    "t0": 39.11,
+    "t1": 48.39,
+    "text": "And that's exactly the kind of craft decision I'll be looking at when I make the referral choice tonight. Not polish, not smoothness, but whether the writer made the brave call."
+   },
+   {
+    "spk": "Leo",
+    "t0": 48.59,
+    "t1": 54.91,
+    "text": "Then Priya should absolutely read next. I've been saying it, the timeline fractures she left in, that's exactly the brave—"
+   }
+  ]
+ }
+]
