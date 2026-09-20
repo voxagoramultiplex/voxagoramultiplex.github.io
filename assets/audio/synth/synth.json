@@ -5,6 +5,11 @@
   "note": "3 speakers. This 30 s excerpt is built around a mutual-drop: two of them start at once, then both give way. The session has 2 such moments among 8 floor-taking events.",
   "tracks": [
    {
+    "spk": "Room mix",
+    "src": "assets/audio/synth/syn952_mix.opus",
+    "mix": true
+   },
+   {
     "spk": "Diane",
     "src": "assets/audio/synth/syn952_Diane.opus"
    },
@@ -116,6 +121,11 @@
   "note": "4 speakers. This 30 s excerpt is built around a mutual-drop: two of them start at once, then both give way. The session has 2 such moments among 7 floor-taking events.",
   "tracks": [
    {
+    "spk": "Room mix",
+    "src": "assets/audio/synth/syn982_mix.opus",
+    "mix": true
+   },
+   {
     "spk": "Mia",
     "src": "assets/audio/synth/syn982_Mia.opus"
    },
@@ -194,6 +204,11 @@
   "label": "Session 593 · 77 turns",
   "note": "4 speakers. This 38 s excerpt is built around a mutual-drop: two of them start at once, then both give way. The session has 2 such moments among 9 floor-taking events.",
   "tracks": [
+   {
+    "spk": "Room mix",
+    "src": "assets/audio/synth/syn593_mix.opus",
+    "mix": true
+   },
    {
     "spk": "Elena",
     "src": "assets/audio/synth/syn593_Elena.opus"
@@ -285,6 +300,11 @@
   "label": "Session 1097 · 71 turns",
   "note": "5 speakers. This 44 s excerpt is built around a mutual-drop: two of them start at once, then both give way. The session has 3 such moments among 10 floor-taking events.",
   "tracks": [
+   {
+    "spk": "Room mix",
+    "src": "assets/audio/synth/syn1097_mix.opus",
+    "mix": true
+   },
    {
     "spk": "Elena",
     "src": "assets/audio/synth/syn1097_Elena.opus"
@@ -380,6 +400,11 @@
   "label": "Session 1066 · 70 turns",
   "note": "5 speakers. This 51 s excerpt is built around a mutual-drop: two of them start at once, then both give way. The session has 2 such moments among 8 floor-taking events.",
   "tracks": [
+   {
+    "spk": "Room mix",
+    "src": "assets/audio/synth/syn1066_mix.opus",
+    "mix": true
+   },
    {
     "spk": "Maya",
     "src": "assets/audio/synth/syn1066_Maya.opus"

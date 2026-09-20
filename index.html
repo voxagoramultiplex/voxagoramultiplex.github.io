@@ -68,6 +68,11 @@ h2{font-size:clamp(22px,3.2vw,28px);font-weight:640;letter-spacing:-.022em;margi
 h3{font-size:15.5px;font-weight:620;letter-spacing:-.01em;margin:38px 0 10px}
 h3 .hint{font-weight:400;font-size:13px;color:var(--faint);margin-left:8px}
 
+h3.part{display:flex;align-items:baseline;gap:9px;margin-top:44px}
+h3.part em{font-style:normal;font-family:var(--m);font-size:10px;letter-spacing:.13em;
+  text-transform:uppercase;padding:3px 9px;border-radius:20px;
+  color:var(--lilac-d);background:var(--lilac-bg)}
+h3.part + .lead{margin-top:8px}
 .credit{font-size:12.5px;color:var(--faint);margin:10px 2px 0;max-width:72ch}
 .ph{border:1px dashed var(--ln);border-radius:var(--r);background:var(--pan);
   padding:26px 24px;color:var(--faint);font-size:14px}
@@ -274,23 +279,26 @@ footer .mark{justify-content:center;margin-bottom:10px;font-size:15px;color:var(
     <div class="card p"><span class="tag">03</span><h4>Point three</h4><p>Short description.</p></div>
   </div>
 
-  <h3>Bleed removal<span class="hint">real per-speaker microphones, before and after</span></h3>
+  <h3 class="part"><em>syn</em>Synthetic sessions<span class="hint">generated multi-party dialogue</span></h3>
+  <p class="lead">Long dialogues synthesised turn by turn and placed on one timeline, so
+     speakers overlap, interrupt and back down the way they do in a room. Start with the
+     room mix to hear the session, then switch to a single speaker &mdash; the playhead
+     carries over, so it is the same moment from that person's microphone.</p>
+  <div id="synth"></div>
+  <p class="credit">Each excerpt is cut around a mutual-drop: two speakers take the floor at
+     the same moment and then both yield. The per-speaker tracks are the channels the
+     dataset ships; the room mix is their sum.</p>
+
+  <h3 class="part"><em>real</em>Real recordings<span class="hint">bleed removal on per-speaker mics</span></h3>
   <p class="lead">In close-talk multi-party recordings every microphone also picks up the
      other people in the room. Pick a domain and a clip, then drag across the waveform to
      select a range &mdash; playback starts there and the two versions share the playhead,
      so the same moment can be heard with and without the bleed.</p>
   <div id="bleed"></div>
   <p class="credit">Source recordings: AMI Meeting Corpus and ICSI Meeting Corpus
-     (CC&nbsp;BY&nbsp;4.0), CHiME-6 and DiPCo. Clips are 10&nbsp;s excerpts; levels are
-     matched between the two versions and are never re-normalised.</p>
-
-  <h3>Synthetic sessions<span class="hint">long multi-party dialogues with mutual drop</span></h3>
-  <p class="lead">Each session is rendered per speaker, so every voice has its own track and
-     its own transcript line.</p>
-  <div id="synth"></div>
-  <p class="credit">Each excerpt is cut around a mutual-drop: two speakers take the floor
-     at the same moment and then both yield. Tracks are the per-speaker channels the
-     dataset ships, not a re-mix.</p>
+     (CC&nbsp;BY&nbsp;4.0), CHiME-6 and DiPCo. Clips are 10&nbsp;s excerpts taken from the
+     separated and restored track the dataset ships; levels are matched between the two
+     versions and are never re-normalised.</p>
 
   <h3>Format &amp; release</h3>
   <div class="ph"><b>Placeholder</b>Schema, annotation fields, splits, and license go here.</div>
@@ -767,13 +775,13 @@ async function buildSynth(){
     teardown(scene);
     scene = Scene(host, {
       title: s.label,
-      subtitle: s.tracks.length + ' speakers',
+      subtitle: s.tracks.filter(t => !t.mix).length + ' speakers',
       note: s.note,
       transcript: s.transcript,
-      tracks: s.tracks.map((t, i) => ({
-        name: t.spk, meta: 'speaker track', src: t.src,
-        color: V(SPK_COLORS[i % SPK_COLORS.length][0])
-      }))
+      tracks: s.tracks.map((t, i) => t.mix
+        ? { name: t.spk, meta: 'all speakers', src: t.src }
+        : { name: t.spk, meta: 'speaker track', src: t.src,
+            color: V(SPK_COLORS[(i - 1) % SPK_COLORS.length][0]) })
     });
   };
   smSel.onchange = show;
@@ -785,8 +793,8 @@ function buildGroups(){
   GROUPS.forEach(g => Scene(host, g));
 }
 
-buildBleed();
 buildSynth();
+buildBleed();
 buildGroups();
 
 addEventListener('resize', () => SCENES.forEach(S => S.players.forEach(draw)));
