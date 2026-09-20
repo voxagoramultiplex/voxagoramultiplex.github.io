@@ -5,196 +5,190 @@
   "domain": "4-person design meetings · headset mics",
   "samples": [
    {
-    "id": "ami_ES2009d_D_1246",
-    "label": "ES2009d @ 20:46",
-    "target": "D",
-    "note": "AMI ES2009d: close-talk mic of speaker D. While D is silent you also hear speakers A, B, C bleeding into this mic at +15 dB relative to D's own voice. The two versions are level-matched on D's own speech; everything else drops 65 dB.",
-    "orig": "assets/audio/bleed/ami_ES2009d_D_1246.orig.opus",
-    "clean": "assets/audio/bleed/ami_ES2009d_D_1246.clean.opus",
-    "transcript": [
-     {
-      "spk": "C",
-      "t0": 0.0,
-      "t1": 1.36,
-      "text": "… I so I don't n I think there was a lot of room for creativity, we could do whatever basically what we wanted until the budget came down on us, um."
-     },
-     {
-      "spk": "D",
-      "t0": 2.0,
-      "t1": 6.41,
-      "text": "And even then we did get a decent product turned out although it's not everything we wanted it to be."
-     },
-     {
-      "spk": "B",
-      "t0": 6.71,
-      "t1": 7.07,
-      "text": "Yeah."
-     },
-     {
-      "spk": "C",
-      "t0": 7.07,
-      "t1": 8.23,
-      "text": "With the natural look."
-     },
-     {
-      "spk": "B",
-      "t0": 8.45,
-      "t1": 9.58,
-      "text": "That's very natural."
-     },
-     {
-      "spk": "A",
-      "t0": 9.3,
-      "t1": 10.0,
-      "text": "Very natural look. …"
-     }
-    ]
-   },
-   {
-    "id": "ami_ES2012d_D_600",
-    "label": "ES2012d @ 10:00",
-    "target": "D",
-    "note": "AMI ES2012d: close-talk mic of speaker D. While D is silent you also hear speaker A bleeding into this mic at +10 dB relative to D's own voice. The two versions are level-matched on D's own speech; everything else drops 33 dB.",
-    "orig": "assets/audio/bleed/ami_ES2012d_D_600.orig.opus",
-    "clean": "assets/audio/bleed/ami_ES2012d_D_600.clean.opus",
+    "id": "ami_ES2005b_A_2281",
+    "label": "ES2005b @ 38:01",
+    "target": "A",
+    "note": "B, C and D sit on A's microphone +20 dB louder than A's own voice. The two versions are level-matched on A's speech; everything else drops 38 dB.",
+    "orig": "assets/audio/bleed/ami_ES2005b_A_2281.orig.opus",
+    "clean": "assets/audio/bleed/ami_ES2005b_A_2281.clean.opus",
     "transcript": [
      {
       "spk": "D",
-      "t0": 0.0,
-      "t1": 5.12,
-      "text": "um gauge our team response to these questions. So, on a scale of one to seven, one being true and seven being being false."
-     },
-     {
-      "spk": "A",
-      "t0": 4.9,
-      "t1": 7.67,
-      "text": "Seven being a nice round number to work to."
-     },
-     {
-      "spk": "D",
-      "t0": 7.72,
-      "t1": 7.98,
-      "text": "Yeah."
-     },
-     {
-      "spk": "D",
-      "t0": 9.17,
-      "t1": 10.0,
-      "text": "And then at the end just take an average …"
-     }
-    ]
-   },
-   {
-    "id": "ami_EN2001e_D_328",
-    "label": "EN2001e @ 5:28",
-    "target": "D",
-    "note": "AMI EN2001e: close-talk mic of speaker D. While D is silent you also hear speaker A bleeding into this mic at +2 dB relative to D's own voice. The two versions are level-matched on D's own speech; everything else drops 36 dB.",
-    "orig": "assets/audio/bleed/ami_EN2001e_D_328.orig.opus",
-    "clean": "assets/audio/bleed/ami_EN2001e_D_328.clean.opus",
-    "transcript": [
-     {
-      "spk": "A",
-      "t0": 0.0,
-      "t1": 3.43,
-      "text": "… Yeah, uh so let's perhaps uh in the meantime talk about the um um numbers we assign to the dialogue acts because um yeah, I didn't know that you left out those who don't have words. So I just extracted the actual dialogue numbers, and the problem is um it's perhaps more um dangerous to get mistaken with all those numbers and not knowing why things happen if we just devote numbers and n make new uh n n"
-     },
-     {
-      "spk": "D",
-      "t0": 2.0,
-      "t1": 6.98,
-      "text": "Um well as long as the two correspond then it's fine."
-     },
-     {
-      "spk": "A",
-      "t0": 7.46,
-      "t1": 10.0,
-      "text": "Yeah sure, but I mean for all those measures that are based on words um I can automatically just throw those where it's nothing. But um those dialogues acts um like thirty three in in the first meeting, um they have a duration, even though they don't have a word. Um so for my earl other measures I I get them and I don't I mean I would have to look for every single write a programme that looks for everything a number and does the mapping for that. …"
-     }
-    ]
-   },
-   {
-    "id": "ami_EN2009c_C_689",
-    "label": "EN2009c @ 11:29",
-    "target": "C",
-    "note": "AMI EN2009c: close-talk mic of speaker C. While C is silent you also hear speaker B bleeding into this mic at -2 dB relative to C's own voice. The two versions are level-matched on C's own speech; everything else drops 45 dB.",
-    "orig": "assets/audio/bleed/ami_EN2009c_C_689.orig.opus",
-    "clean": "assets/audio/bleed/ami_EN2009c_C_689.clean.opus",
-    "transcript": [
-     {
-      "spk": "B",
-      "t0": 0.0,
-      "t1": 2.34,
-      "text": "… Uh yeah, no no. It's ours. Yeah, it's ours. Oh, so he's got ours left.He's behind-hand. But no, he was billing for he was billing by the hour. So I thought well, I mean obviously if he wants to finish off then you know. I b"
-     },
-     {
-      "spk": "C",
-      "t0": 2.0,
-      "t1": 6.57,
-      "text": "But uh n I've n ni Nijmegen has gone dead for all those last two weeks."
-     },
-     {
-      "spk": "B",
-      "t0": 7.25,
-      "t1": 8.21,
-      "text": "Oh well they're probably away then."
-     },
-     {
-      "spk": "C",
-      "t0": 9.63,
-      "t1": 10.0,
-      "text": "Well uh it w e e Ellen's away. N no, um but I think what they had was some big review. …"
-     },
-     {
-      "spk": "B",
-      "t0": 9.73,
-      "t1": 10.0,
-      "text": "Wasn't Ellen away? They're really at the same place. …"
-     }
-    ]
-   },
-   {
-    "id": "ami_ES2006d_C_1739",
-    "label": "ES2006d @ 28:59",
-    "target": "C",
-    "note": "AMI ES2006d: close-talk mic of speaker C. While C is silent you also hear speakers A, B, D bleeding into this mic at -0 dB relative to C's own voice. The two versions are level-matched on C's own speech; everything else drops 33 dB.",
-    "orig": "assets/audio/bleed/ami_ES2006d_C_1739.orig.opus",
-    "clean": "assets/audio/bleed/ami_ES2006d_C_1739.clean.opus",
-    "transcript": [
-     {
-      "spk": "B",
       "t0": 0.0,
       "t1": 3.17,
-      "text": "… I know you've got the pen, you might attack me with it."
+      "text": "… Wow Has anybo oh Has anybody pressed okay it vibrates It's pretty cool"
      },
      {
       "spk": "C",
-      "t0": 2.0,
-      "t1": 3.23,
-      "text": "Better than that than the banana."
-     },
-     {
-      "spk": "D",
-      "t0": 2.07,
-      "t1": 6.35,
-      "text": "And then the teamwork I think I think it worked quite quite nicely, yeah."
-     },
-     {
-      "spk": "C",
-      "t0": 4.67,
-      "t1": 10.0,
-      "text": "I think it worked quite well. Did anyone feel that they were getting sort of covered up and not being able to …"
-     },
-     {
-      "spk": "B",
-      "t0": 6.0,
-      "t1": 6.45,
-      "text": "Yeah."
+      "t0": 2.08,
+      "t1": 9.58,
+      "text": "Yeah yeah Wow you've your first page I was just writing really big"
      },
      {
       "spk": "A",
-      "t0": 6.03,
-      "t1": 6.44,
-      "text": "Yeah."
+      "t0": 2.7,
+      "t1": 3.15,
+      "text": "Yep"
+     },
+     {
+      "spk": "B",
+      "t0": 3.75,
+      "t1": 4.45,
+      "text": "Check here"
+     },
+     {
+      "spk": "D",
+      "t0": 5.82,
+      "t1": 7.62,
+      "text": "Yeah got small writing"
+     },
+     {
+      "spk": "A",
+      "t0": 8.16,
+      "t1": 9.75,
+      "text": "Yeah I've been using up the pages"
+     }
+    ]
+   },
+   {
+    "id": "ami_ES2015a_C_661",
+    "label": "ES2015a @ 11:01",
+    "target": "C",
+    "note": "A, B and D sit on C's microphone +17 dB louder than C's own voice. The two versions are level-matched on C's speech; everything else drops 29 dB.",
+    "orig": "assets/audio/bleed/ami_ES2015a_C_661.orig.opus",
+    "clean": "assets/audio/bleed/ami_ES2015a_C_661.clean.opus",
+    "transcript": [
+     {
+      "spk": "A",
+      "t0": 0.0,
+      "t1": 0.69,
+      "text": "I forget her name"
+     },
+     {
+      "spk": "C",
+      "t0": 0.89,
+      "t1": 6.33,
+      "text": "right it's gonna be a really funny dog 'cause I'm not sure how to draw a dog"
+     },
+     {
+      "spk": "D",
+      "t0": 1.2,
+      "t1": 1.87,
+      "text": "Tara"
+     },
+     {
+      "spk": "D",
+      "t0": 2.74,
+      "t1": 3.4,
+      "text": "or Tara"
+     },
+     {
+      "spk": "B",
+      "t0": 6.34,
+      "t1": 10.0,
+      "text": "Well there are loads of different types of dogs so I'm sure it'll represent one kind of dog …"
+     }
+    ]
+   },
+   {
+    "id": "ami_EN2009b_C_1874",
+    "label": "EN2009b @ 31:14",
+    "target": "C",
+    "note": "B sit on C's microphone +13 dB louder than C's own voice. The two versions are level-matched on C's speech; everything else drops 63 dB.",
+    "orig": "assets/audio/bleed/ami_EN2009b_C_1874.orig.opus",
+    "clean": "assets/audio/bleed/ami_EN2009b_C_1874.clean.opus",
+    "transcript": [
+     {
+      "spk": "B",
+      "t0": 0.0,
+      "t1": 10.0,
+      "text": "… Yeah so you might wanna try and come If you get that far try and come equipped with a list of the kinds of things you want out of it and and so we can look through and see Um uh y Ellen might have views on what kinds of things once we have a list right So so Yeah So but it'd be good to you know make sure once we have a list of the things that we think we're getting of it that it matches her intentions for what we were supposed to get out of it So um you know if we do talk about that then it might be nice to have her along for it …"
+     },
+     {
+      "spk": "C",
+      "t0": 0.91,
+      "t1": 2.82,
+      "text": "I'm sure she'll have views on it"
+     },
+     {
+      "spk": "C",
+      "t0": 9.62,
+      "t1": 9.97,
+      "text": "Mm-hmm"
+     }
+    ]
+   },
+   {
+    "id": "ami_IS1003b_C_363",
+    "label": "IS1003b @ 6:03",
+    "target": "C",
+    "note": "A, B and D sit on C's microphone +13 dB louder than C's own voice. The two versions are level-matched on C's speech; everything else drops 65 dB.",
+    "orig": "assets/audio/bleed/ami_IS1003b_C_363.orig.opus",
+    "clean": "assets/audio/bleed/ami_IS1003b_C_363.clean.opus",
+    "transcript": [
+     {
+      "spk": "A",
+      "t0": 0.0,
+      "t1": 2.77,
+      "text": "… Yeah that's gonna be the trick"
+     },
+     {
+      "spk": "D",
+      "t0": 0.0,
+      "t1": 1.02,
+      "text": "… Yeah that's my job"
+     },
+     {
+      "spk": "B",
+      "t0": 2.11,
+      "t1": 4.17,
+      "text": "That's your job"
+     },
+     {
+      "spk": "D",
+      "t0": 3.44,
+      "t1": 5.6,
+      "text": "That's my job It's not the easiest I've got to"
+     },
+     {
+      "spk": "B",
+      "t0": 5.68,
+      "t1": 6.98,
+      "text": "It you"
+     },
+     {
+      "spk": "C",
+      "t0": 7.14,
+      "t1": 9.83,
+      "text": "So you will propose us something which is"
+     }
+    ]
+   },
+   {
+    "id": "ami_ES2006c_A_1232",
+    "label": "ES2006c @ 20:32",
+    "target": "A",
+    "note": "B sit on A's microphone +12 dB louder than A's own voice. The two versions are level-matched on A's speech; everything else drops 55 dB.",
+    "orig": "assets/audio/bleed/ami_ES2006c_A_1232.orig.opus",
+    "clean": "assets/audio/bleed/ami_ES2006c_A_1232.clean.opus",
+    "transcript": [
+     {
+      "spk": "A",
+      "t0": 0.18,
+      "t1": 4.03,
+      "text": "So L_C_D_s yeah definitely Go on"
+     },
+     {
+      "spk": "B",
+      "t0": 0.81,
+      "t1": 1.29,
+      "text": "Okay"
+     },
+     {
+      "spk": "B",
+      "t0": 4.88,
+      "t1": 10.0,
+      "text": "Cool Okay apparently fruit and vegetables will be providing inspiration Sorry I discovered clip art Um so these will be an important feature for clothes shoes and furniture So I mean I'm taking this to mean you know curviness …"
      }
     ]
    }
@@ -206,214 +200,316 @@
   "domain": "research group meetings · headset mics",
   "samples": [
    {
-    "id": "icsi_Bed003_B_964",
-    "label": "Bed003 @ 16:04",
-    "target": "B",
-    "note": "ICSI Bed003: close-talk mic of speaker B. While B is silent you also hear speakers A, C, D bleeding into this mic at +7 dB relative to B's own voice. The two versions are level-matched on B's own speech; everything else drops 30 dB.",
-    "orig": "assets/audio/bleed/icsi_Bed003_B_964.orig.opus",
-    "clean": "assets/audio/bleed/icsi_Bed003_B_964.clean.opus",
+    "id": "icsi_Bmr019_H_3377",
+    "label": "Bmr019 @ 56:17",
+    "target": "H",
+    "note": "A, B, C, D, E and F sit on H's microphone +17 dB louder than H's own voice. The two versions are level-matched on H's speech; everything else drops 29 dB.",
+    "orig": "assets/audio/bleed/icsi_Bmr019_H_3377.orig.opus",
+    "clean": "assets/audio/bleed/icsi_Bmr019_H_3377.clean.opus",
     "transcript": [
      {
-      "spk": "C",
+      "spk": "H",
       "t0": 0.0,
-      "t1": 0.72,
-      "text": "… We can do a little demo."
+      "t1": 0.07,
+      "text": "… Ye you prefer eh to eat eh chocolate eh at the coffee break eh at the"
      },
      {
-      "spk": "B",
-      "t0": 2.0,
-      "t1": 5.62,
-      "text": "Oh the Yeah, we could. But the demo doesn't work very well."
+      "spk": "H",
+      "t0": 0.65,
+      "t1": 2.65,
+      "text": "Or you prefer now before after"
+     },
+     {
+      "spk": "C",
+      "t0": 1.65,
+      "t1": 2.63,
+      "text": "Well we have a time"
+     },
+     {
+      "spk": "F",
+      "t0": 1.76,
+      "t1": 3.54,
+      "text": "No we prefer to keep it for ourselves"
      },
      {
       "spk": "D",
-      "t0": 6.04,
-      "t1": 6.36,
-      "text": "OK."
+      "t0": 3.82,
+      "t1": 4.12,
+      "text": "During"
      },
      {
-      "spk": "A",
-      "t0": 6.15,
-      "t1": 7.51,
-      "text": "No, then it wouldn't be a demo"
+      "spk": "F",
+      "t0": 4.18,
+      "t1": 8.07,
+      "text": "Yeah yeah Yeah"
      },
      {
       "spk": "C",
-      "t0": 8.23,
-      "t1": 10.0,
-      "text": "I mean We can do a demo in the sense that we can um, just ob observe the fact that this will, in fact do inference. So we can, you know, set some of the uh nodes and then try to find the probability of other nodes. …"
+      "t0": 4.58,
+      "t1": 6.83,
+      "text": "Well we have a a time time constraint Yeah"
+     },
+     {
+      "spk": "D",
+      "t0": 5.58,
+      "t1": 6.57,
+      "text": "during digits"
+     },
+     {
+      "spk": "B",
+      "t0": 6.15,
+      "t1": 8.33,
+      "text": "So keep it away from that end of the table"
+     },
+     {
+      "spk": "H",
+      "t0": 8.47,
+      "t1": 8.67,
+      "text": "Yeah"
+     },
+     {
+      "spk": "C",
+      "t0": 9.06,
+      "t1": 9.34,
+      "text": "Yeah"
      },
      {
       "spk": "A",
-      "t0": 8.59,
-      "t1": 9.64,
-      "text": "I was just gonna s"
+      "t0": 9.19,
+      "t1": 10.0,
+      "text": "Why is it that I can read your mind …"
+     },
+     {
+      "spk": "E",
+      "t0": 9.49,
+      "t1": 10.0,
+      "text": "Well we 've gotta wait until after after we take the mikes off …"
      }
     ]
    },
    {
-    "id": "icsi_Bmr015_F_1200",
-    "label": "Bmr015 @ 20:00",
+    "id": "icsi_Bmr020_F_2449",
+    "label": "Bmr020 @ 40:49",
     "target": "F",
-    "note": "ICSI Bmr015: close-talk mic of speaker F. While F is silent you also hear speaker E bleeding into this mic at +1 dB relative to F's own voice. The two versions are level-matched on F's own speech; everything else drops 44 dB.",
-    "orig": "assets/audio/bleed/icsi_Bmr015_F_1200.orig.opus",
-    "clean": "assets/audio/bleed/icsi_Bmr015_F_1200.clean.opus",
+    "note": "B, C and D sit on F's microphone +15 dB louder than F's own voice. The two versions are level-matched on F's speech; everything else drops 66 dB.",
+    "orig": "assets/audio/bleed/icsi_Bmr020_F_2449.orig.opus",
+    "clean": "assets/audio/bleed/icsi_Bmr020_F_2449.clean.opus",
     "transcript": [
      {
       "spk": "F",
       "t0": 0.0,
-      "t1": 5.34,
-      "text": "well, so things like training the- segmentation thing. Th-'s necessary to have it more tightly tuned than that. And w and w and, you know, is a It would be wonderful if, uh,'s possible then to use that algorithm to more tightly tie in all the channels after that but, um, you know, th the So, I I don't know exactly where's going at this point. But m I was experimenting with doing this by hand and I really do think that's wise that had them start the way we have with, uh, m y working off the mixed signal, um, having the interface that doesn't require them to do the ti uh, the time bins for every single channel at a t uh, through the entire interaction. Um, I did discover a couple other things by doing this though, and one of them is that, um, um, once in a while a backchannel will be overlooked by the transcriber. As you might expect, because when's a b backchannel could well happen in a very densely populated overlap. And if gonna study types of overlaps, which is what I wanna do, an analysis of that, then that really does require listening to every single channel all the way through the entire length for all the different speakers. Now, for only four speakers,'s not gonna be too much time, but if's nine speakers, then that i that is more time. So's li you know, kind of wondering And I think again's like this's really valuable that's working on the- segmentation because maybe, um, we can close in on that wi without having to actually go to the time that it would take to listen to every single channel from start to finish through every single meeting."
+      "t1": 3.27,
+      "text": "that sounds like a good idea since as you say you have to do stuff with the other end anyway"
+     },
+     {
+      "spk": "B",
+      "t0": 0.12,
+      "t1": 2.14,
+      "text": "That And some on some meetings it good"
+     },
+     {
+      "spk": "B",
+      "t0": 3.32,
+      "t1": 3.52,
+      "text": "Yeah"
+     },
+     {
+      "spk": "C",
+      "t0": 3.46,
+      "t1": 10.0,
+      "text": "Well OK good I mean the detector this Now you were saying that they they differ in how well they work depending on channel systems and stuff …"
+     },
+     {
+      "spk": "D",
+      "t0": 4.18,
+      "t1": 6.22,
+      "text": "Yeah I mean we have to fix it when it comes back anyhow"
+     },
+     {
+      "spk": "B",
+      "t0": 5.66,
+      "t1": 5.84,
+      "text": "Yeah"
+     },
+     {
+      "spk": "B",
+      "t0": 9.24,
+      "t1": 9.38,
+      "text": "Yeah"
+     }
+    ]
+   },
+   {
+    "id": "icsi_Bro018_E_2108",
+    "label": "Bro018 @ 35:08",
+    "target": "E",
+    "note": "C sit on E's microphone +14 dB louder than E's own voice. The two versions are level-matched on E's speech; everything else drops 36 dB.",
+    "orig": "assets/audio/bleed/icsi_Bro018_E_2108.orig.opus",
+    "clean": "assets/audio/bleed/icsi_Bro018_E_2108.clean.opus",
+    "transcript": [
+     {
+      "spk": "E",
+      "t0": 0.75,
+      "t1": 2.38,
+      "text": "Changes to the data I 'm not sure I"
+     },
+     {
+      "spk": "C",
+      "t0": 2.36,
+      "t1": 2.45,
+      "text": "Right"
+     },
+     {
+      "spk": "C",
+      "t0": 2.76,
+      "t1": 4.55,
+      "text": "So we talked on the phone about this that"
      },
      {
       "spk": "E",
-      "t0": 5.63,
-      "t1": 9.47,
-      "text": "Yeah, but those backchannels will always be a problem I think. Uh especially if"
-     }
-    ]
-   },
-   {
-    "id": "icsi_Bmr025_G_1702",
-    "label": "Bmr025 @ 28:22",
-    "target": "G",
-    "note": "ICSI Bmr025: close-talk mic of speaker G. While G is silent you also hear speakers A, B, H bleeding into this mic at -3 dB relative to G's own voice. The two versions are level-matched on G's own speech; everything else drops 27 dB.",
-    "orig": "assets/audio/bleed/icsi_Bmr025_G_1702.orig.opus",
-    "clean": "assets/audio/bleed/icsi_Bmr025_G_1702.clean.opus",
-    "transcript": [
-     {
-      "spk": "B",
-      "t0": 0.0,
-      "t1": 3.57,
-      "text": "… Yeah, I do like the idea of having a couple buttons where like one one button was\"-\" and then another button was\"'s great\" and another button\"'s f\""
-     },
-     {
-      "spk": "G",
-      "t0": 2.0,
-      "t1": 8.38,
-      "text": "Or like this is my\" supposed to do this\" kind of button, like\" I better remember to\" Yeah something like that or"
-     },
-     {
-      "spk": "A",
-      "t0": 2.79,
-      "t1": 3.09,
-      "text": "Yeah."
-     },
-     {
-      "spk": "H",
-      "t0": 6.08,
-      "t1": 6.71,
-      "text": "Action item."
-     },
-     {
-      "spk": "H",
-      "t0": 9.18,
-      "t1": 10.0,
-      "text": "I mean I think the CrossPad idea is a good one.'s just a question of getting people to use it and getting the infrastructure set up in such a way that's not a lot of extra work. I mean's part of the reason why it hasn't happened is that's been a lot of extra work for me and …"
-     },
-     {
-      "spk": "A",
-      "t0": 9.43,
-      "t1": 10.0,
-      "text": "And then-. …"
-     }
-    ]
-   },
-   {
-    "id": "icsi_Bed003_D_791",
-    "label": "Bed003 @ 13:11",
-    "target": "D",
-    "note": "ICSI Bed003: close-talk mic of speaker D. While D is silent you also hear speakers A, B, C bleeding into this mic at -6 dB relative to D's own voice. The two versions are level-matched on D's own speech; everything else drops 24 dB.",
-    "orig": "assets/audio/bleed/icsi_Bed003_D_791.orig.opus",
-    "clean": "assets/audio/bleed/icsi_Bed003_D_791.clean.opus",
-    "transcript": [
-     {
-      "spk": "A",
-      "t0": 0.0,
-      "t1": 2.03,
-      "text": "… Yep.-.'s very nice, huh? The the So the context is a switch between tourist or-? Or also unknown? OK."
-     },
-     {
-      "spk": "B",
-      "t0": 0.52,
-      "t1": 1.85,
-      "text": "Or un unknown, yeah."
+      "t0": 4.42,
+      "t1": 4.68,
+      "text": "Yeah"
      },
      {
       "spk": "C",
-      "t0": 1.58,
-      "t1": 2.49,
-      "text": "Yeah. Unknown, right?"
+      "t0": 4.72,
+      "t1": 6.24,
+      "text": "that there was still a difference of a"
+     },
+     {
+      "spk": "C",
+      "t0": 6.28,
+      "t1": 7.44,
+      "text": "of a few percent"
+     },
+     {
+      "spk": "E",
+      "t0": 6.61,
+      "t1": 6.86,
+      "text": "Right"
+     },
+     {
+      "spk": "C",
+      "t0": 7.52,
+      "t1": 7.91,
+      "text": "and"
+     },
+     {
+      "spk": "C",
+      "t0": 8.42,
+      "t1": 10.0,
+      "text": "you told me that there was a difference in how the normalization was done …"
+     }
+    ]
+   },
+   {
+    "id": "icsi_Bed002_B_452",
+    "label": "Bed002 @ 7:32",
+    "target": "B",
+    "note": "A and C sit on B's microphone +13 dB louder than B's own voice. The two versions are level-matched on B's speech; everything else drops 47 dB.",
+    "orig": "assets/audio/bleed/icsi_Bed002_B_452.orig.opus",
+    "clean": "assets/audio/bleed/icsi_Bed002_B_452.clean.opus",
+    "transcript": [
+     {
+      "spk": "C",
+      "t0": 0.0,
+      "t1": 0.16,
+      "text": "… OK"
+     },
+     {
+      "spk": "B",
+      "t0": 0.37,
+      "t1": 2.69,
+      "text": "Well we can make up aliases for each of us"
+     },
+     {
+      "spk": "A",
+      "t0": 3.31,
+      "t1": 7.61,
+      "text": "Yeah I mean whatever you wanna do is fine but we find that We want the meeting to be as natural as possible"
+     },
+     {
+      "spk": "C",
+      "t0": 3.69,
+      "t1": 4.04,
+      "text": "Right"
+     },
+     {
+      "spk": "C",
+      "t0": 7.81,
+      "t1": 8.14,
+      "text": "OK"
+     },
+     {
+      "spk": "A",
+      "t0": 8.06,
+      "t1": 9.64,
+      "text": "So we 're trying to do real meetings"
+     }
+    ]
+   },
+   {
+    "id": "icsi_Bmr007_B_1127",
+    "label": "Bmr007 @ 18:47",
+    "target": "B",
+    "note": "D sit on B's microphone +12 dB louder than B's own voice. The two versions are level-matched on B's speech; everything else drops 28 dB.",
+    "orig": "assets/audio/bleed/icsi_Bmr007_B_1127.orig.opus",
+    "clean": "assets/audio/bleed/icsi_Bmr007_B_1127.clean.opus",
+    "transcript": [
+     {
+      "spk": "B",
+      "t0": 0.0,
+      "t1": 0.48,
+      "text": "… but that doesn't mean in the real world that people don't talk that way"
      },
      {
       "spk": "D",
-      "t0": 2.0,
-      "t1": 8.86,
-      "text": "So final dest So it seems like that would really help you for doing business versus tourist,"
-     },
-     {
-      "spk": "C",
-      "t0": 9.42,
-      "t1": 10.0,
-      "text": "Which is th Which one? …"
-     },
-     {
-      "spk": "D",
-      "t0": 9.96,
-      "t1": 10.0,
-      "text": "but OK. so the the context being um, e I don't know if that's sort of in general,\" are you\" I mean the ar ar are do they allow business people to be doing- things at the moment? OK. So then you just have some probabilities over OK. over which which of those it is.-.-.-.-.-. …"
-     }
-    ]
-   },
-   {
-    "id": "icsi_Bmr001_C_702",
-    "label": "Bmr001 @ 11:42",
-    "target": "C",
-    "note": "ICSI Bmr001: close-talk mic of speaker C. While C is silent you also hear speakers A, B bleeding into this mic at -11 dB relative to C's own voice. The two versions are level-matched on C's own speech; everything else drops 24 dB.",
-    "orig": "assets/audio/bleed/icsi_Bmr001_C_702.orig.opus",
-    "clean": "assets/audio/bleed/icsi_Bmr001_C_702.clean.opus",
-    "transcript": [
-     {
-      "spk": "A",
-      "t0": 0.0,
-      "t1": 0.01,
-      "text": "… Uh, that is an interesting point. Yeah. Certainly you can"
-     },
-     {
-      "spk": "C",
-      "t0": 0.0,
-      "t1": 0.62,
-      "text": "… Yeah. Well we could"
-     },
-     {
-      "spk": "A",
-      "t0": 1.27,
-      "t1": 1.55,
-      "text": "get some"
-     },
-     {
-      "spk": "C",
-      "t0": 2.0,
-      "t1": 7.15,
-      "text": "I mean. By the time have have data so we can actually you know, demonstrate that."
-     },
-     {
-      "spk": "A",
-      "t0": 5.93,
-      "t1": 6.19,
-      "text": "Yeah."
+      "t0": 0.49,
+      "t1": 1.19,
+      "text": "Yeah I wasn't saying that"
      },
      {
       "spk": "B",
-      "t0": 7.37,
-      "t1": 10.0,
-      "text": "Well. Oh, you mean for location? OK. Depends on's working on it. …"
+      "t0": 0.83,
+      "t1": 0.99,
+      "text": "So"
      },
      {
-      "spk": "A",
-      "t0": 8.31,
-      "t1": 8.73,
-      "text": "Hopefully."
+      "spk": "B",
+      "t0": 1.54,
+      "t1": 1.7,
+      "text": "it"
+     },
+     {
+      "spk": "D",
+      "t0": 1.64,
+      "t1": 3.61,
+      "text": "Right I was just saying that now we 're looking at it"
+     },
+     {
+      "spk": "B",
+      "t0": 2.33,
+      "t1": 2.57,
+      "text": "um"
+     },
+     {
+      "spk": "B",
+      "t0": 4.91,
+      "t1": 5.59,
+      "text": "Well we 've"
+     },
+     {
+      "spk": "D",
+      "t0": 4.91,
+      "t1": 10.0,
+      "text": "And and and you you maybe wanted to look at it before but for these various technical reasons in terms of how the data was you weren't …"
+     },
+     {
+      "spk": "B",
+      "t0": 5.68,
+      "t1": 7.04,
+      "text": "Right We 're looking at it here"
      }
     ]
    }
@@ -428,7 +524,7 @@
     "id": "chime6_S19_P52_3907",
     "label": "S19 @ 65:07",
     "target": "P52",
-    "note": "CHIME6 S19: close-talk mic of speaker P52. While P52 is silent you also hear speakers P49, P50 bleeding into this mic at +4 dB relative to P52's own voice. The two versions are level-matched on P52's own speech; everything else drops 56 dB.",
+    "note": "P49 and P50 sit on P52's microphone +4 dB relative to P52's own voice. The two versions are level-matched on P52's speech; everything else drops 56 dB.",
     "orig": "assets/audio/bleed/chime6_S19_P52_3907.orig.opus",
     "clean": "assets/audio/bleed/chime6_S19_P52_3907.clean.opus",
     "transcript": [
@@ -462,7 +558,7 @@
     "id": "chime6_S20_P49_669",
     "label": "S20 @ 11:09",
     "target": "P49",
-    "note": "CHIME6 S20: close-talk mic of speaker P49. While P49 is silent you also hear speakers P50, P51 bleeding into this mic at -2 dB relative to P49's own voice. The two versions are level-matched on P49's own speech; everything else drops 48 dB.",
+    "note": "P50 and P51 sit on P49's microphone -2 dB relative to P49's own voice. The two versions are level-matched on P49's speech; everything else drops 48 dB.",
     "orig": "assets/audio/bleed/chime6_S20_P49_669.orig.opus",
     "clean": "assets/audio/bleed/chime6_S20_P49_669.clean.opus",
     "transcript": [
@@ -502,7 +598,7 @@
     "id": "chime6_S02_P05_4400",
     "label": "S02 @ 73:20",
     "target": "P05",
-    "note": "CHIME6 S02: close-talk mic of speaker P05. While P05 is silent you also hear speakers P06, P08 bleeding into this mic at +4 dB relative to P05's own voice. The two versions are level-matched on P05's own speech; everything else drops 44 dB.",
+    "note": "P06 and P08 sit on P05's microphone +4 dB relative to P05's own voice. The two versions are level-matched on P05's speech; everything else drops 44 dB.",
     "orig": "assets/audio/bleed/chime6_S02_P05_4400.orig.opus",
     "clean": "assets/audio/bleed/chime6_S02_P05_4400.clean.opus",
     "transcript": [
@@ -548,7 +644,7 @@
     "id": "chime6_S01_P01_3259",
     "label": "S01 @ 54:19",
     "target": "P01",
-    "note": "CHIME6 S01: close-talk mic of speaker P01. While P01 is silent you also hear speakers P03, P04 bleeding into this mic at +1 dB relative to P01's own voice. The two versions are level-matched on P01's own speech; everything else drops 42 dB.",
+    "note": "P03 and P04 sit on P01's microphone +1 dB relative to P01's own voice. The two versions are level-matched on P01's speech; everything else drops 42 dB.",
     "orig": "assets/audio/bleed/chime6_S01_P01_3259.orig.opus",
     "clean": "assets/audio/bleed/chime6_S01_P01_3259.clean.opus",
     "transcript": [
@@ -600,7 +696,7 @@
     "id": "chime6_S20_P50_1710",
     "label": "S20 @ 28:30",
     "target": "P50",
-    "note": "CHIME6 S20: close-talk mic of speaker P50. While P50 is silent you also hear speakers P49, P52 bleeding into this mic at -3 dB relative to P50's own voice. The two versions are level-matched on P50's own speech; everything else drops 49 dB.",
+    "note": "P49 and P52 sit on P50's microphone -3 dB relative to P50's own voice. The two versions are level-matched on P50's speech; everything else drops 49 dB.",
     "orig": "assets/audio/bleed/chime6_S20_P50_1710.orig.opus",
     "clean": "assets/audio/bleed/chime6_S20_P50_1710.clean.opus",
     "transcript": [
@@ -653,7 +749,7 @@
     "id": "dipco_S01_P04_2566",
     "label": "S01 @ 42:46",
     "target": "P04",
-    "note": "DIPCO S01: close-talk mic of speaker P04. While P04 is silent you also hear speakers P01, P02 bleeding into this mic at +6 dB relative to P04's own voice. The two versions are level-matched on P04's own speech; everything else drops 43 dB.",
+    "note": "P01 and P02 sit on P04's microphone +6 dB relative to P04's own voice. The two versions are level-matched on P04's speech; everything else drops 43 dB.",
     "orig": "assets/audio/bleed/dipco_S01_P04_2566.orig.opus",
     "clean": "assets/audio/bleed/dipco_S01_P04_2566.clean.opus",
     "transcript": [
@@ -687,7 +783,7 @@
     "id": "dipco_S03_P10_2784",
     "label": "S03 @ 46:24",
     "target": "P10",
-    "note": "DIPCO S03: close-talk mic of speaker P10. While P10 is silent you also hear speakers P09, P11, P12 bleeding into this mic at +3 dB relative to P10's own voice. The two versions are level-matched on P10's own speech; everything else drops 57 dB.",
+    "note": "P09, P11 and P12 sit on P10's microphone +3 dB relative to P10's own voice. The two versions are level-matched on P10's speech; everything else drops 57 dB.",
     "orig": "assets/audio/bleed/dipco_S03_P10_2784.orig.opus",
     "clean": "assets/audio/bleed/dipco_S03_P10_2784.clean.opus",
     "transcript": [
@@ -727,7 +823,7 @@
     "id": "dipco_S04_P16_719",
     "label": "S04 @ 11:59",
     "target": "P16",
-    "note": "DIPCO S04: close-talk mic of speaker P16. While P16 is silent you also hear speakers P13, P14, P15 bleeding into this mic at -1 dB relative to P16's own voice. The two versions are level-matched on P16's own speech; everything else drops 51 dB.",
+    "note": "P13, P14 and P15 sit on P16's microphone -1 dB relative to P16's own voice. The two versions are level-matched on P16's speech; everything else drops 51 dB.",
     "orig": "assets/audio/bleed/dipco_S04_P16_719.orig.opus",
     "clean": "assets/audio/bleed/dipco_S04_P16_719.clean.opus",
     "transcript": [
@@ -767,7 +863,7 @@
     "id": "dipco_S06_P22_437",
     "label": "S06 @ 7:17",
     "target": "P22",
-    "note": "DIPCO S06: close-talk mic of speaker P22. While P22 is silent you also hear speakers P21, P24 bleeding into this mic at -5 dB relative to P22's own voice. The two versions are level-matched on P22's own speech; everything else drops 36 dB.",
+    "note": "P21 and P24 sit on P22's microphone -5 dB relative to P22's own voice. The two versions are level-matched on P22's speech; everything else drops 36 dB.",
     "orig": "assets/audio/bleed/dipco_S06_P22_437.orig.opus",
     "clean": "assets/audio/bleed/dipco_S06_P22_437.clean.opus",
     "transcript": [
@@ -795,7 +891,7 @@
     "id": "dipco_S08_P26_600",
     "label": "S08 @ 10:00",
     "target": "P26",
-    "note": "DIPCO S08: close-talk mic of speaker P26. While P26 is silent you also hear speaker P28 bleeding into this mic at -7 dB relative to P26's own voice. The two versions are level-matched on P26's own speech; everything else drops 41 dB.",
+    "note": "P28 sit on P26's microphone -7 dB relative to P26's own voice. The two versions are level-matched on P26's speech; everything else drops 41 dB.",
     "orig": "assets/audio/bleed/dipco_S08_P26_600.orig.opus",
     "clean": "assets/audio/bleed/dipco_S08_P26_600.clean.opus",
     "transcript": [
