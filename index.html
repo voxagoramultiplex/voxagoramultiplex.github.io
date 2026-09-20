@@ -13,8 +13,10 @@
   --ln:#E4EAE5; --ln2:#EFF3F0;
   --sage:#8FB39B; --sage-d:#5F8A72; --sage-bg:#EDF2EE;
   --lilac:#B3A0CE; --lilac-d:#7E68A3; --lilac-bg:#F2EDF8;
-  --peri:#93A7D4; --peri-bg:#ECF0FA;
-  --rose:#D2A3AE; --rose-bg:#F9EFF1;
+  --peri:#93A7D4; --peri-d:#4E63A0; --peri-bg:#ECF0FA;
+  --rose:#D2A3AE; --rose-d:#A9707F; --rose-bg:#F9EFF1;
+  --sand:#C9B892; --sand-d:#907C4E; --sand-bg:#F6F2E8;
+  --teal:#88BCBB; --teal-d:#4F8B8A; --teal-bg:#EAF4F4;
   --m:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   --r:12px;
 }
@@ -38,21 +40,16 @@ nav .sp{flex:1}
 nav a{color:var(--dim);text-decoration:none;font-size:13.5px;padding:5px 0;
   border-bottom:1.5px solid transparent;transition:.15s}
 nav a:hover{color:var(--sage-d);border-bottom-color:var(--sage)}
-@media(max-width:640px){nav .lnk{display:none}}
+@media(max-width:700px){nav .lnk{display:none}}
 
 /* ---------- header ---------- */
-header{padding:76px 0 46px;text-align:center}
-.badge{display:inline-block;font-family:var(--m);font-size:10.5px;letter-spacing:.13em;
-  text-transform:uppercase;color:var(--lilac-d);background:var(--lilac-bg);
-  padding:4px 12px;border-radius:20px;margin-bottom:22px}
+header{padding:84px 0 48px;text-align:center}
 .brand{font-size:clamp(40px,7.5vw,68px);font-weight:700;letter-spacing:-.035em;
   line-height:1;margin:0 0 16px}
 .brand .vox{color:var(--sage-d)}
 .brand .agora{color:var(--lilac-d)}
 h1{font-size:clamp(19px,2.9vw,27px);font-weight:560;letter-spacing:-.018em;
-  line-height:1.28;margin:0 auto 26px;max-width:22ch;text-wrap:balance;color:var(--ink)}
-.authors{font-size:14.5px;color:var(--dim);margin:0 0 4px}
-.aff{font-size:13.5px;color:var(--faint);margin:0}
+  line-height:1.28;margin:0 auto;max-width:22ch;text-wrap:balance}
 .cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:32px}
 .btn{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;font-weight:540;
   text-decoration:none;color:var(--ink);background:var(--pan);border:1px solid var(--ln);
@@ -68,7 +65,8 @@ section:first-of-type{border-top:none}
   color:var(--sage-d);margin:0 0 8px}
 h2{font-size:clamp(22px,3.2vw,28px);font-weight:640;letter-spacing:-.022em;margin:0 0 10px}
 .lead{color:var(--dim);font-size:16px;margin:0 0 28px;max-width:66ch;text-wrap:pretty}
-h3{font-size:15.5px;font-weight:620;letter-spacing:-.01em;margin:32px 0 10px}
+h3{font-size:15.5px;font-weight:620;letter-spacing:-.01em;margin:38px 0 10px}
+h3 .hint{font-weight:400;font-size:13px;color:var(--faint);margin-left:8px}
 
 .ph{border:1px dashed var(--ln);border-radius:var(--r);background:var(--pan);
   padding:26px 24px;color:var(--faint);font-size:14px}
@@ -82,18 +80,17 @@ h3{font-size:15.5px;font-weight:620;letter-spacing:-.01em;margin:32px 0 10px}
   padding:3px 8px;border-radius:5px;margin-bottom:10px}
 .card.s .tag{color:var(--sage-d);background:var(--sage-bg)}
 .card.l .tag{color:var(--lilac-d);background:var(--lilac-bg)}
-.card.p .tag{color:#4E63A0;background:var(--peri-bg)}
+.card.p .tag{color:var(--peri-d);background:var(--peri-bg)}
 .card h4{font-size:15px;font-weight:620;margin:0 0 6px;letter-spacing:-.01em}
 .card p{margin:0;font-size:13.8px;color:var(--dim)}
 
-/* seats + format strip */
 .seats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
 .seat{flex:1;min-width:170px;border-radius:10px;padding:13px 16px}
 .seat b{display:block;font-family:var(--m);font-size:11px;letter-spacing:.09em;margin-bottom:1px}
 .seat span{font-size:12.8px;opacity:.8}
 .seat.mod{background:var(--sage-bg);color:var(--sage-d)}
-.seat.pro{background:var(--peri-bg);color:#4E63A0}
-.seat.con{background:var(--rose-bg);color:#A9707F}
+.seat.pro{background:var(--peri-bg);color:var(--peri-d)}
+.seat.con{background:var(--rose-bg);color:var(--rose-d)}
 
 .strip{display:flex;height:40px;border-radius:9px;overflow:hidden;border:1px solid var(--ln);
   font-family:var(--m);font-size:10.5px;letter-spacing:.06em}
@@ -119,13 +116,24 @@ h3{font-size:15.5px;font-weight:620;letter-spacing:-.01em;margin:32px 0 10px}
 .stat span{font-family:var(--m);font-size:10.5px;letter-spacing:.09em;
   text-transform:uppercase;color:var(--dim)}
 
-/* ---------- audio compare ---------- */
-.cmp{background:var(--pan);border:1px solid var(--ln);border-radius:var(--r);
+/* ---------- scene player ---------- */
+.picker{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.fld{display:flex;flex-direction:column;gap:4px;min-width:0}
+.fld label{font-family:var(--m);font-size:10px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--faint)}
+.fld select{font:inherit;font-size:13.5px;color:var(--ink);background:var(--pan);
+  border:1px solid var(--ln);border-radius:9px;padding:7px 30px 7px 12px;cursor:pointer;
+  appearance:none;max-width:100%;
+  background-image:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'><path d='M1 1l4 4 4-4' fill='none' stroke='%236E7872' stroke-width='1.4'/></svg>");
+  background-repeat:no-repeat;background-position:right 11px center;background-size:10px}
+.fld select:focus{outline:none;border-color:var(--sage)}
+
+.scene{background:var(--pan);border:1px solid var(--ln);border-radius:var(--r);
   padding:18px 20px 16px;margin-bottom:14px}
-.cmp>.hd{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:4px}
-.cmp>.hd b{font-size:14.5px;font-weight:620;letter-spacing:-.01em}
-.cmp>.hd span{font-size:13px;color:var(--dim)}
-.cmp>.note{font-size:12.8px;color:var(--faint);margin:0 0 14px}
+.scene>.hd{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:3px}
+.scene>.hd b{font-size:14.5px;font-weight:620;letter-spacing:-.01em}
+.scene>.hd span{font-size:13px;color:var(--dim)}
+.scene>.note{font-size:12.8px;color:var(--faint);margin:0 0 14px}
 
 .tr{display:grid;grid-template-columns:150px 1fr;gap:14px;align-items:center;
   padding:9px 0;border-top:1px solid var(--ln2)}
@@ -141,17 +149,49 @@ h3{font-size:15.5px;font-weight:620;letter-spacing:-.01em;margin:32px 0 10px}
 .tr .nm b{display:block;font-size:13px;font-weight:580;letter-spacing:-.005em;
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .tr .nm span{display:block;font-family:var(--m);font-size:10.5px;color:var(--faint)}
+.tr .nm .dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:6px;
+  vertical-align:middle}
 .wv{position:relative;height:52px;border-radius:8px;background:var(--soft);
-  overflow:hidden;cursor:pointer}
-.wv canvas{display:block;width:100%;height:100%}
+  overflow:hidden;cursor:crosshair;user-select:none;touch-action:none}
+.wv canvas{display:block;width:100%;height:100%;pointer-events:none}
 .wv .msg{position:absolute;inset:0;display:grid;place-items:center;
   font-family:var(--m);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;
   color:var(--faint)}
 .wv .tm{position:absolute;right:8px;bottom:5px;font-family:var(--m);font-size:10px;
   color:var(--dim);background:rgba(255,255,255,.72);border-radius:4px;padding:1px 5px;
   pointer-events:none}
-.wv.err{background:repeating-linear-gradient(135deg,var(--soft),var(--soft) 7px,#E7EDE8 7px,#E7EDE8 14px);
-  cursor:default}
+.wv.err{cursor:default;
+  background:repeating-linear-gradient(135deg,var(--soft),var(--soft) 7px,#E7EDE8 7px,#E7EDE8 14px)}
+
+.selbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  margin-top:12px;padding-top:11px;border-top:1px solid var(--ln2);
+  font-family:var(--m);font-size:11px;color:var(--dim)}
+.selbar .k{color:var(--faint);letter-spacing:.08em;text-transform:uppercase;font-size:10px}
+.selbar .v{color:var(--lilac-d);font-weight:600}
+.selbar .sp{flex:1}
+.mini{font:inherit;font-size:11px;font-family:var(--m);color:var(--dim);background:var(--bg);
+  border:1px solid var(--ln);border-radius:7px;padding:4px 10px;cursor:pointer;transition:.15s}
+.mini:hover{border-color:var(--sage);color:var(--sage-d)}
+.mini[aria-pressed="true"]{background:var(--lilac-bg);border-color:var(--lilac);color:var(--lilac-d)}
+
+/* ---------- transcript ---------- */
+.tx{margin-top:14px;border-top:1px solid var(--ln2);padding-top:12px;
+  max-height:300px;overflow-y:auto}
+.tx .ln{display:grid;grid-template-columns:52px 74px 1fr;gap:10px;align-items:baseline;
+  padding:5px 8px;border-radius:7px;cursor:pointer;transition:background .12s}
+@media(max-width:640px){.tx .ln{grid-template-columns:52px 1fr;}.tx .ln .t{display:none}}
+.tx .ln:hover{background:var(--soft)}
+.tx .ln.on{background:var(--lilac-bg)}
+.tx .spk{font-family:var(--m);font-size:10.5px;font-weight:700;letter-spacing:.04em;
+  padding:1px 6px;border-radius:5px;text-align:center}
+.tx .t{font-family:var(--m);font-size:10.5px;color:var(--faint)}
+.tx .s{font-size:14px;color:var(--ink)}
+.tx .ln.bleed .s{color:var(--faint);font-style:italic}
+.tx .ln.bleed::after{content:"bleed";font-family:var(--m);font-size:9px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--rose-d);background:var(--rose-bg);
+  padding:1px 6px;border-radius:5px;align-self:center}
+.tx .ln.bleed{grid-template-columns:52px 74px 1fr auto}
+@media(max-width:640px){.tx .ln.bleed{grid-template-columns:52px 1fr auto}}
 
 /* ---------- footer ---------- */
 footer{border-top:1px solid var(--ln);padding:34px 0 60px;text-align:center;
@@ -171,11 +211,8 @@ footer .mark{justify-content:center;margin-bottom:10px;font-size:15px;color:var(
 </div></nav>
 
 <header><div class="w">
-  <div class="badge">Anonymous submission &middot; under review</div>
   <div class="brand"><span class="vox">Vox</span><span class="agora">Agora</span></div>
   <h1>Interactive Evaluation for Multi-Party Communication in Full-Duplex Models</h1>
-  <p class="authors">Anonymous Authors</p>
-  <p class="aff">Affiliation withheld during review</p>
   <div class="cta">
     <a class="btn na" href="#"><svg viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v5h5"/></svg>Paper</a>
     <a class="btn na" href="#"><svg viewBox="0 0 24 24"><path d="M4 7h16v13H4z"/><path d="M4 7l3-3h10l3 3"/></svg>Data</a>
@@ -236,6 +273,18 @@ footer .mark{justify-content:center;margin-bottom:10px;font-size:15px;color:var(
     <div class="card p"><span class="tag">03</span><h4>Point three</h4><p>Short description.</p></div>
   </div>
 
+  <h3>Bleed removal<span class="hint">real per-speaker microphones, before and after</span></h3>
+  <p class="lead">In close-talk multi-party recordings every microphone also picks up the
+     other people in the room. Pick a domain and a clip, then drag across the waveform to
+     select a range &mdash; playback starts there and the two versions share the playhead,
+     so the same moment can be heard with and without the bleed.</p>
+  <div id="bleed"></div>
+
+  <h3>Synthetic sessions<span class="hint">long multi-party dialogues with mutual drop</span></h3>
+  <p class="lead">Each session is rendered per speaker, so every voice has its own track and
+     its own transcript line.</p>
+  <div id="synth"></div>
+
   <h3>Format &amp; release</h3>
   <div class="ph"><b>Placeholder</b>Schema, annotation fields, splits, and license go here.</div>
 </div></section>
@@ -252,22 +301,50 @@ footer .mark{justify-content:center;margin-bottom:10px;font-size:15px;color:var(
 <section id="samples"><div class="w">
   <p class="eyebrow">04 &mdash; Listening samples</p>
   <h2>Audio comparison</h2>
-  <p class="lead">Click a waveform to seek. Starting one track pauses the others and hands over
-     the playhead position, so variants can be compared at the same moment.</p>
+  <p class="lead">Drag across a waveform to select a range, click to seek. Starting one track
+     pauses the others and hands over the playhead, so variants can be compared at the
+     same moment.</p>
   <div id="cmp"></div>
 </div></section>
 
 <footer>
   <div class="mark"><i></i>VoxAgora</div>
-  <div>Anonymous submission &middot; page contents are placeholders</div>
+  <div>Page contents are placeholders</div>
 </footer>
 
 <script>
 /* =======================================================================
-   AUDIO CONFIG — edit this list only.
-   Drop .wav/.mp3 files into assets/audio/ and point `src` at them.
-   Tracks inside one group share a playhead (A/B comparison).
+   DATA CONFIG — edit these three blocks only.
+   Audio goes in assets/audio/. A missing file degrades to a notice;
+   it never breaks the page.
    ======================================================================= */
+
+/* 2a. Bleed removal — one entry per corpus, each with N clips.
+      A clip has two tracks (contaminated mic / cleaned) and a transcript
+      whose `spk` is the person actually speaking. Lines whose speaker is
+      not the mic owner (`target`) are marked as bleed. */
+const BLEED = [
+  { id: "ami",   name: "AMI",   domain: "4-person meetings · headset mics", samples: [] },
+  { id: "icsi",  name: "ICSI",  domain: "research meetings · headset mics", samples: [] },
+  { id: "tbd1",  name: "TBD",   domain: "third domain",  samples: [] },
+  { id: "tbd2",  name: "TBD",   domain: "fourth domain", samples: [] }
+];
+/* sample shape:
+   { id: "EN2001a-2790", label: "EN2001a @ 46:30", target: "A",
+     note: "B and C bleed into A's headset while A stays silent.",
+     orig: "assets/audio/bleed/ami_EN2001a_A_orig.mp3",
+     clean:"assets/audio/bleed/ami_EN2001a_A_clean.mp3",
+     transcript: [ { spk:"B", t0:0.4, t1:2.9, text:"..." } ] }            */
+
+/* 2b. Synthetic sessions — one track per speaker. */
+const SYNTH = [];
+/* sample shape:
+   { id: "syn-01", label: "Session 01 · 70 turns",
+     note: "Four speakers, mutual drop.",
+     tracks: [ { spk:"S1", src:"assets/audio/synth/s01_S1.mp3" } ],
+     transcript: [ { spk:"S1", t0:0.0, t1:3.2, text:"..." } ] }           */
+
+/* 4. Simulator variant comparison. */
 const GROUPS = [
   {
     title: "Sample 01",
@@ -293,37 +370,94 @@ const GROUPS = [
 /* ===================================================================== */
 
 const CSS = getComputedStyle(document.documentElement);
-const C = {
-  base : CSS.getPropertyValue('--sage').trim() + '66',
-  fill : CSS.getPropertyValue('--sage-d').trim(),
-  head : CSS.getPropertyValue('--lilac-d').trim()
-};
-const fmt = s => (isFinite(s) ? Math.floor(s/60) + ':' + String(Math.floor(s%60)).padStart(2,'0') : '--:--');
+const V = n => CSS.getPropertyValue(n).trim();
+const C = { base: V('--sage') + '66', fill: V('--sage-d'), head: V('--lilac-d'),
+            sel: V('--lilac') + '2e', selLn: V('--lilac') };
+const SPK_COLORS = [
+  ['--sage-d','--sage-bg'], ['--peri-d','--peri-bg'], ['--rose-d','--rose-bg'],
+  ['--lilac-d','--lilac-bg'], ['--teal-d','--teal-bg'], ['--sand-d','--sand-bg']
+];
+const fmt = s => isFinite(s)
+  ? Math.floor(s/60) + ':' + String(Math.floor(s%60)).padStart(2,'0')
+  : '--:--';
+const fmtMs = s => isFinite(s) ? s.toFixed(1) + 's' : '--';
 
 let audioCtx = null;
-const players = [];
+const SCENES = [];
 
-function makeGroup(g){
+/* ---------------------------------------------------------------- scene */
+/* A scene owns N tracks that share one playhead and one range selection. */
+function Scene(host, spec){
   const el = document.createElement('div');
-  el.className = 'cmp';
-  const hd = document.createElement('div');
-  hd.className = 'hd';
-  hd.innerHTML = '<b></b><span></span>';
-  hd.querySelector('b').textContent = g.title;
-  hd.querySelector('span').textContent = g.subtitle || '';
-  el.appendChild(hd);
-  if (g.note){
+  el.className = 'scene';
+  const S = {
+    el, players: [], sel: null, loop: false, txLines: [],
+    dur: 0, destroyed: false
+  };
+
+  if (spec.title || spec.subtitle){
+    const hd = document.createElement('div');
+    hd.className = 'hd';
+    hd.innerHTML = '<b></b><span></span>';
+    hd.querySelector('b').textContent = spec.title || '';
+    hd.querySelector('span').textContent = spec.subtitle || '';
+    el.appendChild(hd);
+  }
+  if (spec.note){
     const n = document.createElement('p');
     n.className = 'note';
-    n.textContent = g.note;
+    n.textContent = spec.note;
     el.appendChild(n);
   }
-  const mates = [];
-  g.tracks.forEach(t => mates.push(makeTrack(t, el, mates)));
-  return el;
+
+  spec.tracks.forEach(t => S.players.push(Track(S, t, el)));
+
+  /* selection bar */
+  const bar = document.createElement('div');
+  bar.className = 'selbar';
+  bar.innerHTML =
+    '<span class="k">range</span><span class="v">full clip</span>' +
+    '<span class="sp"></span>' +
+    '<button class="mini lp" aria-pressed="false">loop</button>' +
+    '<button class="mini cl">clear</button>';
+  el.appendChild(bar);
+  S.selLabel = bar.querySelector('.v');
+  bar.querySelector('.lp').onclick = e => {
+    S.loop = !S.loop;
+    e.currentTarget.setAttribute('aria-pressed', String(S.loop));
+  };
+  bar.querySelector('.cl').onclick = () => setSel(S, null);
+
+  /* transcript */
+  if (spec.transcript && spec.transcript.length){
+    const tx = document.createElement('div');
+    tx.className = 'tx';
+    const seen = [];
+    spec.transcript.forEach(seg => {
+      if (!seen.includes(seg.spk)) seen.push(seg.spk);
+      const ln = document.createElement('div');
+      ln.className = 'ln' + (spec.target && seg.spk !== spec.target ? ' bleed' : '');
+      const ci = seen.indexOf(seg.spk) % SPK_COLORS.length;
+      ln.innerHTML = '<span class="spk"></span><span class="t"></span><span class="s"></span>';
+      const chip = ln.querySelector('.spk');
+      chip.textContent = seg.spk;
+      chip.style.color = V(SPK_COLORS[ci][0]);
+      chip.style.background = V(SPK_COLORS[ci][1]);
+      ln.querySelector('.t').textContent = fmtMs(seg.t0);
+      ln.querySelector('.s').textContent = seg.text;
+      ln.onclick = () => seekAll(S, seg.t0, true);
+      tx.appendChild(ln);
+      S.txLines.push({ el: ln, t0: seg.t0, t1: seg.t1 });
+    });
+    el.appendChild(tx);
+  }
+
+  host.appendChild(el);
+  SCENES.push(S);
+  return S;
 }
 
-function makeTrack(t, parent, mates){
+function Track(S, t, parent){
   const row = document.createElement('div');
   row.className = 'tr';
   row.innerHTML =
@@ -332,12 +466,19 @@ function makeTrack(t, parent, mates){
       '<div class="nm"><b></b><span></span></div>' +
     '</div>' +
     '<div class="wv"><canvas></canvas><div class="msg">loading</div><div class="tm" hidden>0:00</div></div>';
-  row.querySelector('.nm b').textContent = t.name;
+  const nb = row.querySelector('.nm b');
+  if (t.color){
+    const d = document.createElement('span');
+    d.className = 'dot';
+    d.style.background = t.color;
+    nb.appendChild(d);
+  }
+  nb.appendChild(document.createTextNode(t.name));
   row.querySelector('.nm span').textContent = t.meta || '';
   parent.appendChild(row);
 
   const P = {
-    src: t.src, mates,
+    S, src: t.src,
     btn: row.querySelector('.pl'),
     wv:  row.querySelector('.wv'),
     cv:  row.querySelector('canvas'),
@@ -345,30 +486,76 @@ function makeTrack(t, parent, mates){
     tm:  row.querySelector('.tm'),
     peaks: null, audio: null, dur: 0, raf: 0, ready: false
   };
-  players.push(P);
 
   P.btn.onclick = () => P.ready && (P.audio.paused ? play(P) : P.audio.pause());
-  P.wv.onclick = e => {
-    if (!P.ready) return;
-    const r = P.wv.getBoundingClientRect();
-    P.audio.currentTime = Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)) * P.dur;
-    draw(P);
-  };
+  bindRange(P);
   load(P);
   return P;
 }
 
-function play(P){
-  P.mates.forEach(m => {
+/* drag = select a range, click = seek */
+function bindRange(P){
+  let down = null;
+  const at = e => {
+    const r = P.wv.getBoundingClientRect();
+    return Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)) * (P.dur || 0);
+  };
+  P.wv.addEventListener('pointerdown', e => {
+    if (!P.ready) return;
+    P.wv.setPointerCapture(e.pointerId);
+    down = { x: e.clientX, t: at(e) };
+  });
+  P.wv.addEventListener('pointermove', e => {
+    if (!down) return;
+    if (Math.abs(e.clientX - down.x) < 4) return;
+    const a = down.t, b = at(e);
+    setSel(P.S, { a: Math.min(a,b), b: Math.max(a,b) });
+  });
+  P.wv.addEventListener('pointerup', e => {
+    if (!down) return;
+    const moved = Math.abs(e.clientX - down.x) >= 4;
+    const t = moved ? Math.min(down.t, at(e)) : down.t;
+    if (!moved) setSel(P.S, null);
+    down = null;
+    seekAll(P.S, t, false);
+  });
+  P.wv.addEventListener('pointercancel', () => { down = null; });
+}
+
+function setSel(S, sel){
+  if (sel && sel.b - sel.a < 0.05) sel = null;
+  S.sel = sel;
+  S.selLabel.textContent = sel
+    ? fmtMs(sel.a) + ' – ' + fmtMs(sel.b) + '  (' + fmtMs(sel.b - sel.a) + ')'
+    : 'full clip';
+  S.players.forEach(draw);
+}
+
+function seekAll(S, t, alsoPlay){
+  S.players.forEach(p => { if (p.ready) p.audio.currentTime = Math.min(t, p.dur - 0.01); });
+  S.players.forEach(draw);
+  if (alsoPlay){
+    const p = S.players.find(x => x.ready && !x.audio.paused) ||
+              S.players.find(x => x.ready);
+    if (p) play(p, t);
+  }
+}
+
+function play(P, from){
+  const S = P.S;
+  let at = from != null ? from : P.audio.currentTime;
+  S.players.forEach(m => {
     if (m !== P && m.ready && !m.audio.paused){
-      const at = m.audio.currentTime;
+      at = m.audio.currentTime;          // hand the playhead over
       m.audio.pause();
-      if (at < P.dur) P.audio.currentTime = at;   // hand the playhead over
     }
   });
+  if (S.sel && (at < S.sel.a || at >= S.sel.b)) at = S.sel.a;
+  P.audio.currentTime = Math.min(at, P.dur - 0.01);
   P.audio.play();
 }
 
+/* ---------------------------------------------------------------- audio */
 async function load(P){
   let buf;
   try {
@@ -391,6 +578,7 @@ async function load(P){
   }
 
   P.dur = ab.duration;
+  P.S.dur = Math.max(P.S.dur, P.dur);
   P.peaks = peaksOf(ab, 1400);
 
   P.audio = new Audio(P.src);   // already in the HTTP cache from the fetch above
@@ -418,7 +606,7 @@ function peaksOf(ab, n){
     out[i] = p;
     if (p > max) max = p;
   }
-  for (let i = 0; i < n; i++) out[i] = out[i] / max;
+  for (let i = 0; i < n; i++) out[i] /= max;
   return out;
 }
 
@@ -427,21 +615,31 @@ function draw(P){
   const dpr = window.devicePixelRatio || 1;
   const w = P.wv.clientWidth, h = P.wv.clientHeight;
   if (!w) return;
-  if (P.cv.width !== Math.round(w*dpr)){ P.cv.width = Math.round(w*dpr); P.cv.height = Math.round(h*dpr); }
+  if (P.cv.width !== Math.round(w*dpr)){
+    P.cv.width = Math.round(w*dpr); P.cv.height = Math.round(h*dpr);
+  }
   const g = P.cv.getContext('2d');
   g.setTransform(dpr, 0, 0, dpr, 0, 0);
   g.clearRect(0, 0, w, h);
 
+  const sel = P.S.sel;
+  if (sel && P.dur){
+    const x0 = sel.a / P.dur * w, x1 = sel.b / P.dur * w;
+    g.fillStyle = C.sel;   g.fillRect(x0, 0, x1 - x0, h);
+    g.fillStyle = C.selLn; g.fillRect(x0, 0, 1, h); g.fillRect(x1 - 1, 0, 1, h);
+  }
+
   const bw = 2, gap = 1, step = bw + gap;
   const n = Math.floor(w / step);
-  const mid = h / 2, prog = P.dur ? (P.audio ? P.audio.currentTime / P.dur : 0) : 0;
+  const mid = h / 2;
+  const prog = P.dur && P.audio ? P.audio.currentTime / P.dur : 0;
   for (let i = 0; i < n; i++){
     const v = P.peaks[Math.floor(i / n * P.peaks.length)] || 0;
     const bh = Math.max(1.5, v * (h - 10));
     g.fillStyle = (i / n <= prog) ? C.fill : C.base;
     g.fillRect(i * step, mid - bh/2, bw, bh);
   }
-  if (P.audio && prog > 0){
+  if (prog > 0){
     g.fillStyle = C.head;
     g.fillRect(Math.min(w - 1.5, prog * w), 4, 1.5, h - 8);
   }
@@ -449,8 +647,21 @@ function draw(P){
 }
 
 function tick(P){
+  const S = P.S, t = P.audio.currentTime;
+  if (S.sel && t >= S.sel.b){
+    if (S.loop){ P.audio.currentTime = S.sel.a; }
+    else { P.audio.pause(); P.audio.currentTime = S.sel.a; draw(P); return; }
+  }
   draw(P);
+  highlight(S, t);
   P.raf = requestAnimationFrame(() => tick(P));
+}
+
+function highlight(S, t){
+  S.txLines.forEach(l => {
+    const on = t >= l.t0 && t < l.t1;
+    if (on !== l.on){ l.on = on; l.el.classList.toggle('on', on); }
+  });
 }
 
 function icon(P, playing){
@@ -459,9 +670,111 @@ function icon(P, playing){
     : '<path d="M0 0l10 6-10 6z"/>';
 }
 
-const host = document.getElementById('cmp');
-GROUPS.forEach(g => host.appendChild(makeGroup(g)));
-addEventListener('resize', () => players.forEach(draw));
+function teardown(S){
+  if (!S) return;
+  S.players.forEach(p => {
+    cancelAnimationFrame(p.raf);
+    if (p.audio){ p.audio.pause(); p.audio.src = ''; }
+  });
+  S.el.remove();
+  const i = SCENES.indexOf(S);
+  if (i >= 0) SCENES.splice(i, 1);
+}
+
+function pendingBox(host, text){
+  const d = document.createElement('div');
+  d.className = 'ph';
+  d.innerHTML = '<b>Coming soon</b>';
+  d.appendChild(document.createTextNode(text));
+  host.appendChild(d);
+}
+
+/* ------------------------------------------------------------- builders */
+function buildBleed(){
+  const host = document.getElementById('bleed');
+  const ready = BLEED.filter(d => d.samples.length);
+  if (!ready.length){
+    pendingBox(host, 'Listening clips are being prepared.');
+    return;
+  }
+  const pick = document.createElement('div');
+  pick.className = 'picker';
+  pick.innerHTML =
+    '<div class="fld"><label>domain</label><select class="ds"></select></div>' +
+    '<div class="fld"><label>clip</label><select class="sm"></select></div>';
+  host.appendChild(pick);
+  const dsSel = pick.querySelector('.ds'), smSel = pick.querySelector('.sm');
+  ready.forEach((d, i) => dsSel.add(new Option(d.name + ' — ' + d.domain, i)));
+
+  let scene = null;
+  const fillSamples = () => {
+    const d = ready[dsSel.value];
+    smSel.innerHTML = '';
+    d.samples.forEach((s, i) => smSel.add(new Option(s.label, i)));
+    show();
+  };
+  const show = () => {
+    const s = ready[dsSel.value].samples[smSel.value];
+    teardown(scene);
+    scene = Scene(host, {
+      title: s.label,
+      subtitle: ready[dsSel.value].name + ' · mic of ' + s.target,
+      note: s.note,
+      target: s.target,
+      transcript: s.transcript,
+      tracks: [
+        { name: 'Original mic',  meta: 'as recorded', src: s.orig  },
+        { name: 'Bleed removed', meta: 'pipeline',    src: s.clean }
+      ]
+    });
+  };
+  dsSel.onchange = fillSamples;
+  smSel.onchange = show;
+  fillSamples();
+}
+
+function buildSynth(){
+  const host = document.getElementById('synth');
+  if (!SYNTH.length){
+    pendingBox(host, 'Synthetic session samples are being prepared.');
+    return;
+  }
+  const pick = document.createElement('div');
+  pick.className = 'picker';
+  pick.innerHTML = '<div class="fld"><label>session</label><select class="sm"></select></div>';
+  host.appendChild(pick);
+  const smSel = pick.querySelector('.sm');
+  SYNTH.forEach((s, i) => smSel.add(new Option(s.label, i)));
+
+  let scene = null;
+  const show = () => {
+    const s = SYNTH[smSel.value];
+    teardown(scene);
+    scene = Scene(host, {
+      title: s.label,
+      subtitle: s.tracks.length + ' speakers',
+      note: s.note,
+      transcript: s.transcript,
+      tracks: s.tracks.map((t, i) => ({
+        name: t.spk, meta: 'speaker track', src: t.src,
+        color: V(SPK_COLORS[i % SPK_COLORS.length][0])
+      }))
+    });
+  };
+  smSel.onchange = show;
+  show();
+}
+
+function buildGroups(){
+  const host = document.getElementById('cmp');
+  GROUPS.forEach(g => Scene(host, g));
+}
+
+buildBleed();
+buildSynth();
+buildGroups();
+
+addEventListener('resize', () => SCENES.forEach(S => S.players.forEach(draw)));
 </script>
 </body>
 </html>
