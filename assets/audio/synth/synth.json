@@ -20,7 +20,7 @@
   "transcript": [
    {
     "spk": "Michael",
-    "t0": -1.24,
+    "t0": 0.0,
     "t1": 1.08,
     "text": "Okay, okay. Sorry. Go ahead, I'll shut up."
    },
@@ -105,7 +105,7 @@
    {
     "spk": "Diane",
     "t0": 27.4,
-    "t1": 35.0,
+    "t1": 30.0,
     "text": "I know this is a shock but I need you both to let me explain why before you start telling me all the reasons I shouldn't."
    }
   ]
@@ -135,7 +135,7 @@
   "transcript": [
    {
     "spk": "Alex",
-    "t0": -11.92,
+    "t0": 0.0,
     "t1": 2.8,
     "text": "That Butterworth is exactly what I was worried about. I actually ran a quick simulation comparing it to an FIR with linear phase, and the passband ripple alone accounts for like a 2 percent distortion in the low end. Have you ever measured the group delay on that thing?"
    },
@@ -184,7 +184,7 @@
    {
     "spk": "Alex",
     "t0": 28.4,
-    "t1": 31.52,
+    "t1": 30.0,
     "text": "Sorry, go ahead, you're the one who actually measured the Butterworth."
    }
   ]
@@ -214,13 +214,13 @@
   "transcript": [
    {
     "spk": "Marcus",
-    "t0": -2.24,
+    "t0": 0.0,
     "t1": 2.8,
     "text": "So we're debating two busted models, and the only thing that stops us is a clear decision."
    },
    {
     "spk": "Priya",
-    "t0": -2.24,
+    "t0": 0.0,
     "t1": 1.76,
     "text": "This is exactly my point about agility, because the baseline has to move."
    },
@@ -275,7 +275,7 @@
    {
     "spk": "Jordan",
     "t0": 35.43,
-    "t1": 53.35,
+    "t1": 38.23,
     "text": "It means we stop using the price point from January and plug in the actual trend line from the last six months instead. That one change alone shifts the break even on Marcus's proposal by about four months and Priya's by, um, seven, I think. So the whole timeline we're arguing over is based on a number we already left behind."
    }
   ]
@@ -309,7 +309,7 @@
   "transcript": [
    {
     "spk": "Marcus",
-    "t0": -1.6,
+    "t0": 0.0,
     "t1": 2.8,
     "text": "You had two years to finish that sentence. I wanna hear it now. Every detail."
    },
@@ -370,7 +370,7 @@
    {
     "spk": "Marcus",
     "t0": 41.67,
-    "t1": 48.55,
+    "t1": 44.47,
     "text": "Which junior engineers, Elena. Name them. Because I talked to three of them after the collapse and they all said you never—"
    }
   ]
@@ -404,7 +404,7 @@
   "transcript": [
    {
     "spk": "Leo",
-    "t0": -10.88,
+    "t0": 0.0,
     "t1": 2.8,
     "text": "I almost talked myself out of it like three times. You know when you sit there at two in the morning staring at a sentence and you think, this is either the best thing I've written or the most obvious thing anyone's ever written, and you can't tell which anymore?"
    },
@@ -447,7 +447,7 @@
    {
     "spk": "Leo",
     "t0": 48.59,
-    "t1": 54.91,
+    "t1": 51.39,
     "text": "Then Priya should absolutely read next. I've been saying it, the timeline fractures she left in, that's exactly the brave—"
    }
   ]
