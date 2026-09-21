@@ -9,7 +9,7 @@
 <style>
 :root{
   --bg:#FBFCFA; --pan:#FFFFFF; --soft:#EDF2EE; --soft2:#F2EDF8;
-  --ink:#2A2F2C; --dim:#6E7872; --faint:#9AA39D;
+  --ink:#141816; --dim:#141816; --faint:#4B534E;
   --ln:#E4EAE5; --ln2:#EFF3F0;
   --sage:#8FB39B; --sage-d:#5F8A72; --sage-bg:#EDF2EE;
   --lilac:#B3A0CE; --lilac-d:#7E68A3; --lilac-bg:#F2EDF8;
@@ -64,7 +64,7 @@ section:first-of-type{border-top:none}
 .eyebrow{font-family:var(--m);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
   color:var(--sage-d);margin:0 0 8px}
 h2{font-size:clamp(22px,3.2vw,28px);font-weight:640;letter-spacing:-.022em;margin:0 0 10px}
-.lead{color:var(--dim);font-size:16px;margin:0 0 28px;max-width:66ch;text-wrap:pretty}
+.lead{color:var(--ink);font-size:16px;margin:0 0 28px;max-width:66ch;text-wrap:pretty}
 h3{font-size:15.5px;font-weight:620;letter-spacing:-.01em;margin:38px 0 10px}
 h3 .hint{font-weight:400;font-size:13px;color:var(--faint);margin-left:8px}
 
@@ -88,7 +88,7 @@ h3.part + .lead{margin-top:8px}
 .card.l .tag{color:var(--lilac-d);background:var(--lilac-bg)}
 .card.p .tag{color:var(--peri-d);background:var(--peri-bg)}
 .card h4{font-size:15px;font-weight:620;margin:0 0 6px;letter-spacing:-.01em}
-.card p{margin:0;font-size:13.8px;color:var(--dim)}
+.card p{margin:0;font-size:13.8px;color:var(--ink)}
 
 .seats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
 .seat{flex:1;min-width:170px;border-radius:10px;padding:13px 16px}
@@ -280,25 +280,11 @@ footer .mark{justify-content:center;margin-bottom:10px;font-size:15px;color:var(
   </div>
 
   <h3 class="part"><em>syn</em>Synthetic sessions<span class="hint">generated multi-party dialogue</span></h3>
-  <p class="lead">Long dialogues synthesised turn by turn and placed on one timeline, so
-     speakers overlap, interrupt and back down the way they do in a room. Start with the
-     room mix to hear the session, then switch to a single speaker &mdash; the playhead
-     carries over, so it is the same moment from that person's microphone.</p>
   <div id="synth"></div>
-  <p class="credit">Each excerpt is cut around a mutual-drop: two speakers take the floor at
-     the same moment and then both yield. The per-speaker tracks are the channels the
-     dataset ships; the room mix is their sum.</p>
 
   <h3 class="part"><em>real</em>Real recordings<span class="hint">bleed removal on per-speaker mics</span></h3>
-  <p class="lead">In close-talk multi-party recordings every microphone also picks up the
-     other people in the room. Pick a domain and a clip, then drag across the waveform to
-     select a range &mdash; playback starts there and the two versions share the playhead,
-     so the same moment can be heard with and without the bleed.</p>
   <div id="bleed"></div>
-  <p class="credit">Source recordings: AMI Meeting Corpus and ICSI Meeting Corpus
-     (CC&nbsp;BY&nbsp;4.0), CHiME-6 and DiPCo. Clips are 10&nbsp;s excerpts taken from the
-     separated and restored track the dataset ships; levels are matched between the two
-     versions and are never re-normalised.</p>
+  <p class="credit">AMI and ICSI Meeting Corpus (CC&nbsp;BY&nbsp;4.0), CHiME-6, DiPCo.</p>
 
   <h3>Format &amp; release</h3>
   <div class="ph"><b>Placeholder</b>Schema, annotation fields, splits, and license go here.</div>
@@ -316,9 +302,6 @@ footer .mark{justify-content:center;margin-bottom:10px;font-size:15px;color:var(
 <section id="samples"><div class="w">
   <p class="eyebrow">04 &mdash; Listening samples</p>
   <h2>Audio comparison</h2>
-  <p class="lead">Drag across a waveform to select a range, click to seek. Starting one track
-     pauses the others and hands over the playhead, so variants can be compared at the
-     same moment.</p>
   <div id="cmp"></div>
 </div></section>
 
