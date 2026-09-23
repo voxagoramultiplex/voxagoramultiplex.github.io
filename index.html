@@ -70,7 +70,8 @@ h2{font-size:clamp(28px,4.4vw,40px);font-weight:760;letter-spacing:-.028em;margi
 h3{font-size:16.5px;font-weight:680;letter-spacing:-.012em;margin:38px 0 10px}
 h3 .hint{font-weight:400;font-size:13px;color:var(--faint);margin-left:8px}
 
-h3.part{display:flex;align-items:baseline;gap:9px;margin-top:46px;justify-content:center}
+h3.part{display:block;text-align:center;margin-top:48px;font-size:21px;font-weight:720;
+  letter-spacing:-.018em}
 h3.part em{font-style:normal;font-family:var(--m);font-size:10px;letter-spacing:.13em;
   text-transform:uppercase;padding:3px 9px;border-radius:20px;
   color:var(--lilac);background:var(--lilac-bg)}
@@ -301,11 +302,6 @@ footer .mark{justify-content:center;margin-bottom:10px;font-size:15px;color:var(
 <header><div class="w">
   <div class="brand"><span class="vox">Vox</span><span class="agora">Agora</span></div>
   <h1>Interactive Evaluation for Multi-Party Communication in Full-Duplex Models</h1>
-  <div class="cta">
-    <a class="btn na" href="#"><svg viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v5h5"/></svg>Paper</a>
-    <a class="btn na" href="#"><svg viewBox="0 0 24 24"><path d="M4 7h16v13H4z"/><path d="M4 7l3-3h10l3 3"/></svg>Data</a>
-    <a class="btn na" href="#"><svg viewBox="0 0 24 24"><path d="M9 18c-4 1-4-2-6-3m12 5v-4a3 3 0 00-1-2c3 0 5-1 5-5a4 4 0 00-1-3 4 4 0 000-3s-1 0-3 2a11 11 0 00-6 0C7 3 6 3 6 3a4 4 0 000 3 4 4 0 00-1 3c0 4 2 5 5 5a3 3 0 00-1 2v4"/></svg>Code</a>
-  </div>
 </div></header>
 
 <!-- ============ 1. BENCHMARK ============ -->
@@ -343,7 +339,6 @@ footer .mark{justify-content:center;margin-bottom:10px;font-size:15px;color:var(
   <p class="eyebrow">02 &mdash; Dataset</p>
   <div class="dsname">
     <h2>MINGLE</h2>
-    <em>dataset</em>
   </div>
   <p class="lead">One-paragraph description of the dataset goes here.</p>
 
@@ -361,10 +356,10 @@ footer .mark{justify-content:center;margin-bottom:10px;font-size:15px;color:var(
     <div class="card p"><span class="tag">03</span><h4>Point three</h4><p>Short description.</p></div>
   </div>
 
-  <h3 class="part"><em>syn</em>Synthetic sessions<span class="hint">generated multi-party dialogue</span></h3>
+  <h3 class="part">Synthetic Dataset</h3>
   <div id="synth"></div>
 
-  <h3 class="part"><em>real</em>Real recordings<span class="hint">bleed removal on per-speaker mics</span></h3>
+  <h3 class="part">Real Dataset</h3>
   <div id="bleed"></div>
   <p class="credit">AMI and ICSI Meeting Corpus (CC&nbsp;BY&nbsp;4.0), CHiME-6, DiPCo.</p>
 
