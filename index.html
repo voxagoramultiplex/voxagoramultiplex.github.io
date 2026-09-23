@@ -199,19 +199,9 @@ h3.part b{font-size:19px;font-weight:720;letter-spacing:-.015em}
 .fdanim .ag{display:grid;justify-items:center;gap:6px;font-family:var(--m);font-size:10px;
   letter-spacing:.08em;color:var(--faint)}
 .fdanim .ag i{width:34px;height:34px;border-radius:12px;display:block;position:relative;
-  opacity:.28;transform:scale(.9);animation:talk 8s infinite}
+  opacity:.28;transform:scale(.9);animation:8s infinite}
 .fdanim .ag i::after{content:"";position:absolute;inset:0;border-radius:12px;
-  box-shadow:0 0 0 0 currentColor;animation:ring 8s infinite}
-@keyframes talk{
-  0%,100%{opacity:.28;transform:scale(.9)}
-  6%,26%{opacity:1;transform:scale(1)}
-  32%{opacity:.28;transform:scale(.9)}
-}
-@keyframes ring{
-  0%,100%{box-shadow:0 0 0 0 transparent}
-  6%{box-shadow:0 0 0 0 currentColor;opacity:.35}
-  26%{box-shadow:0 0 0 10px transparent;opacity:0}
-}
+  box-shadow:0 0 0 0 transparent;animation:8s infinite}
 .fdanim .mini{position:relative;display:grid;gap:4px}
 .fdanim .ml{height:12px;border-radius:4px;background:var(--soft);position:relative;overflow:hidden}
 .fdanim .ml span{position:absolute;top:2px;bottom:2px;border-radius:3px}
@@ -961,17 +951,40 @@ function spansOf(transcript, name){
     { key: 'D', c: '--plum',  blocks: [[4, 22], [58, 92]] }
   ];
   const ags = host.querySelector('.ags'), mini = host.querySelector('.mini');
+  const css = [];
+
+  /* Keyframes per agent, one on/off pair per block, so the light follows every
+     block of that row rather than firing once a sweep. */
+  function frames(a){
+    const on = [], ring = [];
+    on.push('0%{opacity:.28;transform:scale(.92)}');
+    ring.push('0%{box-shadow:0 0 0 0 transparent}');
+    a.blocks.forEach(([x, y]) => {
+      const pre = Math.max(0, x - 0.4);
+      on.push(pre + '%{opacity:.28;transform:scale(.92)}',
+              x + '%{opacity:1;transform:scale(1)}',
+              y + '%{opacity:1;transform:scale(1)}',
+              Math.min(100, y + 0.4) + '%{opacity:.28;transform:scale(.92)}');
+      ring.push(pre + '%{box-shadow:0 0 0 0 transparent}',
+                x + '%{box-shadow:0 0 0 0 currentColor}',
+                Math.min(100, x + 12) + '%{box-shadow:0 0 0 11px transparent}');
+    });
+    on.push('100%{opacity:.28;transform:scale(.92)}');
+    ring.push('100%{box-shadow:0 0 0 0 transparent}');
+    return '@keyframes talk_' + a.key + '{' + on.join('') + '}' +
+           '@keyframes ring_' + a.key + '{' + ring.join('') + '}';
+  }
   AG.forEach(a => {
     const col = V(a.c);
     const el = document.createElement('div');
-    el.className = 'ag';
+    el.className = 'ag k' + a.key;
     el.innerHTML = '<i></i><span>' + a.key + '</span>';
     const i = el.querySelector('i');
     i.style.background = col;
     i.style.color = col;
-    i.style.animationDelay = (a.blocks[0][0] / 100 * 8) + 's';
-    i.querySelector ? null : null;
+    i.style.animationName = 'talk_' + a.key;
     ags.appendChild(el);
+    css.push(frames(a));
     const ml = document.createElement('div');
     ml.className = 'ml';
     ml.innerHTML = a.blocks.map(([x, y]) =>
@@ -981,6 +994,10 @@ function spansOf(transcript, name){
   const ph = document.createElement('div');
   ph.className = 'mph';
   mini.appendChild(ph);
+  const st = document.createElement('style');
+  st.textContent = css.join('') +
+    AG.map(a => '.fdanim .ag.k' + a.key + ' i::after{animation-name:ring_' + a.key + '}').join('');
+  document.head.appendChild(st);
 })();
 
 /* ------------------------------------------------------------- builders */
@@ -1117,7 +1134,6 @@ async function buildFD(){
     cur = Lanes(host, {
       title: s.label || m.model,
       subtitle: names.length + ' agents \u00b7 ' + Math.round(s.dur) + 's',
-      note: s.note || m.note,
       audio: s.audio, audioName: 'mix', dur: s.dur,
       speakers: names.map((n, i) => ({
         // measured from each agent's own track: a transcript t1 is when the last
