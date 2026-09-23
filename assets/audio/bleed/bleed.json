@@ -1,653 +1,170 @@
 [
  {
-  "id": "ami",
-  "name": "AMI",
-  "domain": "4-person design meetings · headset mics",
+  "id": "dipco",
+  "name": "DiPCo",
+  "domain": "dinner-table conversations · close-talk mics",
   "samples": [
    {
-    "id": "ami_ES2005c_C_629",
-    "label": "ES2005c @ 10:29",
-    "target": "C",
-    "note": "3 people talking at once. A and D run over C for 4 s of these ten, sitting +26 dB against C's own voice on C's microphone. Level-matched on C's speech; everything else drops 33 dB.",
-    "orig": "assets/audio/bleed/ami_ES2005c_C_629.orig.opus",
-    "clean": "assets/audio/bleed/ami_ES2005c_C_629.clean.opus",
+    "id": "dipco_S01_P04_2566",
+    "label": "S01 @ 42:46",
+    "target": "P04",
+    "note": "P01 and P02 sit +6 dB against P04's own voice on P04's microphone. Level-matched on P04's speech; everything else drops 43 dB.",
+    "orig": "assets/audio/bleed/dipco_S01_P04_2566.orig.opus",
+    "clean": "assets/audio/bleed/dipco_S01_P04_2566.clean.opus",
     "transcript": [
      {
-      "spk": "C",
+      "spk": "P02",
       "t0": 0.0,
-      "t1": 0.87,
-      "text": "… Yeah I mean is that not sort of to assist the blind or something is it"
+      "t1": 1.92,
+      "text": "… yeah you you kind of cut yourself off from everything kind of live i was i don't know i was watching a documentary on netflix about unabomber and the way he used to live somewhere in washington i don't know if you guys have heard ummm yeah he was sending like uhhh mail ummm letters with some bomb to different people random people and people couldn't figure out what the heck who's this person and they were just thinking that this guy is some some person who has uhhh like he's mentally ill or something like that when they finally found him after a lot of research i think the way they figured out they basically built a new study technique within f. b. i. wherein they were looking at the writing style to identify who could this person be and they figured out this guy is a p. h. d. from nineteen sixties their whole profiling was all wrong till that time there was someone from stanford who helped and all that and then you figure out and then those photographs show that this guy was living in some cabin somewhere so far away with no running water nothing no electricity completely cut off and he was like this whole world is going to the the dogs you you basically have all this connected things which is not what you want mach- you are going to become so it's machines and all this like he had that philosophy and that's what he was trying to propagate but i feel like sure that's too extreme but at some point of time you want that few days where you're not connected to your phone not connected to your uhhh a device right so most of the time when young like ahhh this is peaceful bliss like you have no connection no you're like you're on your own"
      },
      {
-      "spk": "D",
-      "t0": 0.8,
-      "t1": 4.0,
-      "text": "I guess so I don't know I think that's a bit"
+      "spk": "P04",
+      "t0": 2.0,
+      "t1": 5.86,
+      "text": "yeah the only thing that you need to remember to a g. p. s."
      },
      {
-      "spk": "C",
-      "t0": 3.16,
-      "t1": 4.6,
-      "text": "Strange"
-     },
-     {
-      "spk": "A",
-      "t0": 3.25,
-      "t1": 9.82,
-      "text": "Then d blind don't watch T_V_ They do"
-     },
-     {
-      "spk": "D",
-      "t0": 6.11,
+      "spk": "P02",
+      "t0": 5.65,
       "t1": 10.0,
-      "text": "Yeah exactly Yeah And um this one is just pointing out I like some of these things um the the raised symbols and everything but pointing out um that this one the volume it is kind of pressing down but it would actually go up because of the shape So that could that's a bit confusing Um but the buttons on this I think are it's just showing you how you can have different different um buttons They don't have to be all the same So that's quite cool Um …"
+      "text": "i know you're going to get lost you're going to get lost otherwise that's true too yeah …"
      },
      {
-      "spk": "C",
-      "t0": 6.31,
-      "t1": 9.0,
-      "text": "No they do they do They listen to it Yeah"
+      "spk": "P01",
+      "t0": 6.27,
+      "t1": 8.34,
+      "text": "yes"
      }
     ]
    },
    {
-    "id": "ami_ES2015d_C_963",
-    "label": "ES2015d @ 16:03",
-    "target": "C",
-    "note": "4 people talking at once. A, B and D run over C for 7 s of these ten, sitting +9 dB against C's own voice on C's microphone. Level-matched on C's speech; everything else drops 43 dB.",
-    "orig": "assets/audio/bleed/ami_ES2015d_C_963.orig.opus",
-    "clean": "assets/audio/bleed/ami_ES2015d_C_963.clean.opus",
+    "id": "dipco_S03_P10_2784",
+    "label": "S03 @ 46:24",
+    "target": "P10",
+    "note": "P09, P11 and P12 sit +3 dB against P10's own voice on P10's microphone. Level-matched on P10's speech; everything else drops 57 dB.",
+    "orig": "assets/audio/bleed/dipco_S03_P10_2784.orig.opus",
+    "clean": "assets/audio/bleed/dipco_S03_P10_2784.clean.opus",
     "transcript": [
      {
-      "spk": "C",
-      "t0": 0.0,
-      "t1": 3.49,
-      "text": "… And the kinetic energy part Yeah Don't shake"
-     },
-     {
-      "spk": "A",
-      "t0": 0.0,
-      "t1": 2.74,
-      "text": "… Durable"
-     },
-     {
-      "spk": "D",
-      "t0": 0.0,
-      "t1": 4.54,
-      "text": "… Shake it and the buttons fall off"
-     },
-     {
-      "spk": "B",
-      "t0": 1.88,
-      "t1": 4.75,
-      "text": "But you know those'll be firmly on"
-     },
-     {
-      "spk": "C",
-      "t0": 4.84,
-      "t1": 10.0,
-      "text": "Oh no the plus You're use the zero Make a new one"
-     },
-     {
-      "spk": "D",
-      "t0": 6.91,
-      "t1": 10.0,
-      "text": "No I guess I don't know much about the remote control industry how much your average sells for but I know I am aren't I …"
-     }
-    ]
-   },
-   {
-    "id": "ami_IS1006a_A_702",
-    "label": "IS1006a @ 11:42",
-    "target": "A",
-    "note": "4 people talking at once. B, C and D run over A for 5 s of these ten, sitting +8 dB against A's own voice on A's microphone. Level-matched on A's speech; everything else drops 17 dB.",
-    "orig": "assets/audio/bleed/ami_IS1006a_A_702.orig.opus",
-    "clean": "assets/audio/bleed/ami_IS1006a_A_702.clean.opus",
-    "transcript": [
-     {
-      "spk": "A",
+      "spk": "P09",
       "t0": 0.0,
       "t1": 2.42,
-      "text": "… Yeah I change channel like this m uh I want to go to twenty five and then to ten uh-huh mm yeah"
+      "text": "… yeah no i definitely tried screen time in home as well like after yeah after dinner i mean maybe one or two episodes maybe but then yeah taking breaks after that"
      },
      {
-      "spk": "D",
-      "t0": 0.96,
-      "t1": 5.11,
-      "text": "And then back to the one I was before so there's whichever it was"
+      "spk": "P10",
+      "t0": 2.0,
+      "t1": 7.19,
+      "text": "how about after like fridays you you won't follow that right"
      },
      {
-      "spk": "A",
-      "t0": 3.24,
-      "t1": 6.13,
-      "text": "Also we can be here yeah that would be cool"
-     },
-     {
-      "spk": "B",
-      "t0": 4.26,
-      "t1": 8.43,
-      "text": "Uh-huh Go back button is good I once had it"
-     },
-     {
-      "spk": "C",
-      "t0": 4.41,
-      "t1": 5.19,
-      "text": "Yeah you can yeah"
-     },
-     {
-      "spk": "C",
-      "t0": 5.96,
-      "t1": 6.15,
-      "text": "Yeah"
-     },
-     {
-      "spk": "D",
-      "t0": 6.21,
+      "spk": "P11",
+      "t0": 6.63,
       "t1": 10.0,
-      "text": "Yeah Uh uh we had that in in other countries Yeah e even the history so you could like uh undo previous of the previous …"
+      "text": "fridays i go out yeah yeah …"
      },
      {
-      "spk": "C",
-      "t0": 7.96,
+      "spk": "P12",
+      "t0": 7.17,
       "t1": 10.0,
-      "text": "Yeah yeah the previous button is …"
+      "text": "oh the weekend i go out that's true the weekend i go out cause …"
      },
      {
-      "spk": "A",
-      "t0": 9.41,
+      "spk": "P09",
+      "t0": 7.74,
       "t1": 10.0,
-      "text": "Mm yeah …"
+      "text": "yeah yeah same thing with me yeah i'm out usually …"
      }
     ]
    },
    {
-    "id": "ami_ES2009d_B_2000",
-    "label": "ES2009d @ 33:20",
-    "target": "B",
-    "note": "4 people talking at once. A and D run over B for 5 s of these ten, sitting +6 dB against B's own voice on B's microphone. Level-matched on B's speech; everything else drops 40 dB.",
-    "orig": "assets/audio/bleed/ami_ES2009d_B_2000.orig.opus",
-    "clean": "assets/audio/bleed/ami_ES2009d_B_2000.clean.opus",
+    "id": "dipco_S04_P16_719",
+    "label": "S04 @ 11:59",
+    "target": "P16",
+    "note": "P13, P14 and P15 sit -1 dB against P16's own voice on P16's microphone. Level-matched on P16's speech; everything else drops 51 dB.",
+    "orig": "assets/audio/bleed/dipco_S04_P16_719.orig.opus",
+    "clean": "assets/audio/bleed/dipco_S04_P16_719.clean.opus",
     "transcript": [
      {
-      "spk": "A",
+      "spk": "P15",
       "t0": 0.0,
-      "t1": 1.52,
-      "text": "project documents"
+      "t1": 1.49,
+      "text": "… and they're like used you sneaked up to the front because it was all empty that was great"
      },
      {
-      "spk": "B",
-      "t0": 0.41,
-      "t1": 6.67,
-      "text": "I find myself hitting the send and receive button on the email a lot just out of boredom like c come on gimme something"
+      "spk": "P16",
+      "t0": 2.0,
+      "t1": 8.4,
+      "text": "so it got busier you know just like the more they started to win the more expensive the tickets got"
      },
      {
-      "spk": "D",
-      "t0": 3.16,
-      "t1": 7.83,
-      "text": "I yeah pretty compulsively during meetings like yeah"
+      "spk": "P15",
+      "t0": 5.56,
+      "t1": 6.97,
+      "text": "oh yeah hmmm hmmm"
      },
      {
-      "spk": "A",
-      "t0": 3.45,
+      "spk": "P14",
+      "t0": 6.44,
+      "t1": 7.49,
+      "text": "hmmm hmmm"
+     },
+     {
+      "spk": "P13",
+      "t0": 6.85,
       "t1": 10.0,
-      "text": "Yeah Oh yeah Yeah I know Come on give me some information Well to be fair we're we're hooked we're all hooked on the internet so I mean I do the …"
+      "text": "oh yeah and they are they are now very good …"
      }
     ]
    },
    {
-    "id": "ami_EN2001e_D_965",
-    "label": "EN2001e @ 16:05",
-    "target": "D",
-    "note": "4 people talking at once. A, B and E run over D for 4 s of these ten, sitting +3 dB against D's own voice on D's microphone. Level-matched on D's speech; everything else drops 22 dB.",
-    "orig": "assets/audio/bleed/ami_EN2001e_D_965.orig.opus",
-    "clean": "assets/audio/bleed/ami_EN2001e_D_965.clean.opus",
+    "id": "dipco_S06_P22_437",
+    "label": "S06 @ 7:17",
+    "target": "P22",
+    "note": "P21 and P24 sit -5 dB against P22's own voice on P22's microphone. Level-matched on P22's speech; everything else drops 36 dB.",
+    "orig": "assets/audio/bleed/dipco_S06_P22_437.orig.opus",
+    "clean": "assets/audio/bleed/dipco_S06_P22_437.clean.opus",
     "transcript": [
      {
-      "spk": "D",
+      "spk": "P21",
       "t0": 0.0,
-      "t1": 0.87,
-      "text": "… But we don't we don't need it evaluated for the presentation do we"
+      "t1": 1.34,
+      "text": "… nothing weird just a late twenties male disneyland by himself it's normal right yeah"
      },
      {
-      "spk": "A",
-      "t0": 1.03,
-      "t1": 5.76,
-      "text": "Yeah but it's just uh three days between the presentation and the yeah"
+      "spk": "P22",
+      "t0": 2.0,
+      "t1": 7.92,
+      "text": "and and you have a a option to buy the fastpass right uhhh huh"
      },
      {
-      "spk": "E",
-      "t0": 1.43,
-      "t1": 2.07,
-      "text": "But yeah"
-     },
-     {
-      "spk": "D",
-      "t0": 4.04,
-      "t1": 8.81,
-      "text": "Is it Oh 'cause it was moved back wasn't it Yeah"
-     },
-     {
-      "spk": "E",
-      "t0": 6.23,
-      "t1": 9.41,
-      "text": "Yeah So yeah I don't know if we're gon"
-     },
-     {
-      "spk": "B",
-      "t0": 6.24,
-      "t1": 9.94,
-      "text": "Ah No really And the report"
-     },
-     {
-      "spk": "A",
-      "t0": 7.85,
-      "t1": 8.16,
-      "text": "Yeah"
-     }
-    ]
-   }
-  ]
- },
- {
-  "id": "icsi",
-  "name": "ICSI",
-  "domain": "research group meetings · headset mics",
-  "samples": [
-   {
-    "id": "icsi_Bsr001_D_335",
-    "label": "Bsr001 @ 5:35",
-    "target": "D",
-    "note": "6 people talking at once. A, C, E, F, G and H run over D for 3 s of these ten, sitting +4 dB against D's own voice on D's microphone. Level-matched on D's speech; everything else drops 48 dB.",
-    "orig": "assets/audio/bleed/icsi_Bsr001_D_335.orig.opus",
-    "clean": "assets/audio/bleed/icsi_Bsr001_D_335.clean.opus",
-    "transcript": [
-     {
-      "spk": "F",
-      "t0": 0.0,
-      "t1": 0.87,
-      "text": "… Because I find this one doesn't bother me at all"
-     },
-     {
-      "spk": "G",
-      "t0": 0.0,
-      "t1": 1.7,
-      "text": "… Because I actually think it sort of makes everybody act a little more professional"
-     },
-     {
-      "spk": "D",
-      "t0": 2.29,
-      "t1": 7.76,
-      "text": "I didn't know that you could whistle that You 're a very soft whistler you 're mostly able to do that without much air at all aren't you"
-     },
-     {
-      "spk": "A",
-      "t0": 3.16,
-      "t1": 3.92,
-      "text": "OK"
-     },
-     {
-      "spk": "C",
-      "t0": 5.2,
-      "t1": 9.68,
-      "text": "Actually I use something like this on on the telephone and it very comfortable"
-     },
-     {
-      "spk": "G",
-      "t0": 5.25,
-      "t1": 5.7,
-      "text": "Yeah"
-     },
-     {
-      "spk": "A",
-      "t0": 5.54,
-      "t1": 6.91,
-      "text": "I uh"
-     },
-     {
-      "spk": "A",
-      "t0": 5.72,
-      "t1": 7.06,
-      "text": "I uh"
-     },
-     {
-      "spk": "F",
-      "t0": 5.81,
-      "t1": 6.16,
-      "text": "I think you forget pretty quick"
-     },
-     {
-      "spk": "G",
-      "t0": 7.1,
+      "spk": "P24",
+      "t0": 6.7,
       "t1": 10.0,
-      "text": "Your telephone and people use it for cell phones and …"
-     },
-     {
-      "spk": "A",
-      "t0": 8.14,
-      "t1": 9.37,
-      "text": "I mean no"
-     },
-     {
-      "spk": "A",
-      "t0": 8.15,
-      "t1": 9.64,
-      "text": "I mean no"
-     },
-     {
-      "spk": "E",
-      "t0": 8.69,
-      "t1": 10.0,
-      "text": "Yeah it weird It kind of uh …"
-     },
-     {
-      "spk": "H",
-      "t0": 8.71,
-      "t1": 9.29,
-      "text": "Yeah"
+      "text": "yeah no you don't have to buy right you have to go and claim it you just have to yeah …"
      }
     ]
    },
    {
-    "id": "icsi_Bmr016_C_2434",
-    "label": "Bmr016 @ 40:34",
-    "target": "C",
-    "note": "4 people talking at once. A, D, E and G run over C for 4 s of these ten, sitting +5 dB against C's own voice on C's microphone. Level-matched on C's speech; everything else drops 13 dB.",
-    "orig": "assets/audio/bleed/icsi_Bmr016_C_2434.orig.opus",
-    "clean": "assets/audio/bleed/icsi_Bmr016_C_2434.clean.opus",
+    "id": "dipco_S08_P26_600",
+    "label": "S08 @ 10:00",
+    "target": "P26",
+    "note": "P28 sit -7 dB against P26's own voice on P26's microphone. Level-matched on P26's speech; everything else drops 41 dB.",
+    "orig": "assets/audio/bleed/dipco_S08_P26_600.orig.opus",
+    "clean": "assets/audio/bleed/dipco_S08_P26_600.clean.opus",
     "transcript": [
      {
-      "spk": "C",
+      "spk": "P26",
       "t0": 0.0,
-      "t1": 0.66,
-      "text": "… Jane can I ask you a question What that very last one correspond to I don't even know how to pronounce that"
+      "t1": 4.73,
+      "text": "so same kind of concept i was like if only i could you know somehow do that without deteriorating my entire brain"
      },
      {
-      "spk": "E",
-      "t0": 0.0,
-      "t1": 2.78,
-      "text": "… Well yeah Now that that only occurs once and I 'm thinking of changing that"
-     },
-     {
-      "spk": "G",
-      "t0": 0.0,
-      "t1": 0.52,
-      "text": "… Yeah"
-     },
-     {
-      "spk": "G",
-      "t0": 2.18,
-      "t1": 2.62,
-      "text": "Right"
-     },
-     {
-      "spk": "E",
-      "t0": 2.85,
-      "t1": 4.55,
-      "text": "So I haven't listened to it so I don't know"
-     },
-     {
-      "spk": "C",
-      "t0": 2.89,
-      "t1": 6.72,
-      "text": "Uh is that like someone like burning or some such thing Like their hair on fire"
-     },
-     {
-      "spk": "E",
-      "t0": 5.36,
-      "t1": 8.19,
-      "text": "I haven't heard it actually I I need to listen to that one"
-     },
-     {
-      "spk": "D",
-      "t0": 7.35,
-      "t1": 7.99,
-      "text": "Ah"
-     },
-     {
-      "spk": "G",
-      "t0": 7.81,
-      "t1": 10.0,
-      "text": "Actually we we gave this to our pronunciation person she like I don't know what that is either So …"
-     },
-     {
-      "spk": "A",
-      "t0": 8.21,
-      "t1": 9.62,
-      "text": "It the Castle of Ah"
-     },
-     {
-      "spk": "C",
-      "t0": 8.41,
-      "t1": 9.22,
-      "text": "Uh it looks like that"
-     }
-    ]
-   },
-   {
-    "id": "icsi_Bmr005_D_2096",
-    "label": "Bmr005 @ 34:56",
-    "target": "D",
-    "note": "4 people talking at once. B, F and G run over D for 3 s of these ten, sitting +3 dB against D's own voice on D's microphone. Level-matched on D's speech; everything else drops 14 dB.",
-    "orig": "assets/audio/bleed/icsi_Bmr005_D_2096.orig.opus",
-    "clean": "assets/audio/bleed/icsi_Bmr005_D_2096.clean.opus",
-    "transcript": [
-     {
-      "spk": "D",
-      "t0": 0.0,
-      "t1": 0.07,
-      "text": "… It it a good eh work but eh I think we need eh eh more information"
-     },
-     {
-      "spk": "F",
-      "t0": 0.0,
-      "t1": 5.87,
-      "text": "… No of course I expect you to find more overlaps than than Jane because you 're looking at it at a much more detailed level"
-     },
-     {
-      "spk": "B",
-      "t0": 0.81,
-      "t1": 1.04,
-      "text": "Yeah"
-     },
-     {
-      "spk": "G",
-      "t0": 1.01,
-      "t1": 1.78,
-      "text": "Always need more for"
-     },
-     {
-      "spk": "D",
-      "t0": 3.2,
-      "t1": 9.36,
-      "text": "No no I I have to go to I want eh I wanted to eh compare the the transcription"
-     },
-     {
-      "spk": "B",
-      "t0": 3.38,
-      "t1": 3.66,
-      "text": "Yeah"
-     },
-     {
-      "spk": "G",
-      "t0": 8.53,
-      "t1": 9.93,
-      "text": "But if it takes sixty to one"
-     }
-    ]
-   },
-   {
-    "id": "icsi_Bmr019_E_2704",
-    "label": "Bmr019 @ 45:04",
-    "target": "E",
-    "note": "4 people talking at once. A, B and F run over E for 4 s of these ten, sitting -1 dB against E's own voice on E's microphone. Level-matched on E's speech; everything else drops 14 dB.",
-    "orig": "assets/audio/bleed/icsi_Bmr019_E_2704.orig.opus",
-    "clean": "assets/audio/bleed/icsi_Bmr019_E_2704.clean.opus",
-    "transcript": [
-     {
-      "spk": "F",
-      "t0": 0.0,
-      "t1": 1.44,
-      "text": "… Maybe you can submit the digits paper on for the Aurora session"
-     },
-     {
-      "spk": "A",
-      "t0": 0.19,
-      "t1": 0.63,
-      "text": "Yeah"
-     },
-     {
-      "spk": "E",
-      "t0": 0.8,
-      "t1": 3.74,
-      "text": "Oh I could I could submit that to Aurora That would be pretty pretty"
-     },
-     {
-      "spk": "B",
-      "t0": 0.97,
-      "t1": 1.76,
-      "text": "if it"
-     },
-     {
-      "spk": "A",
-      "t0": 1.33,
-      "t1": 1.94,
-      "text": "Yeah"
-     },
-     {
-      "spk": "F",
-      "t0": 2.54,
-      "t1": 2.95,
-      "text": "Yeah"
-     },
-     {
-      "spk": "B",
-      "t0": 2.59,
-      "t1": 3.32,
-      "text": "Well"
-     },
-     {
-      "spk": "B",
-      "t0": 3.54,
-      "t1": 4.61,
-      "text": "it has"
-     },
-     {
-      "spk": "A",
-      "t0": 4.31,
-      "t1": 4.94,
-      "text": "Yeah"
-     },
-     {
-      "spk": "E",
-      "t0": 4.33,
-      "t1": 6.3,
-      "text": "That wouldn't work It not Aurora"
-     },
-     {
-      "spk": "B",
-      "t0": 5.3,
-      "t1": 9.46,
-      "text": "No it wouldn't work It it not the Aurora I mean it it it actually the Aurora task"
-     },
-     {
-      "spk": "A",
-      "t0": 7.89,
-      "t1": 8.66,
-      "text": "Maybe they 'll get"
-     },
-     {
-      "spk": "E",
-      "t0": 8.17,
-      "t1": 9.76,
-      "text": "Aurora very specific"
-     },
-     {
-      "spk": "A",
-      "t0": 9.73,
-      "t1": 10.0,
-      "text": "Well maybe it won't be after this deadline extension Maybe they 'll …"
-     },
-     {
-      "spk": "B",
-      "t0": 9.73,
-      "t1": 9.91,
-      "text": "It"
-     }
-    ]
-   },
-   {
-    "id": "icsi_Bed013_E_1928",
-    "label": "Bed013 @ 32:08",
-    "target": "E",
-    "note": "4 people talking at once. A, B and C run over E for 3 s of these ten, sitting -5 dB against E's own voice on E's microphone. Level-matched on E's speech; everything else drops 21 dB.",
-    "orig": "assets/audio/bleed/icsi_Bed013_E_1928.orig.opus",
-    "clean": "assets/audio/bleed/icsi_Bed013_E_1928.clean.opus",
-    "transcript": [
-     {
-      "spk": "A",
-      "t0": 0.18,
-      "t1": 0.97,
-      "text": "You guys are too young"
-     },
-     {
-      "spk": "E",
-      "t0": 0.27,
-      "t1": 4.21,
-      "text": "You know like Sussudio that horrible horrible song that should never have been created"
-     },
-     {
-      "spk": "A",
-      "t0": 1.49,
-      "t1": 2.51,
-      "text": "Yeah come on"
-     },
-     {
-      "spk": "B",
-      "t0": 2.2,
-      "t1": 3.34,
-      "text": "Oh oh oh oh"
-     },
-     {
-      "spk": "A",
-      "t0": 3.14,
-      "t1": 4.26,
-      "text": "I know that was horrible"
-     },
-     {
-      "spk": "B",
-      "t0": 4.52,
-      "t1": 6.96,
-      "text": "I 've blocked every aspect of Phil Collins out of my mind"
-     },
-     {
-      "spk": "A",
-      "t0": 4.7,
-      "t1": 5.98,
-      "text": "Sussudio"
-     },
-     {
-      "spk": "C",
-      "t0": 5.29,
-      "t1": 5.87,
-      "text": "What"
-     },
-     {
-      "spk": "A",
-      "t0": 6.52,
-      "t1": 7.88,
-      "text": "I 'm sorry I haven't"
-     },
-     {
-      "spk": "A",
-      "t0": 8.59,
-      "t1": 9.3,
-      "text": "Not on purpose"
-     },
-     {
-      "spk": "E",
-      "t0": 9.58,
-      "t1": 9.98,
-      "text": "in here"
+      "spk": "P28",
+      "t0": 4.4,
+      "t1": 8.22,
+      "text": "ummm hmmm and the endings are very different though"
      }
     ]
    }
@@ -879,171 +396,600 @@
   ]
  },
  {
-  "id": "dipco",
-  "name": "DiPCo",
-  "domain": "dinner-table conversations · close-talk mics",
+  "id": "ami",
+  "name": "AMI",
+  "domain": "4-person design meetings · headset mics",
   "samples": [
    {
-    "id": "dipco_S01_P04_2566",
-    "label": "S01 @ 42:46",
-    "target": "P04",
-    "note": "P01 and P02 sit +6 dB against P04's own voice on P04's microphone. Level-matched on P04's speech; everything else drops 43 dB.",
-    "orig": "assets/audio/bleed/dipco_S01_P04_2566.orig.opus",
-    "clean": "assets/audio/bleed/dipco_S01_P04_2566.clean.opus",
+    "id": "ami_ES2005c_C_629",
+    "label": "ES2005c @ 10:29",
+    "target": "C",
+    "note": "3 people talking at once. A and D run over C for 4 s of these ten, sitting +26 dB against C's own voice on C's microphone. Level-matched on C's speech; everything else drops 33 dB.",
+    "orig": "assets/audio/bleed/ami_ES2005c_C_629.orig.opus",
+    "clean": "assets/audio/bleed/ami_ES2005c_C_629.clean.opus",
     "transcript": [
      {
-      "spk": "P02",
+      "spk": "C",
       "t0": 0.0,
-      "t1": 1.92,
-      "text": "… yeah you you kind of cut yourself off from everything kind of live i was i don't know i was watching a documentary on netflix about unabomber and the way he used to live somewhere in washington i don't know if you guys have heard ummm yeah he was sending like uhhh mail ummm letters with some bomb to different people random people and people couldn't figure out what the heck who's this person and they were just thinking that this guy is some some person who has uhhh like he's mentally ill or something like that when they finally found him after a lot of research i think the way they figured out they basically built a new study technique within f. b. i. wherein they were looking at the writing style to identify who could this person be and they figured out this guy is a p. h. d. from nineteen sixties their whole profiling was all wrong till that time there was someone from stanford who helped and all that and then you figure out and then those photographs show that this guy was living in some cabin somewhere so far away with no running water nothing no electricity completely cut off and he was like this whole world is going to the the dogs you you basically have all this connected things which is not what you want mach- you are going to become so it's machines and all this like he had that philosophy and that's what he was trying to propagate but i feel like sure that's too extreme but at some point of time you want that few days where you're not connected to your phone not connected to your uhhh a device right so most of the time when young like ahhh this is peaceful bliss like you have no connection no you're like you're on your own"
+      "t1": 0.87,
+      "text": "… Yeah I mean is that not sort of to assist the blind or something is it"
      },
      {
-      "spk": "P04",
-      "t0": 2.0,
-      "t1": 5.86,
-      "text": "yeah the only thing that you need to remember to a g. p. s."
+      "spk": "D",
+      "t0": 0.8,
+      "t1": 4.0,
+      "text": "I guess so I don't know I think that's a bit"
      },
      {
-      "spk": "P02",
-      "t0": 5.65,
+      "spk": "C",
+      "t0": 3.16,
+      "t1": 4.6,
+      "text": "Strange"
+     },
+     {
+      "spk": "A",
+      "t0": 3.25,
+      "t1": 9.82,
+      "text": "Then d blind don't watch T_V_ They do"
+     },
+     {
+      "spk": "D",
+      "t0": 6.11,
       "t1": 10.0,
-      "text": "i know you're going to get lost you're going to get lost otherwise that's true too yeah …"
+      "text": "Yeah exactly Yeah And um this one is just pointing out I like some of these things um the the raised symbols and everything but pointing out um that this one the volume it is kind of pressing down but it would actually go up because of the shape So that could that's a bit confusing Um but the buttons on this I think are it's just showing you how you can have different different um buttons They don't have to be all the same So that's quite cool Um …"
      },
      {
-      "spk": "P01",
-      "t0": 6.27,
-      "t1": 8.34,
-      "text": "yes"
+      "spk": "C",
+      "t0": 6.31,
+      "t1": 9.0,
+      "text": "No they do they do They listen to it Yeah"
      }
     ]
    },
    {
-    "id": "dipco_S03_P10_2784",
-    "label": "S03 @ 46:24",
-    "target": "P10",
-    "note": "P09, P11 and P12 sit +3 dB against P10's own voice on P10's microphone. Level-matched on P10's speech; everything else drops 57 dB.",
-    "orig": "assets/audio/bleed/dipco_S03_P10_2784.orig.opus",
-    "clean": "assets/audio/bleed/dipco_S03_P10_2784.clean.opus",
+    "id": "ami_ES2015d_C_963",
+    "label": "ES2015d @ 16:03",
+    "target": "C",
+    "note": "4 people talking at once. A, B and D run over C for 7 s of these ten, sitting +9 dB against C's own voice on C's microphone. Level-matched on C's speech; everything else drops 43 dB.",
+    "orig": "assets/audio/bleed/ami_ES2015d_C_963.orig.opus",
+    "clean": "assets/audio/bleed/ami_ES2015d_C_963.clean.opus",
     "transcript": [
      {
-      "spk": "P09",
+      "spk": "C",
+      "t0": 0.0,
+      "t1": 3.49,
+      "text": "… And the kinetic energy part Yeah Don't shake"
+     },
+     {
+      "spk": "A",
+      "t0": 0.0,
+      "t1": 2.74,
+      "text": "… Durable"
+     },
+     {
+      "spk": "D",
+      "t0": 0.0,
+      "t1": 4.54,
+      "text": "… Shake it and the buttons fall off"
+     },
+     {
+      "spk": "B",
+      "t0": 1.88,
+      "t1": 4.75,
+      "text": "But you know those'll be firmly on"
+     },
+     {
+      "spk": "C",
+      "t0": 4.84,
+      "t1": 10.0,
+      "text": "Oh no the plus You're use the zero Make a new one"
+     },
+     {
+      "spk": "D",
+      "t0": 6.91,
+      "t1": 10.0,
+      "text": "No I guess I don't know much about the remote control industry how much your average sells for but I know I am aren't I …"
+     }
+    ]
+   },
+   {
+    "id": "ami_EN2004a_B_2470",
+    "label": "EN2004a @ 41:10",
+    "target": "B",
+    "note": "3 people talking at once. A and C run over B for 4 s of these ten, sitting +9 dB against B's own voice on B's microphone. Level-matched on B's speech; everything else drops 14 dB.",
+    "orig": "assets/audio/bleed/ami_EN2004a_B_2470.orig.opus",
+    "clean": "assets/audio/bleed/ami_EN2004a_B_2470.clean.opus",
+    "transcript": [
+     {
+      "spk": "C",
+      "t0": 0.0,
+      "t1": 3.28,
+      "text": "… Yeah Yeah 'cause I have there is one dialogue where I think two speakers are French like one is definitely French and I know she is saying and then somebody s saying something to her and she goes comment and then you know you know that so yeah"
+     },
+     {
+      "spk": "B",
+      "t0": 0.26,
+      "t1": 8.19,
+      "text": "Yeah Yeah yeah If you if you're confident that you've got a fair grasp on French for example why not"
+     },
+     {
+      "spk": "A",
+      "t0": 7.19,
+      "t1": 10.0,
+      "text": "And not accidentally translating in the process …"
+     },
+     {
+      "spk": "C",
+      "t0": 7.21,
+      "t1": 9.87,
+      "text": "Oh not really but on comment yeah"
+     }
+    ]
+   },
+   {
+    "id": "ami_IS1006a_A_702",
+    "label": "IS1006a @ 11:42",
+    "target": "A",
+    "note": "4 people talking at once. B, C and D run over A for 5 s of these ten, sitting +8 dB against A's own voice on A's microphone. Level-matched on A's speech; everything else drops 17 dB.",
+    "orig": "assets/audio/bleed/ami_IS1006a_A_702.orig.opus",
+    "clean": "assets/audio/bleed/ami_IS1006a_A_702.clean.opus",
+    "transcript": [
+     {
+      "spk": "A",
       "t0": 0.0,
       "t1": 2.42,
-      "text": "… yeah no i definitely tried screen time in home as well like after yeah after dinner i mean maybe one or two episodes maybe but then yeah taking breaks after that"
+      "text": "… Yeah I change channel like this m uh I want to go to twenty five and then to ten uh-huh mm yeah"
      },
      {
-      "spk": "P10",
-      "t0": 2.0,
-      "t1": 7.19,
-      "text": "how about after like fridays you you won't follow that right"
+      "spk": "D",
+      "t0": 0.96,
+      "t1": 5.11,
+      "text": "And then back to the one I was before so there's whichever it was"
      },
      {
-      "spk": "P11",
-      "t0": 6.63,
+      "spk": "A",
+      "t0": 3.24,
+      "t1": 6.13,
+      "text": "Also we can be here yeah that would be cool"
+     },
+     {
+      "spk": "B",
+      "t0": 4.26,
+      "t1": 8.43,
+      "text": "Uh-huh Go back button is good I once had it"
+     },
+     {
+      "spk": "C",
+      "t0": 4.41,
+      "t1": 5.19,
+      "text": "Yeah you can yeah"
+     },
+     {
+      "spk": "C",
+      "t0": 5.96,
+      "t1": 6.15,
+      "text": "Yeah"
+     },
+     {
+      "spk": "D",
+      "t0": 6.21,
       "t1": 10.0,
-      "text": "fridays i go out yeah yeah …"
+      "text": "Yeah Uh uh we had that in in other countries Yeah e even the history so you could like uh undo previous of the previous …"
      },
      {
-      "spk": "P12",
-      "t0": 7.17,
+      "spk": "C",
+      "t0": 7.96,
       "t1": 10.0,
-      "text": "oh the weekend i go out that's true the weekend i go out cause …"
+      "text": "Yeah yeah the previous button is …"
      },
      {
-      "spk": "P09",
-      "t0": 7.74,
+      "spk": "A",
+      "t0": 9.41,
       "t1": 10.0,
-      "text": "yeah yeah same thing with me yeah i'm out usually …"
+      "text": "Mm yeah …"
      }
     ]
    },
    {
-    "id": "dipco_S04_P16_719",
-    "label": "S04 @ 11:59",
-    "target": "P16",
-    "note": "P13, P14 and P15 sit -1 dB against P16's own voice on P16's microphone. Level-matched on P16's speech; everything else drops 51 dB.",
-    "orig": "assets/audio/bleed/dipco_S04_P16_719.orig.opus",
-    "clean": "assets/audio/bleed/dipco_S04_P16_719.clean.opus",
+    "id": "ami_ES2002b_A_1409",
+    "label": "ES2002b @ 23:29",
+    "target": "A",
+    "note": "3 people talking at once. B and C run over A for 3 s of these ten, sitting +8 dB against A's own voice on A's microphone. Level-matched on A's speech; everything else drops 13 dB.",
+    "orig": "assets/audio/bleed/ami_ES2002b_A_1409.orig.opus",
+    "clean": "assets/audio/bleed/ami_ES2002b_A_1409.clean.opus",
     "transcript": [
      {
-      "spk": "P15",
-      "t0": 0.0,
-      "t1": 1.49,
-      "text": "… and they're like used you sneaked up to the front because it was all empty that was great"
-     },
-     {
-      "spk": "P16",
-      "t0": 2.0,
-      "t1": 8.4,
-      "text": "so it got busier you know just like the more they started to win the more expensive the tickets got"
-     },
-     {
-      "spk": "P15",
-      "t0": 5.56,
-      "t1": 6.97,
-      "text": "oh yeah hmmm hmmm"
-     },
-     {
-      "spk": "P14",
-      "t0": 6.44,
-      "t1": 7.49,
-      "text": "hmmm hmmm"
-     },
-     {
-      "spk": "P13",
-      "t0": 6.85,
-      "t1": 10.0,
-      "text": "oh yeah and they are they are now very good …"
-     }
-    ]
-   },
-   {
-    "id": "dipco_S06_P22_437",
-    "label": "S06 @ 7:17",
-    "target": "P22",
-    "note": "P21 and P24 sit -5 dB against P22's own voice on P22's microphone. Level-matched on P22's speech; everything else drops 36 dB.",
-    "orig": "assets/audio/bleed/dipco_S06_P22_437.orig.opus",
-    "clean": "assets/audio/bleed/dipco_S06_P22_437.clean.opus",
-    "transcript": [
-     {
-      "spk": "P21",
-      "t0": 0.0,
-      "t1": 1.34,
-      "text": "… nothing weird just a late twenties male disneyland by himself it's normal right yeah"
-     },
-     {
-      "spk": "P22",
-      "t0": 2.0,
-      "t1": 7.92,
-      "text": "and and you have a a option to buy the fastpass right uhhh huh"
-     },
-     {
-      "spk": "P24",
-      "t0": 6.7,
-      "t1": 10.0,
-      "text": "yeah no you don't have to buy right you have to go and claim it you just have to yeah …"
-     }
-    ]
-   },
-   {
-    "id": "dipco_S08_P26_600",
-    "label": "S08 @ 10:00",
-    "target": "P26",
-    "note": "P28 sit -7 dB against P26's own voice on P26's microphone. Level-matched on P26's speech; everything else drops 41 dB.",
-    "orig": "assets/audio/bleed/dipco_S08_P26_600.orig.opus",
-    "clean": "assets/audio/bleed/dipco_S08_P26_600.clean.opus",
-    "transcript": [
-     {
-      "spk": "P26",
+      "spk": "B",
       "t0": 0.0,
       "t1": 4.73,
-      "text": "so same kind of concept i was like if only i could you know somehow do that without deteriorating my entire brain"
+      "text": "… Do you think maybe we need like further advances in that kind of area until it's worthwhile incorporating it though"
      },
      {
-      "spk": "P28",
-      "t0": 4.4,
-      "t1": 8.22,
-      "text": "ummm hmmm and the endings are very different though"
+      "spk": "C",
+      "t0": 0.5,
+      "t1": 1.35,
+      "text": "Um"
+     },
+     {
+      "spk": "C",
+      "t0": 3.98,
+      "t1": 6.61,
+      "text": "I think it'd probably quite expensive to put in"
+     },
+     {
+      "spk": "A",
+      "t0": 5.22,
+      "t1": 7.47,
+      "text": "Sorry do you mind passing me my notepad Thanks"
+     },
+     {
+      "spk": "B",
+      "t0": 5.88,
+      "t1": 9.19,
+      "text": "Mm Course not There you go"
+     },
+     {
+      "spk": "A",
+      "t0": 8.41,
+      "t1": 10.0,
+      "text": "Cool um Okay Um Well this is just the working design um Well this is just what how I would go about it Um I guess I try to define like what we're doing now try to define what we're trying to get done Um I think in a practical way we kind of know what it is We've used it we're familiar with it but we're we can't n we haven't narrowed down um exactly what the things we're trying to fulfil like Besides the basics I think back in the back of our minds we know what the basics are Has to change channels has to change volume but in like specifics right which one of the basics are you trying to target Um are there certain parts of the basics that are more important or less important than the basics Um and I just the idea is just to get everybody to um I usually have a have have a design that's there as a basic so you know things that to start everything going But I guess everybody does have some idea so I don't think um there's a need for that …"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "icsi",
+  "name": "ICSI",
+  "domain": "research group meetings · headset mics",
+  "samples": [
+   {
+    "id": "icsi_Bmr016_C_2434",
+    "label": "Bmr016 @ 40:34",
+    "target": "C",
+    "note": "4 people talking at once. A, D, E and G run over C for 4 s of these ten, sitting +5 dB against C's own voice on C's microphone. Level-matched on C's speech; everything else drops 30 dB.",
+    "orig": "assets/audio/bleed/icsi_Bmr016_C_2434.orig.opus",
+    "clean": "assets/audio/bleed/icsi_Bmr016_C_2434.clean.opus",
+    "transcript": [
+     {
+      "spk": "C",
+      "t0": 0.0,
+      "t1": 0.66,
+      "text": "… Jane can I ask you a question What that very last one correspond to I don't even know how to pronounce that"
+     },
+     {
+      "spk": "E",
+      "t0": 0.0,
+      "t1": 2.78,
+      "text": "… Well yeah Now that that only occurs once and I 'm thinking of changing that"
+     },
+     {
+      "spk": "G",
+      "t0": 0.0,
+      "t1": 0.52,
+      "text": "… Yeah"
+     },
+     {
+      "spk": "G",
+      "t0": 2.18,
+      "t1": 2.62,
+      "text": "Right"
+     },
+     {
+      "spk": "E",
+      "t0": 2.85,
+      "t1": 4.55,
+      "text": "So I haven't listened to it so I don't know"
+     },
+     {
+      "spk": "C",
+      "t0": 2.89,
+      "t1": 6.72,
+      "text": "Uh is that like someone like burning or some such thing Like their hair on fire"
+     },
+     {
+      "spk": "E",
+      "t0": 5.36,
+      "t1": 8.19,
+      "text": "I haven't heard it actually I I need to listen to that one"
+     },
+     {
+      "spk": "D",
+      "t0": 7.35,
+      "t1": 7.99,
+      "text": "Ah"
+     },
+     {
+      "spk": "C",
+      "t0": 7.37,
+      "t1": 9.22,
+      "text": "Uh it looks like that"
+     },
+     {
+      "spk": "G",
+      "t0": 7.54,
+      "t1": 10.0,
+      "text": "Actually we we gave this to our pronunciation person she like I don't know what that is either So …"
+     },
+     {
+      "spk": "A",
+      "t0": 8.21,
+      "t1": 9.62,
+      "text": "It the Castle of Ah"
+     }
+    ]
+   },
+   {
+    "id": "icsi_Bsr001_D_335",
+    "label": "Bsr001 @ 5:35",
+    "target": "D",
+    "note": "6 people talking at once. A, C, E, F, G and H run over D for 3 s of these ten, sitting +4 dB against D's own voice on D's microphone. Level-matched on D's speech; everything else drops 48 dB.",
+    "orig": "assets/audio/bleed/icsi_Bsr001_D_335.orig.opus",
+    "clean": "assets/audio/bleed/icsi_Bsr001_D_335.clean.opus",
+    "transcript": [
+     {
+      "spk": "F",
+      "t0": 0.0,
+      "t1": 0.87,
+      "text": "… Because I find this one doesn't bother me at all"
+     },
+     {
+      "spk": "G",
+      "t0": 0.0,
+      "t1": 1.7,
+      "text": "… Because I actually think it sort of makes everybody act a little more professional"
+     },
+     {
+      "spk": "D",
+      "t0": 2.29,
+      "t1": 7.76,
+      "text": "I didn't know that you could whistle that You 're a very soft whistler you 're mostly able to do that without much air at all aren't you"
+     },
+     {
+      "spk": "A",
+      "t0": 3.16,
+      "t1": 3.92,
+      "text": "OK"
+     },
+     {
+      "spk": "C",
+      "t0": 5.2,
+      "t1": 9.68,
+      "text": "Actually I use something like this on on the telephone and it very comfortable"
+     },
+     {
+      "spk": "G",
+      "t0": 5.25,
+      "t1": 5.7,
+      "text": "Yeah"
+     },
+     {
+      "spk": "A",
+      "t0": 5.54,
+      "t1": 6.91,
+      "text": "I uh"
+     },
+     {
+      "spk": "A",
+      "t0": 5.72,
+      "t1": 7.06,
+      "text": "I uh"
+     },
+     {
+      "spk": "F",
+      "t0": 5.81,
+      "t1": 6.16,
+      "text": "I think you forget pretty quick"
+     },
+     {
+      "spk": "E",
+      "t0": 7.04,
+      "t1": 10.0,
+      "text": "Yeah it weird It kind of uh …"
+     },
+     {
+      "spk": "G",
+      "t0": 7.1,
+      "t1": 10.0,
+      "text": "Your telephone and people use it for cell phones and …"
+     },
+     {
+      "spk": "A",
+      "t0": 8.14,
+      "t1": 9.37,
+      "text": "I mean no"
+     },
+     {
+      "spk": "A",
+      "t0": 8.15,
+      "t1": 9.64,
+      "text": "I mean no"
+     },
+     {
+      "spk": "H",
+      "t0": 8.71,
+      "t1": 9.29,
+      "text": "Yeah"
+     }
+    ]
+   },
+   {
+    "id": "icsi_Bmr007_B_1773",
+    "label": "Bmr007 @ 29:33",
+    "target": "B",
+    "note": "3 people talking at once. D, G and H run over B for 3 s of these ten, sitting +3 dB against B's own voice on B's microphone. Level-matched on B's speech; everything else drops 28 dB.",
+    "orig": "assets/audio/bleed/icsi_Bmr007_B_1773.orig.opus",
+    "clean": "assets/audio/bleed/icsi_Bmr007_B_1773.clean.opus",
+    "transcript": [
+     {
+      "spk": "G",
+      "t0": 0.12,
+      "t1": 1.03,
+      "text": "So um"
+     },
+     {
+      "spk": "B",
+      "t0": 0.74,
+      "t1": 1.97,
+      "text": "Can we actually record"
+     },
+     {
+      "spk": "H",
+      "t0": 1.15,
+      "t1": 4.2,
+      "text": "It just seems like that a very different thing than what we 're doing"
+     },
+     {
+      "spk": "D",
+      "t0": 2.88,
+      "t1": 3.42,
+      "text": "Uh"
+     },
+     {
+      "spk": "B",
+      "t0": 3.77,
+      "t1": 6.77,
+      "text": "I mean physically can we record the the other"
+     },
+     {
+      "spk": "D",
+      "t0": 4.13,
+      "t1": 5.35,
+      "text": "Well we 'll have to set up for it"
+     },
+     {
+      "spk": "D",
+      "t0": 5.46,
+      "t1": 5.84,
+      "text": "Yeah"
+     },
+     {
+      "spk": "D",
+      "t0": 6.78,
+      "t1": 7.98,
+      "text": "Well we 're not really set up for it"
+     },
+     {
+      "spk": "D",
+      "t0": 7.98,
+      "t1": 8.83,
+      "text": "to do that"
+     },
+     {
+      "spk": "D",
+      "t0": 8.96,
+      "t1": 9.14,
+      "text": "But"
+     },
+     {
+      "spk": "G",
+      "t0": 9.2,
+      "t1": 9.62,
+      "text": "Or"
+     }
+    ]
+   },
+   {
+    "id": "icsi_Bmr005_D_2096",
+    "label": "Bmr005 @ 34:56",
+    "target": "D",
+    "note": "4 people talking at once. B, F and G run over D for 3 s of these ten, sitting +3 dB against D's own voice on D's microphone. Level-matched on D's speech; everything else drops 14 dB.",
+    "orig": "assets/audio/bleed/icsi_Bmr005_D_2096.orig.opus",
+    "clean": "assets/audio/bleed/icsi_Bmr005_D_2096.clean.opus",
+    "transcript": [
+     {
+      "spk": "D",
+      "t0": 0.0,
+      "t1": 0.07,
+      "text": "… It it a good eh work but eh I think we need eh eh more information"
+     },
+     {
+      "spk": "F",
+      "t0": 0.0,
+      "t1": 5.87,
+      "text": "… No of course I expect you to find more overlaps than than Jane because you 're looking at it at a much more detailed level"
+     },
+     {
+      "spk": "B",
+      "t0": 0.81,
+      "t1": 1.04,
+      "text": "Yeah"
+     },
+     {
+      "spk": "G",
+      "t0": 1.01,
+      "t1": 2.09,
+      "text": "Always need more for"
+     },
+     {
+      "spk": "D",
+      "t0": 3.2,
+      "t1": 9.36,
+      "text": "No no I I have to go to I want eh I wanted to eh compare the the transcription"
+     },
+     {
+      "spk": "B",
+      "t0": 3.38,
+      "t1": 3.66,
+      "text": "Yeah"
+     },
+     {
+      "spk": "G",
+      "t0": 8.53,
+      "t1": 10.0,
+      "text": "But if it takes sixty to one …"
+     }
+    ]
+   },
+   {
+    "id": "icsi_Bed006_G_2825",
+    "label": "Bed006 @ 47:05",
+    "target": "G",
+    "note": "2 people talking at once. C and E run over G for 3 s of these ten, sitting -4 dB against G's own voice on G's microphone. Level-matched on G's speech; everything else drops 39 dB.",
+    "orig": "assets/audio/bleed/icsi_Bed006_G_2825.orig.opus",
+    "clean": "assets/audio/bleed/icsi_Bed006_G_2825.clean.opus",
+    "transcript": [
+     {
+      "spk": "C",
+      "t0": 0.0,
+      "t1": 2.82,
+      "text": "… Um and I agree that you know this is something we need to discuss yeah"
+     },
+     {
+      "spk": "G",
+      "t0": 0.37,
+      "t1": 2.66,
+      "text": "in fact what you could say is for Enter"
+     },
+     {
+      "spk": "G",
+      "t0": 2.89,
+      "t1": 5.55,
+      "text": "you could say here list all the kinds of schemas that"
+     },
+     {
+      "spk": "G",
+      "t0": 5.6,
+      "t1": 6.75,
+      "text": "on the category that"
+     },
+     {
+      "spk": "E",
+      "t0": 6.65,
+      "t1": 8.2,
+      "text": "List all the parent categories"
+     },
+     {
+      "spk": "G",
+      "t0": 6.83,
+      "t1": 9.12,
+      "text": "you know list all the parent categories It just like"
+     },
+     {
+      "spk": "G",
+      "t0": 9.12,
+      "t1": 10.0,
+      "text": "a frame hierarchy right like you have these blended frames So you would say enter and you 'd say my parent …"
      }
     ]
    }
