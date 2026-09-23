@@ -10,7 +10,6 @@
     "target": "P04",
     "note": "P01 and P02 sit +6 dB against P04's own voice on P04's microphone. Level-matched on P04's speech; everything else drops 25 dB.",
     "orig": "assets/audio/bleed/dipco_S01_P04_2566.orig.opus",
-    "sep": "assets/audio/bleed/dipco_S01_P04_2566.sep.opus",
     "clean": "assets/audio/bleed/dipco_S01_P04_2566.clean.opus",
     "transcript": [
      {
@@ -45,7 +44,6 @@
     "target": "P10",
     "note": "P09, P11 and P12 sit +3 dB against P10's own voice on P10's microphone. Level-matched on P10's speech; everything else drops 47 dB.",
     "orig": "assets/audio/bleed/dipco_S03_P10_2784.orig.opus",
-    "sep": "assets/audio/bleed/dipco_S03_P10_2784.sep.opus",
     "clean": "assets/audio/bleed/dipco_S03_P10_2784.clean.opus",
     "transcript": [
      {
@@ -86,7 +84,6 @@
     "target": "P16",
     "note": "P13, P14 and P15 sit -1 dB against P16's own voice on P16's microphone. Level-matched on P16's speech; everything else drops 32 dB.",
     "orig": "assets/audio/bleed/dipco_S04_P16_719.orig.opus",
-    "sep": "assets/audio/bleed/dipco_S04_P16_719.sep.opus",
     "clean": "assets/audio/bleed/dipco_S04_P16_719.clean.opus",
     "transcript": [
      {
@@ -127,7 +124,6 @@
     "target": "P22",
     "note": "P21 and P24 sit -5 dB against P22's own voice on P22's microphone. Level-matched on P22's speech; everything else drops 13 dB.",
     "orig": "assets/audio/bleed/dipco_S06_P22_437.orig.opus",
-    "sep": "assets/audio/bleed/dipco_S06_P22_437.sep.opus",
     "clean": "assets/audio/bleed/dipco_S06_P22_437.clean.opus",
     "transcript": [
      {
@@ -156,7 +152,6 @@
     "target": "P26",
     "note": "P28 sit -7 dB against P26's own voice on P26's microphone. Level-matched on P26's speech; everything else drops 29 dB.",
     "orig": "assets/audio/bleed/dipco_S08_P26_600.orig.opus",
-    "sep": "assets/audio/bleed/dipco_S08_P26_600.sep.opus",
     "clean": "assets/audio/bleed/dipco_S08_P26_600.clean.opus",
     "transcript": [
      {
@@ -186,7 +181,6 @@
     "target": "P52",
     "note": "P49 and P50 sit +4 dB against P52's own voice on P52's microphone. Level-matched on P52's speech; everything else drops 51 dB.",
     "orig": "assets/audio/bleed/chime6_S19_P52_3907.orig.opus",
-    "sep": "assets/audio/bleed/chime6_S19_P52_3907.sep.opus",
     "clean": "assets/audio/bleed/chime6_S19_P52_3907.clean.opus",
     "transcript": [
      {
@@ -221,7 +215,6 @@
     "target": "P49",
     "note": "P50 and P51 sit -2 dB against P49's own voice on P49's microphone. Level-matched on P49's speech; everything else drops 30 dB.",
     "orig": "assets/audio/bleed/chime6_S20_P49_669.orig.opus",
-    "sep": "assets/audio/bleed/chime6_S20_P49_669.sep.opus",
     "clean": "assets/audio/bleed/chime6_S20_P49_669.clean.opus",
     "transcript": [
      {
@@ -262,7 +255,6 @@
     "target": "P05",
     "note": "P06 and P08 sit +4 dB against P05's own voice on P05's microphone. Level-matched on P05's speech; everything else drops 31 dB.",
     "orig": "assets/audio/bleed/chime6_S02_P05_4400.orig.opus",
-    "sep": "assets/audio/bleed/chime6_S02_P05_4400.sep.opus",
     "clean": "assets/audio/bleed/chime6_S02_P05_4400.clean.opus",
     "transcript": [
      {
@@ -309,7 +301,6 @@
     "target": "P01",
     "note": "P03 and P04 sit +1 dB against P01's own voice on P01's microphone. Level-matched on P01's speech; everything else drops 17 dB.",
     "orig": "assets/audio/bleed/chime6_S01_P01_3259.orig.opus",
-    "sep": "assets/audio/bleed/chime6_S01_P01_3259.sep.opus",
     "clean": "assets/audio/bleed/chime6_S01_P01_3259.clean.opus",
     "transcript": [
      {
@@ -362,7 +353,6 @@
     "target": "P50",
     "note": "P49 and P52 sit -3 dB against P50's own voice on P50's microphone. Level-matched on P50's speech; everything else drops 23 dB.",
     "orig": "assets/audio/bleed/chime6_S20_P50_1710.orig.opus",
-    "sep": "assets/audio/bleed/chime6_S20_P50_1710.sep.opus",
     "clean": "assets/audio/bleed/chime6_S20_P50_1710.clean.opus",
     "transcript": [
      {
@@ -411,243 +401,232 @@
   "domain": "4-person design meetings · headset mics",
   "samples": [
    {
-    "id": "ami_ES2005c_C_629",
-    "label": "ES2005c @ 10:29",
-    "target": "C",
-    "note": "3 people talking at once. A and D run over C for 4 s of these ten, sitting +26 dB against C's own voice on C's microphone. Level-matched on C's speech; everything else drops 32 dB.",
-    "orig": "assets/audio/bleed/ami_ES2005c_C_629.orig.opus",
-    "sep": "assets/audio/bleed/ami_ES2005c_C_629.sep.opus",
-    "clean": "assets/audio/bleed/ami_ES2005c_C_629.clean.opus",
-    "transcript": [
-     {
-      "spk": "C",
-      "t0": 0.0,
-      "t1": 0.87,
-      "text": "… Yeah I mean is that not sort of to assist the blind or something is it"
-     },
-     {
-      "spk": "D",
-      "t0": 0.8,
-      "t1": 4.0,
-      "text": "I guess so I don't know I think that's a bit"
-     },
-     {
-      "spk": "C",
-      "t0": 3.16,
-      "t1": 4.6,
-      "text": "Strange"
-     },
-     {
-      "spk": "A",
-      "t0": 3.25,
-      "t1": 9.82,
-      "text": "Then d blind don't watch T_V_ They do"
-     },
-     {
-      "spk": "D",
-      "t0": 6.11,
-      "t1": 10.0,
-      "text": "Yeah exactly Yeah And um this one is just pointing out I like some of these things um the the raised symbols and everything but pointing out um that this one the volume it is kind of pressing down but it would actually go up because of the shape So that could that's a bit confusing Um but the buttons on this I think are it's just showing you how you can have different different um buttons They don't have to be all the same So that's quite cool Um …"
-     },
-     {
-      "spk": "C",
-      "t0": 6.31,
-      "t1": 9.0,
-      "text": "No they do they do They listen to it Yeah"
-     }
-    ]
-   },
-   {
-    "id": "ami_ES2015d_C_963",
-    "label": "ES2015d @ 16:03",
-    "target": "C",
-    "note": "4 people talking at once. A, B and D run over C for 7 s of these ten, sitting +9 dB against C's own voice on C's microphone. Level-matched on C's speech; everything else drops 43 dB.",
-    "orig": "assets/audio/bleed/ami_ES2015d_C_963.orig.opus",
-    "sep": "assets/audio/bleed/ami_ES2015d_C_963.sep.opus",
-    "clean": "assets/audio/bleed/ami_ES2015d_C_963.clean.opus",
-    "transcript": [
-     {
-      "spk": "C",
-      "t0": 0.0,
-      "t1": 3.49,
-      "text": "… And the kinetic energy part Yeah Don't shake"
-     },
-     {
-      "spk": "A",
-      "t0": 0.0,
-      "t1": 2.74,
-      "text": "… Durable"
-     },
-     {
-      "spk": "D",
-      "t0": 0.0,
-      "t1": 4.54,
-      "text": "… Shake it and the buttons fall off"
-     },
-     {
-      "spk": "B",
-      "t0": 1.88,
-      "t1": 4.75,
-      "text": "But you know those'll be firmly on"
-     },
-     {
-      "spk": "C",
-      "t0": 4.84,
-      "t1": 10.0,
-      "text": "Oh no the plus You're use the zero Make a new one"
-     },
-     {
-      "spk": "D",
-      "t0": 6.91,
-      "t1": 10.0,
-      "text": "No I guess I don't know much about the remote control industry how much your average sells for but I know I am aren't I …"
-     }
-    ]
-   },
-   {
-    "id": "ami_EN2004a_B_2470",
-    "label": "EN2004a @ 41:10",
+    "id": "ami_ES2008d_B_2504",
+    "label": "ES2008d @ 41:44",
     "target": "B",
-    "note": "3 people talking at once. A and C run over B for 4 s of these ten, sitting +9 dB against B's own voice on B's microphone. Level-matched on B's speech; everything else drops 14 dB.",
-    "orig": "assets/audio/bleed/ami_EN2004a_B_2470.orig.opus",
-    "sep": "assets/audio/bleed/ami_EN2004a_B_2470.sep.opus",
-    "clean": "assets/audio/bleed/ami_EN2004a_B_2470.clean.opus",
+    "note": "3 people talking at once. A and D run over B for 3 s of these ten, sitting +10 dB against B's own voice on B's microphone. Level-matched on B's speech; everything else drops 45 dB.",
+    "orig": "assets/audio/bleed/ami_ES2008d_B_2504.orig.opus",
+    "clean": "assets/audio/bleed/ami_ES2008d_B_2504.clean.opus",
     "transcript": [
      {
-      "spk": "C",
-      "t0": 0.0,
-      "t1": 3.28,
-      "text": "… Yeah Yeah 'cause I have there is one dialogue where I think two speakers are French like one is definitely French and I know she is saying and then somebody s saying something to her and she goes comment and then you know you know that so yeah"
-     },
-     {
       "spk": "B",
-      "t0": 0.26,
-      "t1": 8.19,
-      "text": "Yeah Yeah yeah If you if you're confident that you've got a fair grasp on French for example why not"
+      "t0": 0.0,
+      "t1": 0.13,
+      "text": "… No no definitely not"
      },
      {
       "spk": "A",
-      "t0": 7.19,
-      "t1": 10.0,
-      "text": "And not accidentally translating in the process …"
+      "t0": 0.0,
+      "t1": 0.01,
+      "text": "… The slogan on it No no no"
      },
      {
-      "spk": "C",
-      "t0": 7.21,
-      "t1": 9.87,
-      "text": "Oh not really but on comment yeah"
+      "spk": "D",
+      "t0": 0.0,
+      "t1": 0.24,
+      "text": "… Okay good"
+     },
+     {
+      "spk": "B",
+      "t0": 1.37,
+      "t1": 1.53,
+      "text": "We"
+     },
+     {
+      "spk": "D",
+      "t0": 1.46,
+      "t1": 4.78,
+      "text": "'Cause I was like it could go around the outside"
+     },
+     {
+      "spk": "B",
+      "t0": 4.3,
+      "t1": 9.53,
+      "text": "No I don't think we need to I think the R_ and R_ especially if the yellow and black one"
+     },
+     {
+      "spk": "A",
+      "t0": 5.54,
+      "t1": 7.93,
+      "text": "I think we just need the um the R_R_ yeah"
      }
     ]
    },
    {
-    "id": "ami_IS1006a_A_702",
-    "label": "IS1006a @ 11:42",
+    "id": "ami_IS1000a_A_698",
+    "label": "IS1000a @ 11:38",
     "target": "A",
-    "note": "4 people talking at once. B, C and D run over A for 5 s of these ten, sitting +8 dB against A's own voice on A's microphone. Level-matched on A's speech; everything else drops 17 dB.",
-    "orig": "assets/audio/bleed/ami_IS1006a_A_702.orig.opus",
-    "sep": "assets/audio/bleed/ami_IS1006a_A_702.sep.opus",
-    "clean": "assets/audio/bleed/ami_IS1006a_A_702.clean.opus",
+    "note": "3 people talking at once. B and C run over A for 5 s of these ten, sitting +7 dB against A's own voice on A's microphone. Level-matched on A's speech; everything else drops 22 dB.",
+    "orig": "assets/audio/bleed/ami_IS1000a_A_698.orig.opus",
+    "clean": "assets/audio/bleed/ami_IS1000a_A_698.clean.opus",
     "transcript": [
      {
       "spk": "A",
       "t0": 0.0,
-      "t1": 2.42,
-      "text": "… Yeah I change channel like this m uh I want to go to twenty five and then to ten uh-huh mm yeah"
-     },
-     {
-      "spk": "D",
-      "t0": 0.96,
-      "t1": 5.11,
-      "text": "And then back to the one I was before so there's whichever it was"
-     },
-     {
-      "spk": "A",
-      "t0": 3.24,
-      "t1": 6.13,
-      "text": "Also we can be here yeah that would be cool"
+      "t1": 0.78,
+      "text": "… It's got a tail then"
      },
      {
       "spk": "B",
-      "t0": 4.26,
-      "t1": 8.43,
-      "text": "Uh-huh Go back button is good I once had it"
+      "t0": 0.0,
+      "t1": 1.68,
+      "text": "… B bo both predators"
      },
      {
       "spk": "C",
-      "t0": 4.41,
-      "t1": 5.19,
-      "text": "Yeah you can yeah"
+      "t0": 0.95,
+      "t1": 5.28,
+      "text": "Yeah sure yeah I thought so The dogs have a tail"
      },
      {
+      "spk": "A",
+      "t0": 2.6,
+      "t1": 3.48,
+      "text": "Yeah yeah"
+     },
+     {
+      "spk": "B",
+      "t0": 5.29,
+      "t1": 8.66,
+      "text": "So thank you Uh d did you uh work out cord"
+     },
+     {
+      "spk": "A",
+      "t0": 5.49,
+      "t1": 9.73,
+      "text": "So do cats And you guessed cats without a tail"
+     }
+    ]
+   },
+   {
+    "id": "ami_ES2009d_B_2000",
+    "label": "ES2009d @ 33:20",
+    "target": "B",
+    "note": "4 people talking at once. A and D run over B for 5 s of these ten, sitting +6 dB against B's own voice on B's microphone. Level-matched on B's speech; everything else drops 40 dB.",
+    "orig": "assets/audio/bleed/ami_ES2009d_B_2000.orig.opus",
+    "clean": "assets/audio/bleed/ami_ES2009d_B_2000.clean.opus",
+    "transcript": [
+     {
+      "spk": "A",
+      "t0": 0.0,
+      "t1": 1.52,
+      "text": "project documents"
+     },
+     {
+      "spk": "B",
+      "t0": 0.41,
+      "t1": 6.67,
+      "text": "I find myself hitting the send and receive button on the email a lot just out of boredom like c come on gimme something"
+     },
+     {
+      "spk": "D",
+      "t0": 3.16,
+      "t1": 7.83,
+      "text": "I yeah pretty compulsively during meetings like yeah"
+     },
+     {
+      "spk": "A",
+      "t0": 3.45,
+      "t1": 10.0,
+      "text": "Yeah Oh yeah Yeah I know Come on give me some information Well to be fair we're we're hooked we're all hooked on the internet so I mean I do the …"
+     }
+    ]
+   },
+   {
+    "id": "ami_ES2013b_A_1590",
+    "label": "ES2013b @ 26:30",
+    "target": "A",
+    "note": "3 people talking at once. C and D run over A for 3 s of these ten, sitting +5 dB against A's own voice on A's microphone. Level-matched on A's speech; everything else drops 25 dB.",
+    "orig": "assets/audio/bleed/ami_ES2013b_A_1590.orig.opus",
+    "clean": "assets/audio/bleed/ami_ES2013b_A_1590.clean.opus",
+    "transcript": [
+     {
       "spk": "C",
-      "t0": 5.96,
-      "t1": 6.15,
+      "t0": 0.0,
+      "t1": 0.61,
+      "text": "… Mm Sort of have its little dock that you could put it in"
+     },
+     {
+      "spk": "D",
+      "t0": 0.0,
+      "t1": 5.05,
+      "text": "… loss and breakage of um remotes how much of that is is to do with it not really having a uh a home a um a nest a place to live exactly So if you can dock it um you know you could s argue that this is"
+     },
+     {
+      "spk": "A",
+      "t0": 0.42,
+      "t1": 0.71,
       "text": "Yeah"
      },
      {
+      "spk": "A",
+      "t0": 4.2,
+      "t1": 9.95,
+      "text": "And the dock could look very fancy and that could be your inspiration of having it looking decent"
+     },
+     {
       "spk": "D",
-      "t0": 6.21,
-      "t1": 10.0,
-      "text": "Yeah Uh uh we had that in in other countries Yeah e even the history so you could like uh undo previous of the previous …"
+      "t0": 6.16,
+      "t1": 6.98,
+      "text": "Exactly"
      },
      {
       "spk": "C",
-      "t0": 7.96,
+      "t0": 8.45,
       "t1": 10.0,
-      "text": "Yeah yeah the previous button is …"
-     },
-     {
-      "spk": "A",
-      "t0": 9.41,
-      "t1": 10.0,
-      "text": "Mm yeah …"
+      "text": "Still I don't know if it's quite within our price range …"
      }
     ]
    },
    {
-    "id": "ami_ES2002b_A_1409",
-    "label": "ES2002b @ 23:29",
-    "target": "A",
-    "note": "3 people talking at once. B and C run over A for 3 s of these ten, sitting +8 dB against A's own voice on A's microphone. Level-matched on A's speech; everything else drops 13 dB.",
-    "orig": "assets/audio/bleed/ami_ES2002b_A_1409.orig.opus",
-    "sep": "assets/audio/bleed/ami_ES2002b_A_1409.sep.opus",
-    "clean": "assets/audio/bleed/ami_ES2002b_A_1409.clean.opus",
+    "id": "ami_ES2010d_C_912",
+    "label": "ES2010d @ 15:12",
+    "target": "C",
+    "note": "3 people talking at once. A, B and D run over C for 4 s of these ten, sitting +4 dB against C's own voice on C's microphone. Level-matched on C's speech; everything else drops 23 dB.",
+    "orig": "assets/audio/bleed/ami_ES2010d_C_912.orig.opus",
+    "clean": "assets/audio/bleed/ami_ES2010d_C_912.clean.opus",
     "transcript": [
      {
-      "spk": "B",
+      "spk": "C",
       "t0": 0.0,
-      "t1": 4.73,
-      "text": "… Do you think maybe we need like further advances in that kind of area until it's worthwhile incorporating it though"
-     },
-     {
-      "spk": "C",
-      "t0": 0.5,
-      "t1": 1.35,
-      "text": "Um"
-     },
-     {
-      "spk": "C",
-      "t0": 3.98,
-      "t1": 6.61,
-      "text": "I think it'd probably quite expensive to put in"
+      "t1": 0.17,
+      "text": "… You're kidding"
      },
      {
       "spk": "A",
-      "t0": 5.22,
-      "t1": 7.47,
-      "text": "Sorry do you mind passing me my notepad Thanks"
+      "t0": 0.0,
+      "t1": 1.82,
+      "text": "… Yeah Fashionable chic people will"
+     },
+     {
+      "spk": "D",
+      "t0": 0.0,
+      "t1": 4.25,
+      "text": "… Look at it That is a piece of work Wow Marketing Director says yeah"
+     },
+     {
+      "spk": "C",
+      "t0": 1.7,
+      "t1": 9.24,
+      "text": "No no No marketing has to actually create the desire for it"
+     },
+     {
+      "spk": "D",
+      "t0": 5.37,
+      "t1": 6.59,
+      "text": "Fashionable people will buy it"
+     },
+     {
+      "spk": "D",
+      "t0": 8.79,
+      "t1": 10.0,
+      "text": "Oh I will create desire …"
      },
      {
       "spk": "B",
-      "t0": 5.88,
-      "t1": 9.19,
-      "text": "Mm Course not There you go"
-     },
-     {
-      "spk": "A",
-      "t0": 8.41,
+      "t0": 9.52,
       "t1": 10.0,
-      "text": "Cool um Okay Um Well this is just the working design um Well this is just what how I would go about it Um I guess I try to define like what we're doing now try to define what we're trying to get done Um I think in a practical way we kind of know what it is We've used it we're familiar with it but we're we can't n we haven't narrowed down um exactly what the things we're trying to fulfil like Besides the basics I think back in the back of our minds we know what the basics are Has to change channels has to change volume but in like specifics right which one of the basics are you trying to target Um are there certain parts of the basics that are more important or less important than the basics Um and I just the idea is just to get everybody to um I usually have a have have a design that's there as a basic so you know things that to start everything going But I guess everybody does have some idea so I don't think um there's a need for that …"
+      "text": "That's okay We can create a commercial where they think that all their needs will be met This will help them find the one That's right …"
      }
     ]
    }
@@ -659,357 +638,322 @@
   "domain": "research group meetings · headset mics",
   "samples": [
    {
-    "id": "icsi_Bmr016_C_2434",
-    "label": "Bmr016 @ 40:34",
-    "target": "C",
-    "note": "4 people talking at once. A, D, E and G run over C for 4 s of these ten, sitting +5 dB against C's own voice on C's microphone. Level-matched on C's speech; everything else drops 30 dB.",
-    "orig": "assets/audio/bleed/icsi_Bmr016_C_2434.orig.opus",
-    "sep": "assets/audio/bleed/icsi_Bmr016_C_2434.sep.opus",
-    "clean": "assets/audio/bleed/icsi_Bmr016_C_2434.clean.opus",
+    "id": "icsi_Bmr024_G_1427",
+    "label": "Bmr024 @ 23:47",
+    "target": "G",
+    "note": "3 people talking at once. D and F run over G for 4 s of these ten, sitting -4 dB against G's own voice on G's microphone. Level-matched on G's speech; everything else drops 23 dB.",
+    "orig": "assets/audio/bleed/icsi_Bmr024_G_1427.orig.opus",
+    "clean": "assets/audio/bleed/icsi_Bmr024_G_1427.clean.opus",
     "transcript": [
      {
-      "spk": "C",
+      "spk": "F",
       "t0": 0.0,
-      "t1": 0.66,
-      "text": "… Jane can I ask you a question What that very last one correspond to I don't even know how to pronounce that"
-     },
-     {
-      "spk": "E",
-      "t0": 0.0,
-      "t1": 2.78,
-      "text": "… Well yeah Now that that only occurs once and I 'm thinking of changing that"
-     },
-     {
-      "spk": "G",
-      "t0": 0.0,
-      "t1": 0.52,
-      "text": "… Yeah"
-     },
-     {
-      "spk": "G",
-      "t0": 2.18,
-      "t1": 2.62,
-      "text": "Right"
-     },
-     {
-      "spk": "E",
-      "t0": 2.85,
-      "t1": 4.55,
-      "text": "So I haven't listened to it so I don't know"
-     },
-     {
-      "spk": "C",
-      "t0": 2.89,
-      "t1": 6.72,
-      "text": "Uh is that like someone like burning or some such thing Like their hair on fire"
-     },
-     {
-      "spk": "E",
-      "t0": 5.36,
-      "t1": 8.19,
-      "text": "I haven't heard it actually I I need to listen to that one"
+      "t1": 2.63,
+      "text": "… I put it under the same directory tree You know it in user doctor speech data MR"
      },
      {
       "spk": "D",
-      "t0": 7.35,
-      "t1": 7.99,
-      "text": "Ah"
-     },
-     {
-      "spk": "C",
-      "t0": 7.37,
-      "t1": 9.22,
-      "text": "Uh it looks like that"
+      "t0": 0.3,
+      "t1": 0.62,
+      "text": "Well"
      },
      {
       "spk": "G",
-      "t0": 7.54,
-      "t1": 10.0,
-      "text": "Actually we we gave this to our pronunciation person she like I don't know what that is either So …"
+      "t0": 0.88,
+      "t1": 3.71,
+      "text": "Can we just have a directory called like other stuff"
      },
      {
-      "spk": "A",
-      "t0": 8.21,
-      "t1": 9.62,
-      "text": "It the Castle of Ah"
+      "spk": "G",
+      "t0": 4.05,
+      "t1": 4.44,
+      "text": "And"
+     },
+     {
+      "spk": "F",
+      "t0": 4.32,
+      "t1": 4.96,
+      "text": "Other"
+     },
+     {
+      "spk": "G",
+      "t0": 4.84,
+      "t1": 6.18,
+      "text": "Well or I dunno"
+     },
+     {
+      "spk": "D",
+      "t0": 6.03,
+      "t1": 9.01,
+      "text": "I mean I don't care what directory tree you have it under Right I mean that just a"
+     },
+     {
+      "spk": "G",
+      "t0": 6.88,
+      "t1": 7.89,
+      "text": "And"
+     },
+     {
+      "spk": "G",
+      "t0": 7.93,
+      "t1": 8.45,
+      "text": "and just"
+     },
+     {
+      "spk": "G",
+      "t0": 8.66,
+      "t1": 10.0,
+      "text": "um store it there I mean …"
+     },
+     {
+      "spk": "F",
+      "t0": 8.8,
+      "t1": 9.77,
+      "text": "OK My preference"
      }
     ]
    },
    {
-    "id": "icsi_Bsr001_D_335",
-    "label": "Bsr001 @ 5:35",
-    "target": "D",
-    "note": "6 people talking at once. A, C, E, F, G and H run over D for 3 s of these ten, sitting +4 dB against D's own voice on D's microphone. Level-matched on D's speech; everything else drops 48 dB.",
-    "orig": "assets/audio/bleed/icsi_Bsr001_D_335.orig.opus",
-    "sep": "assets/audio/bleed/icsi_Bsr001_D_335.sep.opus",
-    "clean": "assets/audio/bleed/icsi_Bsr001_D_335.clean.opus",
+    "id": "icsi_Bro011_A_1043",
+    "label": "Bro011 @ 17:23",
+    "target": "A",
+    "note": "3 people talking at once. B and E run over A for 5 s of these ten, sitting -4 dB against A's own voice on A's microphone. Level-matched on A's speech; everything else drops 25 dB.",
+    "orig": "assets/audio/bleed/icsi_Bro011_A_1043.orig.opus",
+    "clean": "assets/audio/bleed/icsi_Bro011_A_1043.clean.opus",
     "transcript": [
      {
-      "spk": "F",
+      "spk": "E",
       "t0": 0.0,
-      "t1": 0.87,
-      "text": "… Because I find this one doesn't bother me at all"
-     },
-     {
-      "spk": "G",
-      "t0": 0.0,
-      "t1": 1.7,
-      "text": "… Because I actually think it sort of makes everybody act a little more professional"
-     },
-     {
-      "spk": "D",
-      "t0": 2.29,
-      "t1": 7.76,
-      "text": "I didn't know that you could whistle that You 're a very soft whistler you 're mostly able to do that without much air at all aren't you"
+      "t1": 5.22,
+      "text": "… But I I don't I don't think they 're doing that though"
      },
      {
       "spk": "A",
-      "t0": 3.16,
-      "t1": 3.92,
-      "text": "OK"
+      "t0": 0.22,
+      "t1": 4.86,
+      "text": "Maybe you could go to these parlors and and you could you know you know have have you know reduced rates if you"
      },
      {
-      "spk": "C",
-      "t0": 5.2,
-      "t1": 9.68,
-      "text": "Actually I use something like this on on the telephone and it very comfortable"
-     },
-     {
-      "spk": "G",
-      "t0": 5.25,
-      "t1": 5.7,
+      "spk": "B",
+      "t0": 4.67,
+      "t1": 5.71,
       "text": "Yeah"
      },
      {
       "spk": "A",
-      "t0": 5.54,
-      "t1": 6.91,
-      "text": "I uh"
+      "t0": 5.2,
+      "t1": 6.33,
+      "text": "if you can do the measurements"
+     },
+     {
+      "spk": "B",
+      "t0": 6.35,
+      "t1": 6.84,
+      "text": "That right"
+     },
+     {
+      "spk": "B",
+      "t0": 7.05,
+      "t1": 10.0,
+      "text": "You could what you could do is you could sell little rings and stuff with embedded …"
      },
      {
       "spk": "A",
-      "t0": 5.72,
-      "t1": 7.06,
-      "text": "I uh"
+      "t0": 8.13,
+      "t1": 8.4,
+      "text": "Yeah"
+     }
+    ]
+   },
+   {
+    "id": "icsi_Btr002_C_668",
+    "label": "Btr002 @ 11:08",
+    "target": "C",
+    "note": "3 people talking at once. A and D run over C for 4 s of these ten, sitting -4 dB against C's own voice on C's microphone. Level-matched on C's speech; everything else drops 46 dB.",
+    "orig": "assets/audio/bleed/icsi_Btr002_C_668.orig.opus",
+    "clean": "assets/audio/bleed/icsi_Btr002_C_668.clean.opus",
+    "transcript": [
+     {
+      "spk": "C",
+      "t0": 0.0,
+      "t1": 5.78,
+      "text": "You know And then you would kind of have to come up with some sort of consonant and maybe it an to you"
      },
      {
-      "spk": "F",
-      "t0": 5.81,
-      "t1": 6.16,
-      "text": "I think you forget pretty quick"
+      "spk": "A",
+      "t0": 0.0,
+      "t1": 2.01,
+      "text": "… Yeah It both labial at the end"
      },
      {
-      "spk": "E",
-      "t0": 7.04,
+      "spk": "D",
+      "t0": 2.91,
+      "t1": 3.94,
+      "text": "Groups of"
+     },
+     {
+      "spk": "D",
+      "t0": 5.32,
+      "t1": 6.13,
+      "text": "Well also"
+     },
+     {
+      "spk": "D",
+      "t0": 6.43,
       "t1": 10.0,
-      "text": "Yeah it weird It kind of uh …"
+      "text": "Group of groups of groups of group …"
      },
      {
-      "spk": "G",
+      "spk": "C",
+      "t0": 6.94,
+      "t1": 8.38,
+      "text": "Fff Because also I mean is"
+     },
+     {
+      "spk": "A",
       "t0": 7.1,
       "t1": 10.0,
-      "text": "Your telephone and people use it for cell phones and …"
+      "text": "Gruesome groups of gruesome groups of …"
      },
      {
-      "spk": "A",
-      "t0": 8.14,
-      "t1": 9.37,
-      "text": "I mean no"
-     },
-     {
-      "spk": "A",
-      "t0": 8.15,
-      "t1": 9.64,
-      "text": "I mean no"
-     },
-     {
-      "spk": "H",
-      "t0": 8.71,
-      "t1": 9.29,
-      "text": "Yeah"
+      "spk": "C",
+      "t0": 8.89,
+      "t1": 10.0,
+      "text": "Fff is um …"
      }
     ]
    },
    {
-    "id": "icsi_Bmr007_B_1773",
-    "label": "Bmr007 @ 29:33",
-    "target": "B",
-    "note": "3 people talking at once. D, G and H run over B for 3 s of these ten, sitting +3 dB against B's own voice on B's microphone. Level-matched on B's speech; everything else drops 28 dB.",
-    "orig": "assets/audio/bleed/icsi_Bmr007_B_1773.orig.opus",
-    "sep": "assets/audio/bleed/icsi_Bmr007_B_1773.sep.opus",
-    "clean": "assets/audio/bleed/icsi_Bmr007_B_1773.clean.opus",
+    "id": "icsi_Bed013_E_1928",
+    "label": "Bed013 @ 32:08",
+    "target": "E",
+    "note": "4 people talking at once. A, B and C run over E for 3 s of these ten, sitting -5 dB against E's own voice on E's microphone. Level-matched on E's speech; everything else drops 21 dB.",
+    "orig": "assets/audio/bleed/icsi_Bed013_E_1928.orig.opus",
+    "clean": "assets/audio/bleed/icsi_Bed013_E_1928.clean.opus",
     "transcript": [
      {
-      "spk": "G",
-      "t0": 0.12,
-      "t1": 1.03,
-      "text": "So um"
+      "spk": "B",
+      "t0": 0.0,
+      "t1": 0.75,
+      "text": "… What"
+     },
+     {
+      "spk": "A",
+      "t0": 0.18,
+      "t1": 0.97,
+      "text": "You guys are too young"
+     },
+     {
+      "spk": "E",
+      "t0": 0.27,
+      "t1": 4.21,
+      "text": "You know like Sussudio that horrible horrible song that should never have been created"
+     },
+     {
+      "spk": "A",
+      "t0": 1.49,
+      "t1": 2.51,
+      "text": "Yeah come on"
      },
      {
       "spk": "B",
-      "t0": 0.74,
-      "t1": 1.97,
-      "text": "Can we actually record"
+      "t0": 2.2,
+      "t1": 3.34,
+      "text": "Oh oh oh oh"
      },
      {
-      "spk": "H",
-      "t0": 1.15,
-      "t1": 4.2,
-      "text": "It just seems like that a very different thing than what we 're doing"
-     },
-     {
-      "spk": "D",
-      "t0": 2.88,
-      "t1": 3.42,
-      "text": "Uh"
+      "spk": "A",
+      "t0": 3.14,
+      "t1": 4.26,
+      "text": "I know that was horrible"
      },
      {
       "spk": "B",
-      "t0": 3.77,
-      "t1": 6.77,
-      "text": "I mean physically can we record the the other"
+      "t0": 4.52,
+      "t1": 6.96,
+      "text": "I 've blocked every aspect of Phil Collins out of my mind"
+     },
+     {
+      "spk": "A",
+      "t0": 4.7,
+      "t1": 6.39,
+      "text": "Sussudio"
+     },
+     {
+      "spk": "C",
+      "t0": 5.29,
+      "t1": 5.87,
+      "text": "What"
+     },
+     {
+      "spk": "A",
+      "t0": 6.52,
+      "t1": 8.46,
+      "text": "I 'm sorry I haven't"
+     },
+     {
+      "spk": "A",
+      "t0": 8.59,
+      "t1": 9.87,
+      "text": "Not on purpose"
+     },
+     {
+      "spk": "E",
+      "t0": 8.86,
+      "t1": 10.0,
+      "text": "in here …"
+     }
+    ]
+   },
+   {
+    "id": "icsi_Bmr020_F_2449",
+    "label": "Bmr020 @ 40:49",
+    "target": "F",
+    "note": "2 people talking at once. B, C and D run over F for 0 s of these ten, sitting +15 dB against F's own voice on F's microphone. Level-matched on F's speech; everything else drops 67 dB.",
+    "orig": "assets/audio/bleed/icsi_Bmr020_F_2449.orig.opus",
+    "clean": "assets/audio/bleed/icsi_Bmr020_F_2449.clean.opus",
+    "transcript": [
+     {
+      "spk": "F",
+      "t0": 0.0,
+      "t1": 3.27,
+      "text": "that sounds like a good idea since as you say you have to do stuff with the other end anyway"
+     },
+     {
+      "spk": "B",
+      "t0": 0.01,
+      "t1": 2.43,
+      "text": "That And some on some meetings it good"
+     },
+     {
+      "spk": "C",
+      "t0": 3.3,
+      "t1": 10.0,
+      "text": "Well OK good I mean the detector this Now you were saying that they they differ in how well they work depending on channel systems and stuff …"
+     },
+     {
+      "spk": "B",
+      "t0": 3.32,
+      "t1": 3.72,
+      "text": "Yeah"
      },
      {
       "spk": "D",
-      "t0": 4.13,
-      "t1": 5.35,
-      "text": "Well we 'll have to set up for it"
+      "t0": 4.18,
+      "t1": 6.22,
+      "text": "Yeah I mean we have to fix it when it comes back anyhow"
      },
      {
-      "spk": "D",
-      "t0": 5.46,
+      "spk": "B",
+      "t0": 5.66,
       "t1": 5.84,
       "text": "Yeah"
      },
      {
-      "spk": "D",
-      "t0": 6.78,
-      "t1": 7.98,
-      "text": "Well we 're not really set up for it"
-     },
-     {
-      "spk": "D",
-      "t0": 7.98,
-      "t1": 8.83,
-      "text": "to do that"
-     },
-     {
-      "spk": "D",
-      "t0": 8.96,
-      "t1": 9.14,
-      "text": "But"
-     },
-     {
-      "spk": "G",
-      "t0": 9.2,
-      "t1": 9.62,
-      "text": "Or"
-     }
-    ]
-   },
-   {
-    "id": "icsi_Bmr005_D_2096",
-    "label": "Bmr005 @ 34:56",
-    "target": "D",
-    "note": "4 people talking at once. B, F and G run over D for 3 s of these ten, sitting +3 dB against D's own voice on D's microphone. Level-matched on D's speech; everything else drops 14 dB.",
-    "orig": "assets/audio/bleed/icsi_Bmr005_D_2096.orig.opus",
-    "sep": "assets/audio/bleed/icsi_Bmr005_D_2096.sep.opus",
-    "clean": "assets/audio/bleed/icsi_Bmr005_D_2096.clean.opus",
-    "transcript": [
-     {
-      "spk": "D",
-      "t0": 0.0,
-      "t1": 0.07,
-      "text": "… It it a good eh work but eh I think we need eh eh more information"
-     },
-     {
-      "spk": "F",
-      "t0": 0.0,
-      "t1": 5.87,
-      "text": "… No of course I expect you to find more overlaps than than Jane because you 're looking at it at a much more detailed level"
-     },
-     {
       "spk": "B",
-      "t0": 0.81,
-      "t1": 1.04,
+      "t0": 9.24,
+      "t1": 9.38,
       "text": "Yeah"
-     },
-     {
-      "spk": "G",
-      "t0": 1.01,
-      "t1": 2.09,
-      "text": "Always need more for"
-     },
-     {
-      "spk": "D",
-      "t0": 3.2,
-      "t1": 9.36,
-      "text": "No no I I have to go to I want eh I wanted to eh compare the the transcription"
-     },
-     {
-      "spk": "B",
-      "t0": 3.38,
-      "t1": 3.66,
-      "text": "Yeah"
-     },
-     {
-      "spk": "G",
-      "t0": 8.53,
-      "t1": 10.0,
-      "text": "But if it takes sixty to one …"
-     }
-    ]
-   },
-   {
-    "id": "icsi_Bed006_G_2825",
-    "label": "Bed006 @ 47:05",
-    "target": "G",
-    "note": "2 people talking at once. C and E run over G for 3 s of these ten, sitting -4 dB against G's own voice on G's microphone. Level-matched on G's speech; everything else drops 38 dB.",
-    "orig": "assets/audio/bleed/icsi_Bed006_G_2825.orig.opus",
-    "sep": "assets/audio/bleed/icsi_Bed006_G_2825.sep.opus",
-    "clean": "assets/audio/bleed/icsi_Bed006_G_2825.clean.opus",
-    "transcript": [
-     {
-      "spk": "C",
-      "t0": 0.0,
-      "t1": 2.82,
-      "text": "… Um and I agree that you know this is something we need to discuss yeah"
-     },
-     {
-      "spk": "G",
-      "t0": 0.37,
-      "t1": 2.66,
-      "text": "in fact what you could say is for Enter"
-     },
-     {
-      "spk": "G",
-      "t0": 2.89,
-      "t1": 5.55,
-      "text": "you could say here list all the kinds of schemas that"
-     },
-     {
-      "spk": "G",
-      "t0": 5.6,
-      "t1": 6.75,
-      "text": "on the category that"
-     },
-     {
-      "spk": "E",
-      "t0": 6.65,
-      "t1": 8.2,
-      "text": "List all the parent categories"
-     },
-     {
-      "spk": "G",
-      "t0": 6.83,
-      "t1": 9.12,
-      "text": "you know list all the parent categories It just like"
-     },
-     {
-      "spk": "G",
-      "t0": 9.12,
-      "t1": 10.0,
-      "text": "a frame hierarchy right like you have these blended frames So you would say enter and you 'd say my parent …"
      }
     ]
    }

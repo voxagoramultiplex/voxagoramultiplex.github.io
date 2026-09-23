@@ -76,6 +76,7 @@ h3.part em{font-style:normal;font-family:var(--m);font-size:10px;letter-spacing:
   text-transform:uppercase;padding:3px 9px;border-radius:20px;
   color:var(--lilac);background:var(--lilac-bg)}
 h3.part + .lead{margin-top:8px}
+.lead b{font-weight:680}
 h3.part b{font-size:19px;font-weight:720;letter-spacing:-.015em}
 .credit{font-size:12.5px;color:var(--faint);margin:10px 2px 0;max-width:72ch}
 .ph{border:1px dashed var(--ln);border-radius:var(--r);background:var(--pan);
@@ -362,6 +363,10 @@ footer .mark{justify-content:center;margin-bottom:10px;font-size:15px;color:var(
   <div id="synth"></div>
 
   <h3 class="part">Real Dataset</h3>
+  <p class="lead">Everyone wears their own microphone, and every microphone still
+     hears the rest of the room. That spill is <b>bleed</b>: the person next to you
+     lands on your channel, sometimes louder than you are. We separate each channel
+     down to its owner, then restore what the separation took with it.</p>
   <div id="bleed"></div>
   <p class="credit">AMI and ICSI Meeting Corpus (CC&nbsp;BY&nbsp;4.0), CHiME-6, DiPCo.</p>
 
@@ -1046,10 +1051,8 @@ async function buildBleed(){
         color: n === s.target ? V('--iris') : V(SPK_COLORS[(i + 1) % SPK_COLORS.length][0])
       })),
       tracks: [
-        { name: 'Original mic', meta: 'as recorded',   src: s.orig,  color: V('--mute') },
-        ...(s.sep ? [
-        { name: 'Separated',    meta: 'bleed removed', src: s.sep,   color: V('--sky')  }] : []),
-        { name: 'Restored',     meta: 'what ships',    src: s.clean, color: V('--iris') }
+        { name: 'Original mic',  meta: 'as recorded',   src: s.orig,  color: V('--mute') },
+        { name: 'Bleed removed', meta: 'what ships',    src: s.clean, color: V('--iris') }
       ]
     });
   };
