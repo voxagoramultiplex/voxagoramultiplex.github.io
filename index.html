@@ -203,14 +203,29 @@ h3.part + .lead{margin-top:8px}
 .lane .src:hover svg{fill:var(--iris)}
 .lane.on .src{background:var(--iris);border-color:var(--iris)}
 .lane.on .src svg{fill:#fff}
-.tk{position:relative;height:22px;background:var(--soft);border-radius:5px;cursor:pointer;overflow:hidden}
+.tk{position:relative;height:22px;background:var(--soft);border-radius:5px;cursor:pointer;
+  overflow:hidden;outline:none}
+.tk:focus-visible{outline:2px solid var(--iris);outline-offset:2px}
 .tk .sg{position:absolute;top:3px;bottom:3px;border-radius:3px;min-width:2px}
-.dz .ph{position:absolute;top:16px;bottom:0;width:2px;background:var(--ink);opacity:.8;
+.dz .ph{position:absolute;top:16px;bottom:0;width:1px;background:var(--iris);
   pointer-events:none;display:none}
-.dzbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:8px}
-.dzbar audio{flex:1;min-width:220px;height:32px}
-.dzbar .lbl{font-family:var(--m);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
-  color:var(--faint)}
+.dzbar{display:flex;align-items:center;gap:12px;margin-top:10px;
+  padding-top:10px;border-top:1px solid var(--ln2)}
+.dzbar audio{display:none}
+.tp{flex:none;width:28px;height:28px;border-radius:50%;border:1px solid var(--ln);
+  background:var(--pan);cursor:pointer;display:grid;place-items:center;padding:0;transition:.12s}
+.tp:hover{border-color:var(--iris)}
+.tp svg{width:10px;height:10px;fill:var(--iris)}
+.prog{flex:1;height:3px;border-radius:2px;background:var(--soft);cursor:pointer;position:relative}
+.prog::before{content:"";position:absolute;inset:-9px 0;cursor:pointer}
+.prog .fill{position:absolute;left:0;top:0;bottom:0;width:0;border-radius:2px;background:var(--iris)}
+.prog .knob{position:absolute;top:50%;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;
+  border-radius:50%;background:var(--iris)}
+.dzbar .tm{flex:none;font-family:var(--m);font-size:11px;color:var(--faint);
+  font-variant-numeric:tabular-nums}
+.dzbar .lbl{flex:none;font-family:var(--m);font-size:10px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--faint);min-width:64px;text-align:right;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
 /* ---------- transcript ---------- */
 .tx{margin-top:12px;border-top:1px solid var(--ln2);padding-top:10px;
@@ -830,9 +845,22 @@ function Lanes(host, spec){
 
   const bar = document.createElement('div');
   bar.className = 'dzbar';
-  bar.innerHTML = '<span class="lbl"></span><audio controls preload="metadata"></audio>';
+  bar.innerHTML =
+    '<button class="tp" aria-label="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></button>' +
+    '<div class="prog"><div class="fill"></div><div class="knob"></div></div>' +
+    '<span class="tm">0:00</span><span class="lbl"></span>' +
+    '<audio preload="metadata"></audio>';
   el.appendChild(bar);
   const audio = bar.querySelector('audio'), lbl = bar.querySelector('.lbl');
+  const prog = bar.querySelector('.prog'), fill = bar.querySelector('.fill');
+  const knob = bar.querySelector('.knob'), tmEl = bar.querySelector('.tm');
+  const btn = bar.querySelector('.tp');
+  btn.onclick = () => audio.paused ? audio.play() : audio.pause();
+  prog.onclick = e => {
+    const r = prog.getBoundingClientRect();
+    audio.currentTime = dur * Math.max(0, Math.min(1, (e.clientX - r.left) / r.width));
+    place();
+  };
 
   let cur = null;
   function pick(src, name, row){
@@ -876,9 +904,12 @@ function Lanes(host, spec){
   function place(){
     const tk = rows[0].lane.querySelector('.tk');
     const r = tk.getBoundingClientRect(), w = dz.getBoundingClientRect();
-    ph.style.left = (r.left - w.left + (audio.currentTime / dur) * r.width) + 'px';
+    const t = audio.currentTime, f = Math.max(0, Math.min(1, t / dur));
+    ph.style.left = (r.left - w.left + f * r.width) + 'px';
     ph.style.display = 'block';
-    const t = audio.currentTime;
+    fill.style.width = (f * 100) + '%';
+    knob.style.left = (f * 100) + '%';
+    tmEl.textContent = fmt(t) + ' / ' + fmt(dur);
     txLines.forEach(l => {
       const on = t >= l.t0 && t < l.t1;
       if (on !== l.on){ l.on = on; l.el.classList.toggle('on', on); }
@@ -886,9 +917,13 @@ function Lanes(host, spec){
   }
   let raf;
   const tick = () => { place(); if (!audio.paused) raf = requestAnimationFrame(tick); };
-  audio.addEventListener('play', tick);
+  const icon = on => btn.querySelector('svg').innerHTML = on
+    ? '<path d="M0 0h3.4v12H0zM6.6 0H10v12H6.6z"/>'
+    : '<path d="M0 0l10 6-10 6z"/>';
+  audio.addEventListener('play', () => { icon(true); tick(); });
   audio.addEventListener('seeked', place);
-  audio.addEventListener('pause', () => { cancelAnimationFrame(raf); place(); });
+  audio.addEventListener('pause', () => { icon(false); cancelAnimationFrame(raf); place(); });
+  audio.addEventListener('ended', () => { icon(false); audio.currentTime = 0; place(); });
   dz.querySelectorAll('.tk').forEach(tk => tk.onclick = e => {
     const r = tk.getBoundingClientRect();
     audio.currentTime = dur * Math.max(0, Math.min(1, (e.clientX - r.left) / r.width));
@@ -896,6 +931,7 @@ function Lanes(host, spec){
   });
 
   host.appendChild(el);
+  place();          // after the element is laid out, and after txLines exists
   return { el, audio };
 }
 
