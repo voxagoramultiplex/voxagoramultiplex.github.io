@@ -8,7 +8,7 @@
     "id": "dipco_S01_P04_2566",
     "label": "S01 @ 42:46",
     "target": "P04",
-    "note": "P01 and P02 sit +6 dB against P04's own voice on P04's microphone. Level-matched on P04's speech; everything else drops 25 dB.",
+    "note": "P01 and P02 sit +6 dB against P04's own voice on P04's microphone. Everything but P04 drops 25 dB.",
     "orig": "assets/audio/bleed/dipco_S01_P04_2566.orig.opus",
     "clean": "assets/audio/bleed/dipco_S01_P04_2566.clean.opus",
     "transcript": [
@@ -42,7 +42,7 @@
     "id": "dipco_S03_P10_2784",
     "label": "S03 @ 46:24",
     "target": "P10",
-    "note": "P09, P11 and P12 sit +3 dB against P10's own voice on P10's microphone. Level-matched on P10's speech; everything else drops 47 dB.",
+    "note": "P09, P11 and P12 sit +3 dB against P10's own voice on P10's microphone. Everything but P10 drops 46 dB.",
     "orig": "assets/audio/bleed/dipco_S03_P10_2784.orig.opus",
     "clean": "assets/audio/bleed/dipco_S03_P10_2784.clean.opus",
     "transcript": [
@@ -82,7 +82,7 @@
     "id": "dipco_S04_P16_719",
     "label": "S04 @ 11:59",
     "target": "P16",
-    "note": "P13, P14 and P15 sit -1 dB against P16's own voice on P16's microphone. Level-matched on P16's speech; everything else drops 32 dB.",
+    "note": "P13, P14 and P15 sit -1 dB against P16's own voice on P16's microphone. Everything but P16 drops 30 dB.",
     "orig": "assets/audio/bleed/dipco_S04_P16_719.orig.opus",
     "clean": "assets/audio/bleed/dipco_S04_P16_719.clean.opus",
     "transcript": [
@@ -122,7 +122,7 @@
     "id": "dipco_S06_P22_437",
     "label": "S06 @ 7:17",
     "target": "P22",
-    "note": "P21 and P24 sit -5 dB against P22's own voice on P22's microphone. Level-matched on P22's speech; everything else drops 13 dB.",
+    "note": "P21 and P24 sit -5 dB against P22's own voice on P22's microphone. Everything but P22 drops 20 dB.",
     "orig": "assets/audio/bleed/dipco_S06_P22_437.orig.opus",
     "clean": "assets/audio/bleed/dipco_S06_P22_437.clean.opus",
     "transcript": [
@@ -150,7 +150,7 @@
     "id": "dipco_S08_P26_600",
     "label": "S08 @ 10:00",
     "target": "P26",
-    "note": "P28 sit -7 dB against P26's own voice on P26's microphone. Level-matched on P26's speech; everything else drops 29 dB.",
+    "note": "P28 sit -7 dB against P26's own voice on P26's microphone. Everything but P26 drops 30 dB.",
     "orig": "assets/audio/bleed/dipco_S08_P26_600.orig.opus",
     "clean": "assets/audio/bleed/dipco_S08_P26_600.clean.opus",
     "transcript": [
@@ -179,7 +179,7 @@
     "id": "chime6_S19_P52_3907",
     "label": "S19 @ 65:07",
     "target": "P52",
-    "note": "P49 and P50 sit +4 dB against P52's own voice on P52's microphone. Level-matched on P52's speech; everything else drops 51 dB.",
+    "note": "P49 and P50 sit +4 dB against P52's own voice on P52's microphone. Everything but P52 drops 44 dB.",
     "orig": "assets/audio/bleed/chime6_S19_P52_3907.orig.opus",
     "clean": "assets/audio/bleed/chime6_S19_P52_3907.clean.opus",
     "transcript": [
@@ -213,7 +213,7 @@
     "id": "chime6_S20_P49_669",
     "label": "S20 @ 11:09",
     "target": "P49",
-    "note": "P50 and P51 sit -2 dB against P49's own voice on P49's microphone. Level-matched on P49's speech; everything else drops 30 dB.",
+    "note": "P50 and P51 sit -2 dB against P49's own voice on P49's microphone. Everything but P49 drops 31 dB.",
     "orig": "assets/audio/bleed/chime6_S20_P49_669.orig.opus",
     "clean": "assets/audio/bleed/chime6_S20_P49_669.clean.opus",
     "transcript": [
@@ -253,7 +253,7 @@
     "id": "chime6_S02_P05_4400",
     "label": "S02 @ 73:20",
     "target": "P05",
-    "note": "P06 and P08 sit +4 dB against P05's own voice on P05's microphone. Level-matched on P05's speech; everything else drops 31 dB.",
+    "note": "P06 and P08 sit +4 dB against P05's own voice on P05's microphone. Everything but P05 drops 18 dB.",
     "orig": "assets/audio/bleed/chime6_S02_P05_4400.orig.opus",
     "clean": "assets/audio/bleed/chime6_S02_P05_4400.clean.opus",
     "transcript": [
@@ -299,7 +299,7 @@
     "id": "chime6_S01_P01_3259",
     "label": "S01 @ 54:19",
     "target": "P01",
-    "note": "P03 and P04 sit +1 dB against P01's own voice on P01's microphone. Level-matched on P01's speech; everything else drops 17 dB.",
+    "note": "P03 and P04 sit +1 dB against P01's own voice on P01's microphone. Everything but P01 drops 19 dB.",
     "orig": "assets/audio/bleed/chime6_S01_P01_3259.orig.opus",
     "clean": "assets/audio/bleed/chime6_S01_P01_3259.clean.opus",
     "transcript": [
@@ -351,7 +351,7 @@
     "id": "chime6_S20_P50_1710",
     "label": "S20 @ 28:30",
     "target": "P50",
-    "note": "P49 and P52 sit -3 dB against P50's own voice on P50's microphone. Level-matched on P50's speech; everything else drops 23 dB.",
+    "note": "P49 and P52 sit -3 dB against P50's own voice on P50's microphone. Everything but P50 drops 27 dB.",
     "orig": "assets/audio/bleed/chime6_S20_P50_1710.orig.opus",
     "clean": "assets/audio/bleed/chime6_S20_P50_1710.clean.opus",
     "transcript": [
@@ -404,7 +404,7 @@
     "id": "ami_ES2008d_B_2504",
     "label": "ES2008d @ 41:44",
     "target": "B",
-    "note": "3 people talking at once. A and D run over B for 3 s of these ten, sitting +10 dB against B's own voice on B's microphone. Level-matched on B's speech; everything else drops 45 dB.",
+    "note": "3 people talking at once. A and D run over B for 3 s of these ten, sitting +10 dB against B's own voice on B's microphone. Everything but B drops 32 dB.",
     "orig": "assets/audio/bleed/ami_ES2008d_B_2504.orig.opus",
     "clean": "assets/audio/bleed/ami_ES2008d_B_2504.clean.opus",
     "transcript": [
@@ -456,7 +456,7 @@
     "id": "ami_IS1000a_A_698",
     "label": "IS1000a @ 11:38",
     "target": "A",
-    "note": "3 people talking at once. B and C run over A for 5 s of these ten, sitting +7 dB against A's own voice on A's microphone. Level-matched on A's speech; everything else drops 22 dB.",
+    "note": "3 people talking at once. B and C run over A for 5 s of these ten, sitting +7 dB against A's own voice on A's microphone. Everything but A drops 33 dB.",
     "orig": "assets/audio/bleed/ami_IS1000a_A_698.orig.opus",
     "clean": "assets/audio/bleed/ami_IS1000a_A_698.clean.opus",
     "transcript": [
@@ -502,7 +502,7 @@
     "id": "ami_ES2009d_B_2000",
     "label": "ES2009d @ 33:20",
     "target": "B",
-    "note": "4 people talking at once. A and D run over B for 5 s of these ten, sitting +6 dB against B's own voice on B's microphone. Level-matched on B's speech; everything else drops 40 dB.",
+    "note": "4 people talking at once. A and D run over B for 5 s of these ten, sitting +6 dB against B's own voice on B's microphone. Everything but B drops 23 dB.",
     "orig": "assets/audio/bleed/ami_ES2009d_B_2000.orig.opus",
     "clean": "assets/audio/bleed/ami_ES2009d_B_2000.clean.opus",
     "transcript": [
@@ -536,7 +536,7 @@
     "id": "ami_ES2013b_A_1590",
     "label": "ES2013b @ 26:30",
     "target": "A",
-    "note": "3 people talking at once. C and D run over A for 3 s of these ten, sitting +5 dB against A's own voice on A's microphone. Level-matched on A's speech; everything else drops 25 dB.",
+    "note": "3 people talking at once. C and D run over A for 3 s of these ten, sitting +5 dB against A's own voice on A's microphone. Everything but A drops 12 dB.",
     "orig": "assets/audio/bleed/ami_ES2013b_A_1590.orig.opus",
     "clean": "assets/audio/bleed/ami_ES2013b_A_1590.clean.opus",
     "transcript": [
@@ -582,7 +582,7 @@
     "id": "ami_ES2010d_C_912",
     "label": "ES2010d @ 15:12",
     "target": "C",
-    "note": "3 people talking at once. A, B and D run over C for 4 s of these ten, sitting +4 dB against C's own voice on C's microphone. Level-matched on C's speech; everything else drops 23 dB.",
+    "note": "3 people talking at once. A, B and D run over C for 4 s of these ten, sitting +4 dB against C's own voice on C's microphone. Everything but C drops 12 dB.",
     "orig": "assets/audio/bleed/ami_ES2010d_C_912.orig.opus",
     "clean": "assets/audio/bleed/ami_ES2010d_C_912.clean.opus",
     "transcript": [
@@ -641,7 +641,7 @@
     "id": "icsi_Bmr024_G_1427",
     "label": "Bmr024 @ 23:47",
     "target": "G",
-    "note": "3 people talking at once. D and F run over G for 4 s of these ten, sitting -4 dB against G's own voice on G's microphone. Level-matched on G's speech; everything else drops 23 dB.",
+    "note": "3 people talking at once. D and F run over G for 4 s of these ten, sitting -4 dB against G's own voice on G's microphone. Everything but G drops 25 dB.",
     "orig": "assets/audio/bleed/icsi_Bmr024_G_1427.orig.opus",
     "clean": "assets/audio/bleed/icsi_Bmr024_G_1427.clean.opus",
     "transcript": [
@@ -717,7 +717,7 @@
     "id": "icsi_Bro011_A_1043",
     "label": "Bro011 @ 17:23",
     "target": "A",
-    "note": "3 people talking at once. B and E run over A for 5 s of these ten, sitting -4 dB against A's own voice on A's microphone. Level-matched on A's speech; everything else drops 25 dB.",
+    "note": "3 people talking at once. B and E run over A for 5 s of these ten, sitting -4 dB against A's own voice on A's microphone. Everything but A drops 20 dB.",
     "orig": "assets/audio/bleed/icsi_Bro011_A_1043.orig.opus",
     "clean": "assets/audio/bleed/icsi_Bro011_A_1043.clean.opus",
     "transcript": [
@@ -769,7 +769,7 @@
     "id": "icsi_Btr002_C_668",
     "label": "Btr002 @ 11:08",
     "target": "C",
-    "note": "3 people talking at once. A and D run over C for 4 s of these ten, sitting -4 dB against C's own voice on C's microphone. Level-matched on C's speech; everything else drops 46 dB.",
+    "note": "3 people talking at once. A and D run over C for 4 s of these ten, sitting -4 dB against C's own voice on C's microphone. Everything but C drops 45 dB.",
     "orig": "assets/audio/bleed/icsi_Btr002_C_668.orig.opus",
     "clean": "assets/audio/bleed/icsi_Btr002_C_668.clean.opus",
     "transcript": [
@@ -827,7 +827,7 @@
     "id": "icsi_Bed013_E_1928",
     "label": "Bed013 @ 32:08",
     "target": "E",
-    "note": "4 people talking at once. A, B and C run over E for 3 s of these ten, sitting -5 dB against E's own voice on E's microphone. Level-matched on E's speech; everything else drops 21 dB.",
+    "note": "4 people talking at once. A, B and C run over E for 3 s of these ten, sitting -5 dB against E's own voice on E's microphone. Everything but E drops 20 dB.",
     "orig": "assets/audio/bleed/icsi_Bed013_E_1928.orig.opus",
     "clean": "assets/audio/bleed/icsi_Bed013_E_1928.clean.opus",
     "transcript": [
@@ -909,7 +909,7 @@
     "id": "icsi_Bmr020_F_2449",
     "label": "Bmr020 @ 40:49",
     "target": "F",
-    "note": "2 people talking at once. B, C and D run over F for 0 s of these ten, sitting +15 dB against F's own voice on F's microphone. Level-matched on F's speech; everything else drops 67 dB.",
+    "note": "2 people talking at once. B, C and D run over F for 0 s of these ten, sitting +15 dB against F's own voice on F's microphone. Everything but F drops 49 dB.",
     "orig": "assets/audio/bleed/icsi_Bmr020_F_2449.orig.opus",
     "clean": "assets/audio/bleed/icsi_Bmr020_F_2449.clean.opus",
     "transcript": [
