@@ -186,9 +186,35 @@ h3.part + .lead{margin-top:8px}
 .mini:hover{border-color:var(--iris);color:var(--iris)}
 .mini[aria-pressed="true"]{background:var(--lilac-bg);border-color:var(--lilac);color:var(--lilac)}
 
+
+/* ---------- diarization lanes ---------- */
+.dz{position:relative;margin:2px 0 10px}
+.dz .rule{display:grid;grid-template-columns:var(--lw) 1fr;gap:10px;margin-bottom:3px}
+.dz .ticks{position:relative;height:13px;font-family:var(--m);font-size:10px;color:var(--faint)}
+.dz .ticks span{position:absolute;transform:translateX(-50%)}
+.lane{display:grid;grid-template-columns:var(--lw) 1fr;gap:10px;align-items:center;margin-bottom:4px}
+.lane .who{display:flex;align-items:center;gap:7px;min-width:0;font-size:12.5px;font-weight:580}
+.lane .who i{width:9px;height:9px;border-radius:3px;flex:none}
+.lane .who b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:580}
+.lane .src{flex:none;width:18px;height:18px;border:1px solid var(--ln);border-radius:5px;
+  background:var(--pan);cursor:pointer;padding:0;display:grid;place-items:center;transition:.12s}
+.lane .src svg{width:7px;height:7px;fill:var(--faint)}
+.lane .src:hover{border-color:var(--iris)}
+.lane .src:hover svg{fill:var(--iris)}
+.lane.on .src{background:var(--iris);border-color:var(--iris)}
+.lane.on .src svg{fill:#fff}
+.tk{position:relative;height:22px;background:var(--soft);border-radius:5px;cursor:pointer;overflow:hidden}
+.tk .sg{position:absolute;top:3px;bottom:3px;border-radius:3px;min-width:2px}
+.dz .ph{position:absolute;top:16px;bottom:0;width:2px;background:var(--ink);opacity:.8;
+  pointer-events:none;display:none}
+.dzbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:8px}
+.dzbar audio{flex:1;min-width:220px;height:32px}
+.dzbar .lbl{font-family:var(--m);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--faint)}
+
 /* ---------- transcript ---------- */
-.tx{margin-top:14px;border-top:1px solid var(--ln2);padding-top:12px;
-  max-height:300px;overflow-y:auto}
+.tx{margin-top:12px;border-top:1px solid var(--ln2);padding-top:10px;
+  max-height:260px;overflow-y:auto}
 .tx .ln{display:grid;grid-template-columns:52px 74px 1fr;gap:10px;align-items:baseline;
   padding:5px 8px;border-radius:7px;cursor:pointer;transition:background .12s}
 @media(max-width:640px){.tx .ln{grid-template-columns:52px 1fr;}.tx .ln .t{display:none}}
@@ -218,6 +244,7 @@ footer .mark{justify-content:center;margin-bottom:10px;font-size:15px;color:var(
   <div class="sp"></div>
   <a class="lnk" href="#about">Benchmark</a>
   <a class="lnk" href="#data">Data</a>
+  <a class="lnk" href="#models">Models</a>
   <a class="lnk" href="#simulator">Simulator</a>
   <a class="lnk" href="#samples">Samples</a>
 </div></nav>
@@ -296,17 +323,25 @@ footer .mark{justify-content:center;margin-bottom:10px;font-size:15px;color:var(
   <div class="ph"><b>Placeholder</b>Schema, annotation fields, splits, and license go here.</div>
 </div></section>
 
-<!-- ============ 3. SIMULATOR ============ -->
+<!-- ============ 3. MODELS ============ -->
+<section id="models"><div class="w">
+  <p class="eyebrow">03 &mdash; Full-duplex models</p>
+  <h2>What happens when they talk to each other?</h2>
+  <p class="lead">Each model is given peers instead of a user. Nobody is driving.</p>
+  <div id="fd"></div>
+</div></section>
+
+<!-- ============ 4. SIMULATOR ============ -->
 <section id="simulator"><div class="w">
-  <p class="eyebrow">03 &mdash; Simulator</p>
+  <p class="eyebrow">04 &mdash; Simulator</p>
   <h2>Conversation simulator</h2>
   <p class="lead">How multi-party sessions are rendered into audio &mdash; description goes here.</p>
   <div class="ph"><b>Placeholder</b>Pipeline figure and stage-by-stage description go here.</div>
 </div></section>
 
-<!-- ============ 4. AUDIO COMPARISON ============ -->
+<!-- ============ 5. AUDIO COMPARISON ============ -->
 <section id="samples"><div class="w">
-  <p class="eyebrow">04 &mdash; Listening samples</p>
+  <p class="eyebrow">05 &mdash; Listening samples</p>
   <h2>Audio comparison</h2>
   <div id="cmp"></div>
 </div></section>
@@ -340,6 +375,12 @@ const BLEED_URL = "assets/audio/bleed/bleed.json";
       [{ id, label, note, tracks: [{spk, src}],
          transcript: [{spk, t0, t1, text}] }] */
 const SYNTH_URL = "assets/audio/synth/synth.json";
+
+/* 3. Full-duplex models talking to each other — built from
+      assets/audio/fd/fd.json:
+      [{ model, note, sessions: [{ id, label, note, dur, audio, tracks:[{spk,src}],
+                                   transcript:[{spk,t0,t1,text}] }] }] */
+const FD_URL = "assets/audio/fd/fd.json";
 
 /* 4. Simulator variant comparison. */
 const GROUPS = [
@@ -405,6 +446,36 @@ function Scene(host, spec){
     n.className = 'note';
     n.textContent = spec.note;
     el.appendChild(n);
+  }
+
+  if (spec.speakers && spec.speakers.length){
+    const dur = spec.dur || Math.max(...spec.transcript.map(u => u.t1), 1);
+    const dz = document.createElement('div');
+    dz.className = 'dz';
+    const wide = Math.max(...spec.speakers.map(x => x.name.length));
+    dz.style.setProperty('--lw', Math.min(190, Math.max(96, wide * 8 + 40)) + 'px');
+    const step = dur > 40 ? 10 : 2;
+    let ticks = '';
+    for (let t = 0; t <= dur + .01; t += step)
+      ticks += '<span style="left:' + (t / dur * 100).toFixed(2) + '%">' + Math.round(t) + 's</span>';
+    dz.innerHTML = '<div class="rule"><div></div><div class="ticks">' + ticks + '</div></div>';
+    spec.speakers.forEach(sp => {
+      const lane = document.createElement('div');
+      lane.className = 'lane';
+      lane.innerHTML =
+        '<div class="who"><i style="background:' + sp.color + '"></i><b></b></div>' +
+        '<div class="tk">' + (sp.spans || []).map(([a, b]) =>
+          '<div class="sg" style="left:' + (a / dur * 100).toFixed(2) + '%;width:' +
+          Math.max((b - a) / dur * 100, .25).toFixed(2) + '%;background:' + sp.color +
+          ';opacity:' + (sp.own ? 1 : .5) + '"></div>').join('') + '</div>';
+      lane.querySelector('b').textContent = sp.name + (sp.own ? '  \u25c0 mic' : '');
+      lane.querySelector('.tk').onclick = e => {
+        const r = e.currentTarget.getBoundingClientRect();
+        seekAll(S, dur * Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)), true);
+      };
+      dz.appendChild(lane);
+    });
+    el.appendChild(dz);
   }
 
   spec.tracks.forEach(t => S.players.push(Track(S, t, el)));
@@ -701,6 +772,144 @@ function pendingBox(host, text){
   host.appendChild(d);
 }
 
+
+/* ---------------------------------------------------------------- lanes */
+/* One row per speaker, blocks where they talk. Overlap is visible as blocks
+   stacked in the same column. One audio element; the row buttons swap which
+   track it plays and keep the position. */
+function Lanes(host, spec){
+  const el = document.createElement('div');
+  el.className = 'scene';
+  const dur = spec.dur || Math.max(...spec.transcript.map(u => u.t1), 1);
+
+  if (spec.title || spec.subtitle){
+    const hd = document.createElement('div');
+    hd.className = 'hd';
+    hd.innerHTML = '<b></b><span></span>';
+    hd.querySelector('b').textContent = spec.title || '';
+    hd.querySelector('span').textContent = spec.subtitle || '';
+    el.appendChild(hd);
+  }
+  if (spec.note){
+    const n = document.createElement('p');
+    n.className = 'note';
+    n.textContent = spec.note;
+    el.appendChild(n);
+  }
+
+  const spk = spec.speakers;
+  const wide = Math.max(...spk.map(s => s.name.length));
+  const dz = document.createElement('div');
+  dz.className = 'dz';
+  dz.style.setProperty('--lw', Math.min(190, Math.max(96, wide * 8 + 46)) + 'px');
+  const step = dur > 90 ? 30 : dur > 40 ? 10 : 5;
+  let ticks = '';
+  for (let t = 0; t <= dur + .01; t += step)
+    ticks += '<span style="left:' + (t / dur * 100).toFixed(2) + '%">' + Math.round(t) + 's</span>';
+  dz.innerHTML = '<div class="rule"><div></div><div class="ticks">' + ticks + '</div></div>';
+
+  const rows = spk.map(sp => {
+    const lane = document.createElement('div');
+    lane.className = 'lane';
+    const blocks = (sp.spans || []).map(([a, b]) =>
+      '<div class="sg" style="left:' + (a / dur * 100).toFixed(2) + '%;width:' +
+      Math.max((b - a) / dur * 100, .25).toFixed(2) + '%;background:' + sp.color + '"></div>').join('');
+    lane.innerHTML =
+      '<div class="who">' +
+        (sp.src ? '<button class="src" title="play this track"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></button>' : '') +
+        '<i style="background:' + sp.color + '"></i><b></b></div>' +
+      '<div class="tk">' + blocks + '</div>';
+    lane.querySelector('b').textContent = sp.name;
+    dz.appendChild(lane);
+    return { lane, sp };
+  });
+  const ph = document.createElement('div');
+  ph.className = 'ph';
+  dz.appendChild(ph);
+  el.appendChild(dz);
+
+  const bar = document.createElement('div');
+  bar.className = 'dzbar';
+  bar.innerHTML = '<span class="lbl"></span><audio controls preload="metadata"></audio>';
+  el.appendChild(bar);
+  const audio = bar.querySelector('audio'), lbl = bar.querySelector('.lbl');
+
+  let cur = null;
+  function pick(src, name, row){
+    const t = audio.currentTime, playing = !audio.paused;
+    if (cur !== src){ cur = src; audio.src = src; audio.currentTime = t || 0; }
+    lbl.textContent = name;
+    rows.forEach(r => r.lane.classList.toggle('on', r === row));
+    if (playing) audio.play();
+  }
+  pick(spec.audio, spec.audioName || 'mix', null);
+  rows.forEach(r => {
+    const b = r.lane.querySelector('.src');
+    if (b) b.onclick = () => (r.lane.classList.contains('on')
+      ? pick(spec.audio, spec.audioName || 'mix', null)
+      : pick(r.sp.src, r.sp.name, r));
+  });
+
+  let txLines = [];
+  if (spec.transcript && spec.transcript.length){
+    const tx = document.createElement('div');
+    tx.className = 'tx';
+    const idx = {};
+    spk.forEach((s, i) => idx[s.name] = i);
+    spec.transcript.forEach(seg => {
+      const ln = document.createElement('div');
+      ln.className = 'ln' + (spec.target && seg.spk !== spec.target ? ' bleed' : '');
+      ln.innerHTML = '<span class="spk"></span><span class="t"></span><span class="s"></span>';
+      const chip = ln.querySelector('.spk');
+      chip.textContent = seg.spk;
+      const c = spk[idx[seg.spk]];
+      if (c){ chip.style.color = c.color; chip.style.background = c.bg || 'transparent'; }
+      ln.querySelector('.t').textContent = seg.t0.toFixed(1) + 's';
+      ln.querySelector('.s').textContent = seg.text;
+      ln.onclick = () => { audio.currentTime = seg.t0; audio.play(); };
+      tx.appendChild(ln);
+      txLines.push({ el: ln, t0: seg.t0, t1: seg.t1 });
+    });
+    el.appendChild(tx);
+  }
+
+  function place(){
+    const tk = rows[0].lane.querySelector('.tk');
+    const r = tk.getBoundingClientRect(), w = dz.getBoundingClientRect();
+    ph.style.left = (r.left - w.left + (audio.currentTime / dur) * r.width) + 'px';
+    ph.style.display = 'block';
+    const t = audio.currentTime;
+    txLines.forEach(l => {
+      const on = t >= l.t0 && t < l.t1;
+      if (on !== l.on){ l.on = on; l.el.classList.toggle('on', on); }
+    });
+  }
+  let raf;
+  const tick = () => { place(); if (!audio.paused) raf = requestAnimationFrame(tick); };
+  audio.addEventListener('play', tick);
+  audio.addEventListener('seeked', place);
+  audio.addEventListener('pause', () => { cancelAnimationFrame(raf); place(); });
+  dz.querySelectorAll('.tk').forEach(tk => tk.onclick = e => {
+    const r = tk.getBoundingClientRect();
+    audio.currentTime = dur * Math.max(0, Math.min(1, (e.clientX - r.left) / r.width));
+    audio.play();
+  });
+
+  host.appendChild(el);
+  return { el, audio };
+}
+
+/* Turn a transcript into per-speaker blocks, merging anything closer than 0.25 s. */
+function spansOf(transcript, name){
+  const out = [];
+  transcript.filter(u => u.spk === name).sort((a, b) => a.t0 - b.t0).forEach(u => {
+    if (out.length && u.t0 - out[out.length - 1][1] <= 0.25)
+      out[out.length - 1][1] = Math.max(out[out.length - 1][1], u.t1);
+    else out.push([u.t0, u.t1]);
+  });
+  return out;
+}
+
 /* ------------------------------------------------------------- builders */
 async function buildBleed(){
   const host = document.getElementById('bleed');
@@ -732,12 +941,20 @@ async function buildBleed(){
   const show = () => {
     const s = ready[dsSel.value].samples[smSel.value];
     teardown(scene);
+    const names = [];
+    s.transcript.forEach(u => { if (!names.includes(u.spk)) names.push(u.spk); });
+    names.sort((a, b) => (a === s.target ? -1 : b === s.target ? 1 : 0));
     scene = Scene(host, {
       title: s.label,
       subtitle: ready[dsSel.value].name + ' · mic of ' + s.target,
       note: s.note,
       target: s.target,
       transcript: s.transcript,
+      dur: 10,
+      speakers: names.map((n, i) => ({
+        name: n, own: n === s.target, spans: spansOf(s.transcript, n),
+        color: n === s.target ? V('--iris') : V(SPK_COLORS[(i + 1) % SPK_COLORS.length][0])
+      })),
       tracks: [
         { name: 'Original mic',  meta: 'as recorded',     src: s.orig,  color: V('--mute') },
         { name: 'Bleed removed', meta: 'pipeline output', src: s.clean, color: V('--iris') }
@@ -767,24 +984,30 @@ async function buildSynth(){
   const smSel = pick.querySelector('.sm');
   SYNTH.forEach((s, i) => smSel.add(new Option(s.label, i)));
 
-  let scene = null;
+  let cur = null;
   const show = () => {
     const s = SYNTH[smSel.value];
-    teardown(scene);
-    scene = Scene(host, {
-      title: s.label,
-      subtitle: s.tracks.filter(t => !t.mix).length + ' speakers',
-      note: s.note,
-      transcript: s.transcript,
-      tracks: s.tracks.map((t, i) => t.mix
-        ? { name: t.spk, meta: 'all speakers', src: t.src,
-            mix: true, chip: 'mix', color: V('--slate') }
-        : { name: t.spk, meta: 'own channel', src: t.src,
-            color: V(SPK_COLORS[(i - 1) % SPK_COLORS.length][0]) })
+    drop(cur);
+    const mix = s.tracks.find(t => t.mix);
+    const speakers = s.tracks.filter(t => !t.mix).map((t, i) => ({
+      name: t.spk, src: t.src, spans: spansOf(s.transcript, t.spk),
+      color: V(SPK_COLORS[i % SPK_COLORS.length][0]),
+      bg:    V(SPK_COLORS[i % SPK_COLORS.length][1])
+    }));
+    cur = Lanes(host, {
+      title: s.label, subtitle: speakers.length + ' speakers', note: s.note,
+      audio: mix ? mix.src : speakers[0].src, audioName: 'room mix',
+      speakers, transcript: s.transcript
     });
   };
   smSel.onchange = show;
   show();
+}
+
+function drop(L){
+  if (!L) return;
+  L.audio.pause();
+  L.el.remove();
 }
 
 function buildGroups(){
@@ -795,7 +1018,58 @@ function buildGroups(){
   })));
 }
 
+async function buildFD(){
+  const host = document.getElementById('fd');
+  let FD = [];
+  try {
+    const r = await fetch(FD_URL);
+    if (r.ok) FD = (await r.json()).filter(m => m.sessions && m.sessions.length);
+  } catch (e) { /* fall through to the pending notice */ }
+  if (!FD.length){
+    pendingBox(host, 'Model conversations are being prepared.');
+    return;
+  }
+  const pick = document.createElement('div');
+  pick.className = 'picker';
+  pick.innerHTML =
+    '<div class="fld"><label>model</label><select class="md"></select></div>' +
+    '<div class="fld"><label>conversation</label><select class="cv"></select></div>';
+  host.appendChild(pick);
+  const mdSel = pick.querySelector('.md'), cvSel = pick.querySelector('.cv');
+  FD.forEach((m, i) => mdSel.add(new Option(m.model, i)));
+
+  let cur = null;
+  const show = () => {
+    const m = FD[mdSel.value], s = m.sessions[cvSel.value];
+    drop(cur);
+    const names = [];
+    s.transcript.forEach(u => { if (!names.includes(u.spk)) names.push(u.spk); });
+    (s.tracks || []).forEach(t => { if (!names.includes(t.spk)) names.push(t.spk); });
+    const src = {};
+    (s.tracks || []).forEach(t => src[t.spk] = t.src);
+    cur = Lanes(host, {
+      title: s.label || m.model, subtitle: names.length + ' agents', note: s.note || m.note,
+      audio: s.audio, audioName: 'mix', dur: s.dur,
+      speakers: names.map((n, i) => ({
+        name: n, src: src[n], spans: spansOf(s.transcript, n),
+        color: V(SPK_COLORS[i % SPK_COLORS.length][0]),
+        bg:    V(SPK_COLORS[i % SPK_COLORS.length][1])
+      })),
+      transcript: s.transcript
+    });
+  };
+  const fill = () => {
+    cvSel.innerHTML = '';
+    FD[mdSel.value].sessions.forEach((x, i) => cvSel.add(new Option(x.label || ('take ' + (i + 1)), i)));
+    show();
+  };
+  mdSel.onchange = fill;
+  cvSel.onchange = show;
+  fill();
+}
+
 buildSynth();
+buildFD();
 buildBleed();
 buildGroups();
 
