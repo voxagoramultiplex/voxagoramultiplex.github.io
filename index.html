@@ -1048,10 +1048,14 @@ async function buildFD(){
     const src = {};
     (s.tracks || []).forEach(t => src[t.spk] = t.src);
     cur = Lanes(host, {
-      title: s.label || m.model, subtitle: names.length + ' agents', note: s.note || m.note,
+      title: s.label || m.model,
+      subtitle: names.length + ' agents \u00b7 ' + Math.round(s.dur) + 's',
+      note: s.note || m.note,
       audio: s.audio, audioName: 'mix', dur: s.dur,
       speakers: names.map((n, i) => ({
-        name: n, src: src[n], spans: spansOf(s.transcript, n),
+        // measured from each agent's own track: a transcript t1 is when the last
+        // word arrived, not when the voice stopped
+        name: n, src: src[n], spans: (s.spans && s.spans[n]) || spansOf(s.transcript, n),
         color: V(SPK_COLORS[i % SPK_COLORS.length][0]),
         bg:    V(SPK_COLORS[i % SPK_COLORS.length][1])
       })),
