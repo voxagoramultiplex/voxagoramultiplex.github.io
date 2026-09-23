@@ -1029,8 +1029,10 @@ async function buildBleed(){
         color: n === s.target ? V('--iris') : V(SPK_COLORS[(i + 1) % SPK_COLORS.length][0])
       })),
       tracks: [
-        { name: 'Original mic',  meta: 'as recorded',     src: s.orig,  color: V('--mute') },
-        { name: 'Bleed removed', meta: 'pipeline output', src: s.clean, color: V('--iris') }
+        { name: 'Original mic', meta: 'as recorded',   src: s.orig,  color: V('--mute') },
+        ...(s.sep ? [
+        { name: 'Separated',    meta: 'bleed removed', src: s.sep,   color: V('--sky')  }] : []),
+        { name: 'Restored',     meta: 'what ships',    src: s.clean, color: V('--iris') }
       ]
     });
   };
