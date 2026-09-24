@@ -70,8 +70,12 @@ h2{font-size:clamp(28px,4.4vw,40px);font-weight:760;letter-spacing:-.028em;margi
 h3{font-size:16.5px;font-weight:680;letter-spacing:-.012em;margin:38px 0 10px}
 h3 .hint{font-weight:400;font-size:13px;color:var(--faint);margin-left:8px}
 
-h3.part{display:block;text-align:center;margin-top:48px;font-size:21px;font-weight:720;
-  letter-spacing:-.018em}
+h3.part{display:grid;justify-items:center;gap:10px;margin:60px 0 14px;
+  font-size:26px;font-weight:780;letter-spacing:-.026em;text-align:center}
+h3.part::before{content:"";width:44px;height:4px;border-radius:3px;background:var(--lilac)}
+h3.part.r::before{background:var(--iris)}
+h3.part small{display:block;font-family:var(--m);font-size:10.5px;font-weight:500;
+  letter-spacing:.17em;text-transform:uppercase;color:var(--faint)}
 h3.part em{font-style:normal;font-family:var(--m);font-size:10px;letter-spacing:.13em;
   text-transform:uppercase;padding:3px 9px;border-radius:20px;
   color:var(--lilac);background:var(--lilac-bg)}
@@ -193,6 +197,13 @@ h3.part b{font-size:19px;font-weight:720;letter-spacing:-.015em}
 .mini[aria-pressed="true"]{background:var(--lilac-bg);border-color:var(--lilac);color:var(--lilac)}
 
 
+
+
+/* ---------- bleed figure ---------- */
+.bleedfig{margin:0 auto 22px;max-width:620px}
+.bleedfig svg{width:100%;height:auto;display:block;overflow:visible}
+.lead.bl{margin-top:4px}
+.lead.bl b{color:var(--rose);font-weight:760}
 
 /* ---------- four agents talking over each other ---------- */
 .fdanim{max-width:560px;margin:0 auto 30px;display:grid;gap:12px}
@@ -359,14 +370,16 @@ footer .mark{justify-content:center;margin-bottom:10px;font-size:15px;color:var(
     <div class="card p"><span class="tag">03</span><h4>Point three</h4><p>Short description.</p></div>
   </div>
 
-  <h3 class="part">Synthetic Dataset</h3>
+  <h3 class="part">Synthetic Dataset<small>generated, every turn placed on one clock</small></h3>
   <div id="synth"></div>
 
-  <h3 class="part">Real Dataset</h3>
-  <p class="lead">Everyone wears their own microphone, and every microphone still
-     hears the rest of the room. That spill is <b>bleed</b>: the person next to you
-     lands on your channel, sometimes louder than you are. We separate each channel
-     down to its owner, then restore what the separation took with it.</p>
+  <h3 class="part r">Real Dataset<small>recorded in rooms, one microphone each</small></h3>
+  <p class="lead">Everyone wears their own microphone. Every microphone still hears
+     the whole room.</p>
+  <figure class="bleedfig" aria-hidden="true"></figure>
+  <p class="lead bl"><b>Bleed</b> is the voice beside you arriving on your channel &mdash;
+     an uninvited guest in somebody else's waveform, often louder than its owner.
+     We take every channel back down to the person wearing it.</p>
   <div id="bleed"></div>
   <p class="credit">AMI and ICSI Meeting Corpus (CC&nbsp;BY&nbsp;4.0), CHiME-6, DiPCo.</p>
 
@@ -1003,6 +1016,68 @@ function spansOf(transcript, name){
   st.textContent = css.join('') +
     AG.map(a => '.fdanim .ag.k' + a.key + ' i::after{animation-name:ring_' + a.key + '}').join('');
   document.head.appendChild(st);
+})();
+
+
+/* A microphone carrying voices that are not its owner's, and the same channel
+   once they are gone. Bars, so it reads as the waveforms above it. */
+(function(){
+  const fig = document.querySelector('.bleedfig');
+  if (!fig) return;
+  const W = 620, MID1 = 44, MID2 = 132, X0 = 96, X1 = 604;
+  const owner = [[0, .20], [.55, .74], [.86, 1]];
+  const guests = [{ at: [.22, .38], c: '--rose' }, { at: [.40, .52], c: '--sky' },
+                  { at: [.76, .84], c: '--rose' }];
+  const seed = i => Math.abs(Math.sin(i * 12.9898) * 43758.5453) % 1;
+  const span = f => X0 + f * (X1 - X0);
+  const bars = (ranges, mid, col, op, tall) => {
+    let out = '';
+    for (const [a, b] of ranges){
+      const x0 = span(a), x1 = span(b);
+      for (let x = x0, i = 0; x < x1 - 1.5; x += 4, i++){
+        const h = (0.3 + 0.7 * seed(x + mid)) * tall;
+        out += '<rect x="' + x.toFixed(1) + '" y="' + (mid - h / 2).toFixed(1) +
+               '" width="2" height="' + h.toFixed(1) + '" rx="1" fill="' + col +
+               '" opacity="' + op + '"/>';
+      }
+    }
+    return out;
+  };
+  const V = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const iris = V('--iris'), ln = V('--ln'), faint = V('--faint'), rose = V('--rose');
+  let g = '';
+  // lane backgrounds
+  [MID1, MID2].forEach(m => {
+    g += '<rect x="' + X0 + '" y="' + (m - 24) + '" width="' + (X1 - X0) +
+         '" height="48" rx="8" fill="' + V('--soft') + '"/>';
+  });
+  // top lane: owner + guests
+  g += bars(owner, MID1, iris, 1, 34);
+  guests.forEach(gu => {
+    const col = V(gu.c);
+    g += bars([gu.at], MID1, col, .95, 30);
+    const x0 = span(gu.at[0]) - 5, x1 = span(gu.at[1]) + 5;
+    g += '<rect x="' + x0.toFixed(1) + '" y="' + (MID1 - 22) + '" width="' + (x1 - x0).toFixed(1) +
+         '" height="44" rx="6" fill="none" stroke="' + col +
+         '" stroke-width="1.2" stroke-dasharray="3 3" opacity=".85"/>';
+  });
+  // bottom lane: owner only
+  g += bars(owner, MID2, iris, 1, 34);
+  // labels
+  g += '<text x="' + (X0 - 12) + '" y="' + (MID1 + 4) + '" text-anchor="end" font-size="11.5" ' +
+       'font-family="ui-monospace,monospace" fill="' + faint + '">your mic</text>';
+  g += '<text x="' + (X0 - 12) + '" y="' + (MID2 + 4) + '" text-anchor="end" font-size="11.5" ' +
+       'font-family="ui-monospace,monospace" fill="' + faint + '">your voice</text>';
+  const gx = (span(guests[1].at[0]) + span(guests[1].at[1])) / 2;
+  g += '<text x="' + gx.toFixed(1) + '" y="' + (MID1 - 30) + '" text-anchor="middle" font-size="11" ' +
+       'font-family="ui-monospace,monospace" fill="' + rose + '">not you</text>';
+  g += '<path d="M' + gx.toFixed(1) + ' ' + (MID1 - 26) + ' l0 6" stroke="' + rose +
+       '" stroke-width="1.2"/>';
+  g += '<path d="M' + (X0 - 40) + ' ' + (MID1 + 30) + ' L' + (X0 - 40) + ' ' + (MID2 - 30) +
+       '" stroke="' + ln + '" stroke-width="1.4"/>' +
+       '<path d="M' + (X0 - 44) + ' ' + (MID2 - 36) + ' l4 6 4-6" fill="none" stroke="' + ln +
+       '" stroke-width="1.4"/>';
+  fig.innerHTML = '<svg viewBox="0 -14 ' + W + ' 184" role="img">' + g + '</svg>';
 })();
 
 /* ------------------------------------------------------------- builders */
